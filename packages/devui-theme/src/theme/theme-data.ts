@@ -1,8 +1,7 @@
 import { Theme } from './theme';
 export const devuiLightTheme: Theme = new Theme({
-  id: 'devui-light-theme',
+  id: 'b-light-theme',
   name: 'Light Mode',
-  cnName: '浅色主题',
   data: {
     // 基础变量
     'b-global-bg': '#f3f6f8',
@@ -147,9 +146,8 @@ export const devuiLightTheme: Theme = new Theme({
   isDark: false,
 });
 export const devuiGreenTheme: Theme = new Theme({
-  id: 'devui-green-theme',
+  id: 'b-green-theme',
   name: 'Green - Light Mode',
-  cnName: '绿色主题',
   data: {
     ...devuiLightTheme.data,
     'b-global-bg': '#f3f8f7',
@@ -192,13 +190,12 @@ export const devuiGreenTheme: Theme = new Theme({
     'b-icon-fill-active-disabled': '#c5f0e5',
     'b-range-item-hover-bg': '#d8f9ea',
   },
-  extends: 'devui-light-theme',
+  extends: 'b-light-theme',
   isDark: false,
 });
 export const devuiDarkTheme: Theme = new Theme({
-  id: 'devui-dark-theme',
+  id: 'b-dark-theme',
   name: 'Dark Mode',
-  cnName: '深色主题',
   data: {
     'b-global-bg': '#202124',
     'b-global-bg-normal': '#202124',
@@ -297,13 +294,12 @@ export const devuiDarkTheme: Theme = new Theme({
     'b-menu-item-hover': '#fff',
     'b-menu-disabled': '#919191',
   },
-  extends: 'devui-light-theme',
+  extends: 'b-light-theme',
   isDark: true,
 });
 export const devuiGreenDarkTheme: Theme = new Theme({
-  id: 'devui-green-dark-theme',
+  id: 'b-green-dark-theme',
   name: 'Green - Dark Mode',
-  cnName: '绿色深色主题',
   data: {
     ...devuiDarkTheme.data,
     'b-brand': '#3DCCA6',
@@ -337,6 +333,6 @@ export const devuiGreenDarkTheme: Theme = new Theme({
     'b-primary-disabled': '#28544B',
     'b-icon-fill-active-disabled': '#28544B',
   },
-  extends: 'devui-dark-theme',
+  extends: 'b-dark-theme',
   isDark: true,
 });

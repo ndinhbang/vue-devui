@@ -35,11 +35,11 @@ export function ThemeServiceInit(
 
   // @ts-ignore
   window[THEME_KEY.themeCollection] = themes || {
-    'devui-light-theme': devuiLightTheme,
-    'devui-dark-theme': devuiDarkTheme,
+    'b-light-theme': devuiLightTheme,
+    'b-dark-theme': devuiDarkTheme,
   };
   // @ts-ignore
-  window[THEME_KEY.currentTheme] = defaultThemeName || 'devui-light-theme';
+  window[THEME_KEY.currentTheme] = defaultThemeName || 'b-light-theme';
   // @ts-ignore
   const eventBus = window['globalEventBus'] || new EventBus(); // window.globalEventBus 为 框架的事件总线
   const themeService = new ThemeService(eventBus);
@@ -47,7 +47,7 @@ export function ThemeServiceInit(
   window[THEME_KEY.themeService] = themeService;
 
   themeService.setExtraData(extraData || {
-    'devui-dark-theme': {
+    'b-dark-theme': {
       appendClasses: ['dark-mode']
     }
   });
@@ -70,10 +70,10 @@ export function ThemeServiceFollowSystemOn(themeConfig?: { lightThemeName: strin
   return themeService.mediaQuery.prefersColorSchemeChange.subscribe(value => {
     if (value === 'dark') {
       // @ts-ignore
-      themeService.applyTheme(window[THEME_KEY.themeCollection][themeConfig && themeConfig.darkThemeName || 'devui-dark-theme']);
+      themeService.applyTheme(window[THEME_KEY.themeCollection][themeConfig && themeConfig.darkThemeName || 'b-dark-theme']);
     } else {
       // @ts-ignore
-      themeService.applyTheme(window[THEME_KEY.themeCollection][themeConfig && themeConfig.lightThemeName || 'devui-light-theme']);
+      themeService.applyTheme(window[THEME_KEY.themeCollection][themeConfig && themeConfig.lightThemeName || 'b-light-theme']);
     }
   });
 }

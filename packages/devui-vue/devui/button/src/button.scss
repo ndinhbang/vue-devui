@@ -1,27 +1,27 @@
 @import '../../styles-var/devui-var.scss';
 
-$devui-btn-padding: var(--devui-btn-padding, 0 20px);
-$devui-btn-common-bg: var(--devui-btn-common-bg, $devui-base-bg);
-$devui-btn-common-bg-hover: var(--devui-btn-common-bg-hover, $devui-base-bg);
-$devui-btn-common-bg-active: var(--devui-btn-common-bg-active, $devui-base-bg);
-$devui-btn-common-color-hover: var(--devui-btn-common-color-hover, $devui-brand-active);
-$devui-btn-common-color-active: var(--devui-btn-common-color-active, $devui-brand-active);
-$devui-btn-common-border-color: var(--devui-btn-common-border-color, $devui-line);
-$devui-btn-common-border-color-hover: var(--devui-btn-common-border-color-hover, $devui-form-control-line-active);
-$devui-btn-common-border-color-active: var(--devui-btn-common-border-color-active, $devui-form-control-line-active);
-$devui-btn-sm-padding: var(--devui-btn-sm-padding, 0 16px);
-$devui-btn-lg-padding: var(--devui-btn-lg-padding, 0 24px);
+$b-btn-padding: var(--b-btn-padding, 0 20px);
+$b-btn-common-bg: var(--b-btn-common-bg, $b-base-bg);
+$b-btn-common-bg-hover: var(--b-btn-common-bg-hover, $b-base-bg);
+$b-btn-common-bg-active: var(--b-btn-common-bg-active, $b-base-bg);
+$b-btn-common-color-hover: var(--b-btn-common-color-hover, $b-brand-active);
+$b-btn-common-color-active: var(--b-btn-common-color-active, $b-brand-active);
+$b-btn-common-border-color: var(--b-btn-common-border-color, $b-line);
+$b-btn-common-border-color-hover: var(--b-btn-common-border-color-hover, $b-form-control-line-active);
+$b-btn-common-border-color-active: var(--b-btn-common-border-color-active, $b-form-control-line-active);
+$b-btn-sm-padding: var(--b-btn-sm-padding, 0 16px);
+$b-btn-lg-padding: var(--b-btn-lg-padding, 0 24px);
 
 @mixin btn-solid-style {
-  color: $devui-brand-active;
-  border-color: $devui-form-control-line-active;
+  color: $b-brand-active;
+  border-color: $b-form-control-line-active;
 }
 
-.#{$devui-prefix}-button {
-  padding: $devui-btn-padding;
-  font-size: $devui-font-size-md;
-  line-height: $devui-line-height-base;
-  border-radius: $devui-border-radius;
+.#{$b-prefix}-button {
+  padding: $b-btn-padding;
+  font-size: $b-font-size-md;
+  line-height: $b-line-height-base;
+  border-radius: $b-border-radius;
   border-width: 1px;
   border-color: transparent;
   background-color: transparent;
@@ -39,34 +39,34 @@ $devui-btn-lg-padding: var(--devui-btn-lg-padding, 0 24px);
   }
 
   &--solid {
-    color: $devui-light-text;
+    color: $b-light-text;
     min-width: 64px;
 
     i {
-      color: $devui-light-text;
+      color: $b-light-text;
     }
 
     &--secondary {
-      color: $devui-text;
-      border-color: $devui-btn-common-border-color;
-      background-color: $devui-btn-common-bg;
+      color: $b-text;
+      border-color: $b-btn-common-border-color;
+      background-color: $b-btn-common-bg;
 
       &:hover {
-        color: $devui-btn-common-color-hover;
-        border-color: $devui-btn-common-border-color-hover;
-        background-color: $devui-btn-common-bg-hover;
+        color: $b-btn-common-color-hover;
+        border-color: $b-btn-common-border-color-hover;
+        background-color: $b-btn-common-bg-hover;
       }
 
       &:focus {
-        color: $devui-btn-common-color-active;
-        border-color: $devui-btn-common-border-color-active;
-        background-color: $devui-btn-common-bg-hover;
+        color: $b-btn-common-color-active;
+        border-color: $b-btn-common-border-color-active;
+        background-color: $b-btn-common-bg-hover;
       }
 
       &:active {
-        color: $devui-btn-common-color-active;
-        border-color: $devui-btn-common-border-color-active;
-        background-color: $devui-btn-common-bg-hover;
+        color: $b-btn-common-color-active;
+        border-color: $b-btn-common-border-color-active;
+        background-color: $b-btn-common-bg-hover;
       }
 
       &:disabled {
@@ -75,116 +75,116 @@ $devui-btn-lg-padding: var(--devui-btn-lg-padding, 0 24px);
     }
 
     &--primary {
-      background-color: $devui-primary;
+      background-color: $b-primary;
 
       &:hover {
-        background-color: $devui-primary-hover;
+        background-color: $b-primary-hover;
       }
 
       &:focus {
-        background-color: $devui-primary-hover;
+        background-color: $b-primary-hover;
       }
 
       &:active {
-        background-color: $devui-primary-active;
+        background-color: $b-primary-active;
       }
 
       &:disabled {
-        color: $devui-light-text;
-        background: $devui-primary-disabled;
+        color: $b-light-text;
+        background: $b-primary-disabled;
         border: none;
       }
     }
 
     &--danger {
-      background-color: $devui-contrast;
+      background-color: $b-contrast;
 
       &:hover {
-        background-color: $devui-contrast-hover;
+        background-color: $b-contrast-hover;
       }
 
       &:focus {
-        background-color: $devui-contrast-hover;
+        background-color: $b-contrast-hover;
       }
 
       &:active {
-        background-color: $devui-contrast-active;
+        background-color: $b-contrast-active;
       }
 
       &:disabled {
-        background-color: $devui-contrast-disabled;
+        background-color: $b-contrast-disabled;
       }
     }
   }
 
   &--outline {
-    background-color: $devui-block;
+    background-color: $b-block;
     border-style: solid;
 
     i {
-      color: $devui-text;
+      color: $b-text;
     }
 
     &--secondary {
-      color: $devui-text;
-      border-color: $devui-line;
+      color: $b-text;
+      border-color: $b-line;
 
       &:hover,
       &:focus,
       &:active {
-        color: $devui-brand-active;
-        border-color: $devui-form-control-line-active;
+        color: $b-brand-active;
+        border-color: $b-form-control-line-active;
 
         i {
-          color: $devui-brand-active;
-          border-color: $devui-form-control-line-active;
+          color: $b-brand-active;
+          border-color: $b-form-control-line-active;
         }
       }
 
       &:disabled {
-        color: $devui-disabled-text;
-        border-color: $devui-disabled-line;
-        background-color: $devui-disabled-bg;
+        color: $b-disabled-text;
+        border-color: $b-disabled-line;
+        background-color: $b-disabled-bg;
 
         i {
-          color: $devui-disabled-text;
+          color: $b-disabled-text;
         }
       }
     }
 
     &--primary {
-      color: $devui-brand-active;
-      border-color: $devui-form-control-line-active;
+      color: $b-brand-active;
+      border-color: $b-form-control-line-active;
 
       &:hover,
       &:focus,
       &:active {
-        color: $devui-brand-active-focus;
-        border-color: $devui-form-control-line-active-hover;
+        color: $b-brand-active-focus;
+        border-color: $b-form-control-line-active-hover;
 
         i {
-          color: $devui-brand-active-focus;
-          border-color: $devui-form-control-line-active-hover;
+          color: $b-brand-active-focus;
+          border-color: $b-form-control-line-active-hover;
         }
       }
 
       &:disabled {
         opacity: 0.8;
-        color: $devui-brand-active;
-        border-color: $devui-form-control-line-active;
+        color: $b-brand-active;
+        border-color: $b-form-control-line-active;
 
         i {
-          color: $devui-brand-active;
+          color: $b-brand-active;
         }
       }
     }
 
     &--danger {
-      color: $devui-contrast;
-      border-color: $devui-contrast;
+      color: $b-contrast;
+      border-color: $b-contrast;
 
       i {
-        color: $devui-contrast;
+        color: $b-contrast;
       }
 
       &:hover,
@@ -200,38 +200,38 @@ $devui-btn-lg-padding: var(--devui-btn-lg-padding, 0 24px);
     padding: 0;
 
     &--secondary {
-      color: $devui-text;
+      color: $b-text;
 
       &:hover {
-        color: $devui-list-item-hover-text;
+        color: $b-list-item-hover-text;
       }
 
       &:focus {
-        color: $devui-list-item-hover-text;
+        color: $b-list-item-hover-text;
       }
 
       &:active {
-        color: $devui-list-item-hover-text;
+        color: $b-list-item-hover-text;
       }
 
       &:disabled {
-        color: $devui-disabled-text;
+        color: $b-disabled-text;
       }
     }
 
     &--primary {
-      color: $devui-brand-active;
+      color: $b-brand-active;
 
       &:hover {
-        color: $devui-link-active;
+        color: $b-link-active;
       }
 
       &:focus {
-        color: $devui-brand-active-focus;
+        color: $b-brand-active-focus;
       }
 
       &:active {
-        color: $devui-brand-active-focus;
+        color: $b-brand-active-focus;
       }
 
       &:disabled {
@@ -240,7 +240,7 @@ $devui-btn-lg-padding: var(--devui-btn-lg-padding, 0 24px);
     }
 
     &--danger {
-      color: $devui-contrast;
+      color: $b-contrast;
 
       &:hover,
       &:focus,
@@ -252,49 +252,49 @@ $devui-btn-lg-padding: var(--devui-btn-lg-padding, 0 24px);
   }
 
   &--sm {
-    padding: $devui-btn-sm-padding;
-    height: $devui-size-sm;
-    font-size: $devui-font-size-sm;
+    padding: $b-btn-sm-padding;
+    height: $b-size-sm;
+    font-size: $b-font-size-sm;
     min-width: 56px;
   }
 
   &--lg {
-    padding: $devui-btn-lg-padding;
-    height: $devui-size-lg;
-    font-size: $devui-font-size-lg;
+    padding: $b-btn-lg-padding;
+    height: $b-size-lg;
+    font-size: $b-font-size-lg;
     min-width: 72px;
   }
 
-  &.#{$devui-prefix}-button__icon:not(.#{$devui-prefix}-button--solid) {
+  &.#{$b-prefix}-button__icon:not(.#{$b-prefix}-button--solid) {
     &:hover,
     &:focus {
-      border: 1px solid $devui-list-item-hover-bg;
-      background-color: $devui-list-item-hover-bg;
+      border: 1px solid $b-list-item-hover-bg;
+      background-color: $b-list-item-hover-bg;
     }
 
     &:disabled {
-      background-color: $devui-disabled-bg;
+      background-color: $b-disabled-bg;
     }
   }
 
   &:not(:disabled) {
-    &.#{$devui-prefix}-button--text {
-      &.#{$devui-prefix}-button__icon-wrap {
-        color: $devui-text;
+    &.#{$b-prefix}-button--text {
+      &.#{$b-prefix}-button__icon-wrap {
+        color: $b-text;
 
-        .#{$devui-prefix}-button__icon-fix {
-          color: $devui-text-weak;
+        .#{$b-prefix}-button__icon-fix {
+          color: $b-text-weak;
         }
 
         &:hover {
-          color: $devui-list-item-hover-text;
+          color: $b-list-item-hover-text;
 
-          .#{$devui-prefix}-button__icon-fix {
-            color: $devui-icon-fill-active;
+          .#{$b-prefix}-button__icon-fix {
+            color: $b-icon-fill-active;
           }
 
           .button-content {
-            color: $devui-brand;
+            color: $b-brand;
           }
         }
       }
@@ -310,70 +310,70 @@ $devui-btn-lg-padding: var(--devui-btn-lg-padding, 0 24px);
   }
 }
 
-.#{$devui-prefix}-loading {
-  .#{$devui-prefix}-loading-default-spinner {
+.#{$b-prefix}-loading {
+  .#{$b-prefix}-loading-default-spinner {
     div {
-      background-color: $devui-text;
+      background-color: $b-text;
     }
   }
 }
 
-.#{$devui-prefix}-button {
+.#{$b-prefix}-button {
   transition:
-    background-color $devui-animation-duration-slow $devui-animation-ease-in-out-smooth,
-    border-color $devui-animation-duration-slow $devui-animation-ease-in-out-smooth,
-    color $devui-animation-duration-slow $devui-animation-ease-in-out-smooth;
+    background-color $b-animation-duration-slow $b-animation-ease-in-out-smooth,
+    border-color $b-animation-duration-slow $b-animation-ease-in-out-smooth,
+    color $b-animation-duration-slow $b-animation-ease-in-out-smooth;
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-style: solid;
 
-  &.#{$devui-prefix}-button__icon {
+  &.#{$b-prefix}-button__icon {
     padding: 8px;
     line-height: 1em;
     min-width: unset;
 
-    &:not(.#{$devui-prefix}-button--circle) {
+    &:not(.#{$b-prefix}-button--circle) {
       border: 1px solid transparent;
     }
 
-    &.#{$devui-prefix}-button--sm {
+    &.#{$b-prefix}-button--sm {
       padding: 4px;
       min-width: 24px;
     }
 
-    &.#{$devui-prefix}-button--lg {
+    &.#{$b-prefix}-button--lg {
       .icon {
-        font-size: $devui-font-size-icon;
+        font-size: $b-font-size-icon;
       }
 
       min-width: 32px;
     }
 
-    &.#{$devui-prefix}-button--circle {
-      width: $devui-size-md;
+    &.#{$b-prefix}-button--circle {
+      width: $b-size-md;
 
-      &.#{$devui-prefix}-button--sm {
-        width: $devui-size-sm;
+      &.#{$b-prefix}-button--sm {
+        width: $b-size-sm;
       }
 
-      &.#{$devui-prefix}-button--lg {
-        width: $devui-size-lg;
+      &.#{$b-prefix}-button--lg {
+        width: $b-size-lg;
       }
     }
   }
 
-  &:not(.#{$devui-prefix}-button__icon) {
+  &:not(.#{$b-prefix}-button__icon) {
     .icon-fix {
-      font-size: $devui-font-size-icon;
+      font-size: $b-font-size-icon;
     }
   }
 }
 
-.#{$devui-prefix}-button__icon-fix {
+.#{$b-prefix}-button__icon-fix {
   position: relative;
-  font-size: $devui-font-size;
+  font-size: $b-font-size;
 }
 
 .button-content {

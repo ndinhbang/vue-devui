@@ -1,15 +1,15 @@
 @import '../../../../styles-var/devui-var.scss';
 
-$devui-tab-options-bg: $devui-brand-foil;
-$devui-tab-slider-bg: $devui-list-item-hover-bg;
+$b-tab-options-bg: $b-brand-foil;
+$b-tab-slider-bg: $b-list-item-hover-bg;
 
 :host {
   display: block;
 }
 
-.#{$devui-prefix}-tabs__nav--tabs,
-.#{$devui-prefix}-tabs__nav--pills {
-  font-size: $devui-font-size;
+.#{$b-prefix}-tabs__nav--tabs,
+.#{$b-prefix}-tabs__nav--pills {
+  font-size: $b-font-size;
   background: transparent;
   list-style: none;
 
@@ -24,7 +24,7 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
       background-color: transparent;
       padding: 0;
       text-decoration: none;
-      color: $devui-aide-text;
+      color: $b-aide-text;
     }
 
     & a:hover,
@@ -35,7 +35,7 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
 
     &.disabled {
       a {
-        color: $devui-disabled-text;
+        color: $b-disabled-text;
         cursor: not-allowed;
       }
     }
@@ -43,7 +43,7 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
     &.active,
     &:hover:not(.disabled) {
       & a {
-        color: $devui-brand;
+        color: $b-brand;
       }
     }
   }
@@ -56,38 +56,38 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
     width: 0;
     background: transparent;
     transition:
-      width $devui-animation-duration-slow $devui-animation-ease-in-out,
-      background-color $devui-animation-duration-slow $devui-animation-ease-in-out;
+      width $b-animation-duration-slow $b-animation-ease-in-out,
+      background-color $b-animation-duration-slow $b-animation-ease-in-out;
   }
 
   li.active::after {
     width: 100%;
-    background: $devui-brand;
+    background: $b-brand;
   }
 
-  .#{$devui-prefix}-tabs__new-tab {
+  .#{$b-prefix}-tabs__new-tab {
     padding: 2px 0 0;
   }
 }
 
-.#{$devui-prefix}-tabs__nav--options {
-  background: $devui-base-bg;
-  border: 1px solid $devui-dividing-line;
-  border-radius: $devui-border-radius;
+.#{$b-prefix}-tabs__nav--options {
+  background: $b-base-bg;
+  border: 1px solid $b-dividing-line;
+  border-radius: $b-border-radius;
   padding: 2px;
   width: fit-content;
 
   & > li {
     cursor: pointer;
-    background-color: $devui-base-bg;
-    border-radius: $devui-border-radius;
+    background-color: $b-base-bg;
+    border-radius: $b-border-radius;
     transition:
-      background-color $devui-animation-duration-slow $devui-animation-ease-in-out,
-      text-shadow $devui-animation-duration-slow $devui-animation-ease-in-out;
+      background-color $b-animation-duration-slow $b-animation-ease-in-out,
+      text-shadow $b-animation-duration-slow $b-animation-ease-in-out;
 
     & span > a {
       border: none;
-      color: $devui-aide-text;
+      color: $b-aide-text;
       line-height: 26px;
       padding: 0 16px;
 
@@ -99,19 +99,19 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
     }
 
     &.active {
-      background: $devui-global-bg;
+      background: $b-global-bg;
 
       & span > a {
-        color: $devui-brand;
+        color: $b-brand;
         padding: 0 16px;
       }
     }
 
     &.disabled {
-      border-color: $devui-disabled-line;
+      border-color: $b-disabled-line;
 
       a {
-        color: $devui-disabled-text;
+        color: $b-disabled-text;
         cursor: not-allowed;
       }
     }
@@ -120,25 +120,25 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
     &:hover:not(.disabled) {
       & span > a {
         &:hover {
-          color: $devui-brand;
+          color: $b-brand;
           background: transparent;
         }
       }
     }
   }
-  .#{$devui-prefix}-tabs__close-btn {
+  .#{$b-prefix}-tabs__close-btn {
     margin-right: 12px;
   }
-  .#{$devui-prefix}-tabs__new-tab {
+  .#{$b-prefix}-tabs__new-tab {
     padding: 2px 16px 0;
   }
 }
 
-.#{$devui-prefix}-tabs__nav--slider {
-  font-size: $devui-font-size;
+.#{$b-prefix}-tabs__nav--slider {
+  font-size: $b-font-size;
   border: none;
-  border-radius: $devui-border-radius;
-  background: $devui-tab-slider-bg;
+  border-radius: $b-border-radius;
+  background: $b-tab-slider-bg;
   width: fit-content;
   display: flex;
   align-items: center;
@@ -152,17 +152,17 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
 
     &:first-child {
       border-left-width: 1px;
-      border-radius: $devui-border-radius 0 0 $devui-border-radius;
+      border-radius: $b-border-radius 0 0 $b-border-radius;
     }
 
     &:last-child {
-      border-radius: 0 $devui-border-radius $devui-border-radius 0;
+      border-radius: 0 $b-border-radius $b-border-radius 0;
     }
 
     & a {
       cursor: pointer;
       border: none;
-      color: $devui-aide-text;
+      color: $b-aide-text;
       line-height: 28px;
       padding: 0 16px;
 
@@ -174,10 +174,10 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
     }
 
     &.disabled {
-      border-color: $devui-disabled-line;
+      border-color: $b-disabled-line;
 
       a {
-        color: $devui-disabled-text;
+        color: $b-disabled-text;
         cursor: not-allowed;
       }
     }
@@ -185,37 +185,37 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
     &.active,
     &:hover:not(.disabled) {
       & a {
-        color: $devui-brand-active;
+        color: $b-brand-active;
 
         &:hover {
-          color: $devui-brand-active;
+          color: $b-brand-active;
           background: transparent;
         }
       }
     }
 
     &.active {
-      text-shadow: 0 0 0.7px $devui-brand;
+      text-shadow: 0 0 0.7px $b-brand;
     }
 
     &:hover:not(.active):not(.disabled) {
-      color: $devui-brand-active;
+      color: $b-brand-active;
     }
   }
 
-  .#{$devui-prefix}-tabs__close-btn {
+  .#{$b-prefix}-tabs__close-btn {
     margin-right: 12px;
   }
-  .#{$devui-prefix}-tabs__new-tab {
+  .#{$b-prefix}-tabs__new-tab {
     padding: 2px 16px 0;
   }
 }
 
-.#{$devui-prefix}-tabs__nav--wrapped {
-  font-size: $devui-font-size;
+.#{$b-prefix}-tabs__nav--wrapped {
+  font-size: $b-font-size;
   background: transparent;
-  border-bottom: 1px solid $devui-dividing-line;
-  background-color: $devui-base-bg;
+  border-bottom: 1px solid $b-dividing-line;
+  background-color: $b-base-bg;
 
   > li {
     cursor: pointer;
@@ -225,8 +225,8 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
     & a {
       cursor: pointer;
       border: none;
-      color: $devui-aide-text;
-      border-radius: $devui-border-radius $devui-border-radius 0 0;
+      color: $b-aide-text;
+      border-radius: $b-border-radius $b-border-radius 0 0;
 
       &:hover,
       &:focus,
@@ -236,37 +236,37 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
     }
 
     &.disabled {
-      border-color: $devui-disabled-line;
+      border-color: $b-disabled-line;
 
       a {
-        color: $devui-disabled-text;
+        color: $b-disabled-text;
         cursor: not-allowed;
       }
     }
 
     &.active {
-      border: 1px solid $devui-dividing-line;
-      background: $devui-global-bg;
-      border-radius: $devui-border-radius $devui-border-radius 0 0;
+      border: 1px solid $b-dividing-line;
+      background: $b-global-bg;
+      border-radius: $b-border-radius $b-border-radius 0 0;
       // 以下覆盖父元素的底部边框,解决多1px的边框造成的抖动
       margin: -1px;
       border-bottom-color: transparent;
 
       & a {
-        color: $devui-brand-active;
+        color: $b-brand-active;
       }
     }
 
     &:hover:not(.active):not(.disabled) {
       a {
-        color: $devui-brand;
+        color: $b-brand;
       }
     }
   }
 }
 
-.#{$devui-prefix}-tabs__nav--tabs {
-  border-bottom: 1px $devui-line solid;
+.#{$b-prefix}-tabs__nav--tabs {
+  border-bottom: 1px $b-line solid;
 
   li {
     margin-left: 32px;
@@ -278,7 +278,7 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
   }
 }
 
-.#{$devui-prefix}-tabs__nav--pills {
+.#{$b-prefix}-tabs__nav--pills {
   > li {
     margin-left: 32px;
 
@@ -288,7 +288,7 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
   }
 }
 
-.#{$devui-prefix}-tabs__nav {
+.#{$b-prefix}-tabs__nav {
   display: flex;
   align-items: center;
   list-style: none;
@@ -319,12 +319,12 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
   &--right,
   &--left {
     margin: 0;
-    .#{$devui-prefix}-tabs__nav-slider-animation {
+    .#{$b-prefix}-tabs__nav-slider-animation {
       transition:
-        top $devui-animation-duration-slow $devui-animation-ease-in-out,
-        height $devui-animation-duration-slow $devui-animation-ease-in-out;
+        top $b-animation-duration-slow $b-animation-ease-in-out,
+        height $b-animation-duration-slow $b-animation-ease-in-out;
     }
-    .#{$devui-prefix}-tabs__new-tab {
+    .#{$b-prefix}-tabs__new-tab {
       text-align: center;
     }
   }
@@ -355,13 +355,13 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
       width: 2px;
       background: transparent;
       transition:
-        height $devui-animation-duration-slow $devui-animation-ease-in-out,
-        background-color $devui-animation-duration-slow $devui-animation-ease-in-out;
+        height $b-animation-duration-slow $b-animation-ease-in-out,
+        background-color $b-animation-duration-slow $b-animation-ease-in-out;
     }
 
     > li.active::before {
       height: 100%;
-      background: $devui-brand;
+      background: $b-brand;
     }
   }
 
@@ -387,46 +387,46 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
       width: 2px;
       background: transparent;
       transition:
-        height $devui-animation-duration-slow $devui-animation-ease-in-out,
-        background-color $devui-animation-duration-slow $devui-animation-ease-in-out;
+        height $b-animation-duration-slow $b-animation-ease-in-out,
+        background-color $b-animation-duration-slow $b-animation-ease-in-out;
     }
 
     > li.active::after {
       height: 100%;
       width: 2px;
-      background: $devui-brand;
+      background: $b-brand;
     }
   }
 }
 
-.#{$devui-prefix}-tabs__nav-content {
+.#{$b-prefix}-tabs__nav-content {
   display: flex;
   align-items: center;
 }
 
-.#{$devui-prefix}-tabs__nav--options {
+.#{$b-prefix}-tabs__nav--options {
   padding-left: 2px;
 }
 
-.#{$devui-prefix}-tabs__nav-slider-animation {
+.#{$b-prefix}-tabs__nav-slider-animation {
   position: absolute;
   z-index: 0;
-  background-color: $devui-base-bg;
-  border-radius: $devui-border-radius;
-  box-shadow: 0 2px 4px 0 $devui-light-shadow;
+  background-color: $b-base-bg;
+  border-radius: $b-border-radius;
+  box-shadow: 0 2px 4px 0 $b-light-shadow;
   top: 1px;
   height: 30px;
   transition:
-    left $devui-animation-duration-slow $devui-animation-ease-in-out,
-    width $devui-animation-duration-slow $devui-animation-ease-in-out;
+    left $b-animation-duration-slow $b-animation-ease-in-out,
+    width $b-animation-duration-slow $b-animation-ease-in-out;
 }
 
-.#{$devui-prefix}-tabs {
+.#{$b-prefix}-tabs {
   &__new-tab,
   &__close-btn {
-    .#{$devui-prefix}-icon__container {
+    .#{$b-prefix}-icon__container {
       &:hover {
-        color: $devui-text;
+        color: $b-text;
       }
 
       > i {
@@ -436,14 +436,14 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
   }
 
   &__new-tab {
-    .#{$devui-prefix}-icon__container {
-      color: $devui-aide-text;
+    .#{$b-prefix}-icon__container {
+      color: $b-aide-text;
     }
   }
 
   &__close-btn {
-    .#{$devui-prefix}-icon__container {
-      color: $devui-form-control-line;
+    .#{$b-prefix}-icon__container {
+      color: $b-form-control-line;
     }
 
     margin-left: 12px;
@@ -451,9 +451,9 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
 
   &--right,
   &--left {
-    .#{$devui-prefix}-tabs__nav--options,
-    .#{$devui-prefix}-tabs__nav--wrapped {
-      border-bottom: 1px solid $devui-dividing-line;
+    .#{$b-prefix}-tabs__nav--options,
+    .#{$b-prefix}-tabs__nav--wrapped {
+      border-bottom: 1px solid $b-dividing-line;
 
       > li::after {
         display: none;
@@ -463,14 +463,14 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
         display: none;
       }
     }
-    .#{$devui-prefix}-tabs__nav--wrapped {
+    .#{$b-prefix}-tabs__nav--wrapped {
       border-bottom: none;
 
       > li {
         padding: 8px 16px;
       }
     }
-    .#{$devui-prefix}-tabs__nav--slider {
+    .#{$b-prefix}-tabs__nav--slider {
       > li::after {
         display: none;
       }
@@ -479,54 +479,54 @@ $devui-tab-slider-bg: $devui-list-item-hover-bg;
         display: none;
       }
     }
-    .#{$devui-prefix}-tabs__nav--slider {
-      .#{$devui-prefix}-tabs__nav-slider-animation {
+    .#{$b-prefix}-tabs__nav--slider {
+      .#{$b-prefix}-tabs__nav-slider-animation {
         left: 1px;
       }
     }
   }
 
   &--right {
-    .#{$devui-prefix}-tabs__nav--wrapped {
-      border-left: 1px solid $devui-dividing-line;
+    .#{$b-prefix}-tabs__nav--wrapped {
+      border-left: 1px solid $b-dividing-line;
 
       > li {
         & a {
-          border-radius: 0 $devui-border-radius $devui-border-radius 0;
+          border-radius: 0 $b-border-radius $b-border-radius 0;
         }
 
         &.active {
-          border-radius: 0 $devui-border-radius $devui-border-radius 0;
-          border-bottom-color: $devui-dividing-line;
+          border-radius: 0 $b-border-radius $b-border-radius 0;
+          border-bottom-color: $b-dividing-line;
           border-left-color: transparent;
         }
       }
     }
 
-    .#{$devui-prefix}-tabs__nav--tabs {
-      border-left: 1px solid $devui-line;
+    .#{$b-prefix}-tabs__nav--tabs {
+      border-left: 1px solid $b-line;
     }
   }
 
   &--left {
-    .#{$devui-prefix}-tabs__nav--wrapped {
-      border-right: 1px solid $devui-dividing-line;
+    .#{$b-prefix}-tabs__nav--wrapped {
+      border-right: 1px solid $b-dividing-line;
 
       > li {
         & a {
-          border-radius: $devui-border-radius 0 0 $devui-border-radius;
+          border-radius: $b-border-radius 0 0 $b-border-radius;
         }
 
         &.active {
-          border-radius: $devui-border-radius 0 0 $devui-border-radius;
-          border-bottom-color: $devui-dividing-line;
+          border-radius: $b-border-radius 0 0 $b-border-radius;
+          border-bottom-color: $b-dividing-line;
           border-right-color: transparent;
         }
       }
     }
 
-    .#{$devui-prefix}-tabs__nav--tabs {
-      border-right: 1px solid $devui-line;
+    .#{$b-prefix}-tabs__nav--tabs {
+      border-right: 1px solid $b-line;
     }
   }
 }

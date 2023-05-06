@@ -1,53 +1,53 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-input-number {
+.#{$b-prefix}-input-number {
   position: relative;
   display: inline-block;
   width: 80px;
 
   &:hover {
-    .#{$devui-prefix}-input-number__input-box:not(.disabled) {
-      border: 1px solid $devui-form-control-line-hover;
+    .#{$b-prefix}-input-number__input-box:not(.disabled) {
+      border: 1px solid $b-form-control-line-hover;
       padding-right: 24px;
     }
 
-    .#{$devui-prefix}-input-number__control-buttons:not(.disabled) {
+    .#{$b-prefix}-input-number__control-buttons:not(.disabled) {
       display: flex;
-      border-color: $devui-form-control-line-hover;
+      border-color: $b-form-control-line-hover;
     }
   }
 
   &:focus-within {
-    .#{$devui-prefix}-input-number__input-box:not(.disabled) {
-      border: 1px solid $devui-form-control-line-active;
+    .#{$b-prefix}-input-number__input-box:not(.disabled) {
+      border: 1px solid $b-form-control-line-active;
       padding-right: 24px;
     }
 
-    .#{$devui-prefix}-input-number__control-buttons:not(.disabled) {
+    .#{$b-prefix}-input-number__control-buttons:not(.disabled) {
       display: flex;
-      border-color: $devui-form-control-line-active;
+      border-color: $b-form-control-line-active;
     }
   }
 
-  .#{$devui-prefix}-input-number__input-box {
+  .#{$b-prefix}-input-number__input-box {
     box-sizing: border-box;
     width: 100%;
     height: 32px;
-    line-height: $devui-line-height-base;
+    line-height: $b-line-height-base;
     padding: 4px 8px;
     display: block;
-    font-size: $devui-font-size;
+    font-size: $b-font-size;
     outline: none;
-    border-radius: $devui-border-radius;
-    border: 1px solid $devui-form-control-line;
+    border-radius: $b-border-radius;
+    border: 1px solid $b-form-control-line;
     cursor: text;
     -moz-appearance: textfield;
-    transition: border-color $devui-animation-duration-slow $devui-animation-ease-in-out-smooth;
+    transition: border-color $b-animation-duration-slow $b-animation-ease-in-out-smooth;
 
     &:not(.disabled) {
-      background-color: $devui-base-bg;
-      border-color: $devui-line;
-      color: $devui-text;
+      background-color: $b-base-bg;
+      border-color: $b-line;
+      color: $b-text;
     }
 
     &::-webkit-inner-spin-button,
@@ -56,7 +56,7 @@
     }
   }
 
-  .#{$devui-prefix}-input-number__control-buttons {
+  .#{$b-prefix}-input-number__control-buttons {
     box-sizing: border-box;
     position: absolute;
     right: 0;
@@ -68,11 +68,11 @@
     justify-content: center;
     align-items: center;
     border: 1px solid transparent;
-    border-left-color: $devui-line;
-    border-radius: 0 $devui-border-radius $devui-border-radius 0;
+    border-left-color: $b-line;
+    border-radius: 0 $b-border-radius $b-border-radius 0;
 
     &.disabled {
-      border-left-color: $devui-disabled-line;
+      border-left-color: $b-disabled-line;
     }
 
     .control-button {
@@ -84,8 +84,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $devui-base-bg;
-      transition: transform $devui-animation-duration-slow $devui-animation-ease-in-out-smooth;
+      background-color: $b-base-bg;
+      transition: transform $b-animation-duration-slow $b-animation-ease-in-out-smooth;
 
       &.control-inc svg {
         position: relative;
@@ -99,7 +99,7 @@
       }
 
       svg path {
-        fill: $devui-text-weak;
+        fill: $b-text-weak;
       }
 
       &:not(.disabled) {
@@ -107,20 +107,20 @@
 
         &:hover {
           & > svg path {
-            fill: $devui-icon-fill-active-hover;
+            fill: $b-icon-fill-active-hover;
           }
         }
       }
 
       &.disabled {
         & > svg path {
-          fill: $devui-disabled-text;
+          fill: $b-disabled-text;
         }
       }
     }
   }
 
-  .#{$devui-prefix}-input-number__input-wrap {
+  .#{$b-prefix}-input-number__input-wrap {
     height: 100%;
   }
 
@@ -129,41 +129,41 @@
   }
 }
 
-.#{$devui-prefix}-input-number--lg {
+.#{$b-prefix}-input-number--lg {
   height: 40px;
-  .#{$devui-prefix}-input-number__input-box {
-    font-size: $devui-font-size-lg;
+  .#{$b-prefix}-input-number__input-box {
+    font-size: $b-font-size-lg;
     height: 100%;
   }
 
-  .#{$devui-prefix}-input-number__control-buttons .control-button .#{$devui-prefix}-input-number__icon-arrow {
+  .#{$b-prefix}-input-number__control-buttons .control-button .#{$b-prefix}-input-number__icon-arrow {
     width: 20px;
     height: 20px;
   }
 }
 
-.#{$devui-prefix}-input-number--md {
+.#{$b-prefix}-input-number--md {
   height: 32px;
-  .#{$devui-prefix}-input-number__input-box {
-    font-size: $devui-font-size;
+  .#{$b-prefix}-input-number__input-box {
+    font-size: $b-font-size;
     height: 100%;
   }
 
-  .#{$devui-prefix}-input-number__control-buttons .control-button .#{$devui-prefix}-input-number__icon-arrow {
+  .#{$b-prefix}-input-number__control-buttons .control-button .#{$b-prefix}-input-number__icon-arrow {
     width: 18px;
     height: 18px;
   }
 }
 
-.#{$devui-prefix}-input-number--sm {
+.#{$b-prefix}-input-number--sm {
   height: 24px;
 
-  .#{$devui-prefix}-input-number__input-box {
-    font-size: $devui-font-size-sm;
+  .#{$b-prefix}-input-number__input-box {
+    font-size: $b-font-size-sm;
     height: 100%;
   }
 
-  .#{$devui-prefix}-input-number__control-buttons .control-button .#{$devui-prefix}-input-number__icon-arrow {
+  .#{$b-prefix}-input-number__control-buttons .control-button .#{$b-prefix}-input-number__icon-arrow {
     width: 16px;
     height: 16px;
   }

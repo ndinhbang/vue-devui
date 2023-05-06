@@ -1,20 +1,20 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-tooltip {
+.#{$b-prefix}-tooltip {
   max-width: 200px;
   min-height: 26px;
   padding: 4px 16px;
-  font-size: $devui-font-size;
-  color: $devui-feedback-overlay-text;
+  font-size: $b-font-size;
+  color: $b-feedback-overlay-text;
   letter-spacing: 0;
   line-height: 1.5;
-  background: $devui-feedback-overlay-bg;
+  background: $b-feedback-overlay-bg;
   box-shadow: none;
   overflow-wrap: break-word;
   word-break: break-word;
   word-wrap: break-word;
   text-align: start;
-  border-radius: $devui-border-radius-feedback;
+  border-radius: $b-border-radius-feedback;
   font-style: normal;
   font-weight: normal;
   line-break: auto;
@@ -24,10 +24,10 @@
   word-spacing: normal;
   white-space: normal;
   opacity: 1;
-  z-index: $devui-z-index-pop-up;
+  z-index: $b-z-index-pop-up;
 }
 
-.#{$devui-prefix}-tooltip--fade {
+.#{$b-prefix}-tooltip--fade {
   &-bottom,
   &-top {
     &-enter-from,

@@ -23,7 +23,7 @@ function createBem(namespace: string, element?: string, modifier?: string): stri
  * @returns UseNamespace
  */
 export function useNamespace(block: string, needDot = false): UseNamespace {
-  const namespace = needDot ? `.devui-${block}` : `devui-${block}`;
+  const namespace = needDot ? `.b-${block}` : `b-${block}`;
   const b = () => createBem(namespace);
   const e = (element: string) => (element ? createBem(namespace, element) : '');
   const m = (modifier: string) => (modifier ? createBem(namespace, '', modifier) : '');

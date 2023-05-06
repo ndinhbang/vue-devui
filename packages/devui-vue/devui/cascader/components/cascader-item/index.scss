@@ -1,14 +1,14 @@
 @import '../../../style/mixins/flex';
 @import '../../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-cascader {
+.#{$b-prefix}-cascader {
   &__li {
     &.dropdown-item {
       height: 36px;
       padding: 8px 12px;
-      color: $devui-text;
+      color: $b-text;
       cursor: pointer;
-      border-radius: $devui-border-radius;
+      border-radius: $b-border-radius;
       box-sizing: border-box;
       @include flex(flex-start);
 
@@ -30,23 +30,23 @@
       width: 0;
       overflow: hidden;
       text-overflow: ellipsis;
-      font-size: $devui-font-size;
+      font-size: $b-font-size;
     }
 
     &.leaf-active {
-      background: $devui-list-item-hover-bg;
+      background: $b-list-item-hover-bg;
 
       span {
-        color: $devui-brand-active;
+        color: $b-brand-active;
       }
     }
 
     &.disabled {
-      background-color: $devui-disabled-bg;
+      background-color: $b-disabled-bg;
       cursor: not-allowed;
 
       .dropdown-item-label {
-        color: $devui-disabled-text;
+        color: $b-disabled-text;
       }
     }
 
@@ -57,13 +57,13 @@
 
       &__icon {
         margin-right: 4px;
-        font-size: $devui-font-size-icon;
-        color: $devui-text;
+        font-size: $b-font-size-icon;
+        color: $b-text;
         line-height: 16px;
         height: 16px;
 
         &.disabled {
-          color: $devui-disabled-text !important;
+          color: $b-disabled-text !important;
         }
       }
     }

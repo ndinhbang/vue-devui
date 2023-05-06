@@ -35,6 +35,7 @@ export class Theme {
     this.name = theme.name;
     this.cnName = theme.cnName || this.name;
     this.data = theme.data;
+    // @ts-ignore
     this.extends = theme.extends || null;
     this.isDark = theme.isDark || undefined;
     this.isPreview = theme.isPreview || false;

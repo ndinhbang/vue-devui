@@ -1,37 +1,37 @@
 @import '../../styles-var/devui-var.scss';
 
-$devui-btn-sm-padding: var(--devui-btn-sm-padding, 0 16px);
-$devui-btn-padding: var(--devui-btn-padding, 0 20px);
-$devui-btn-lg-padding: var(--devui-btn-lg-padding, 0 24px);
+$b-btn-sm-padding: var(--b-btn-sm-padding, 0 16px);
+$b-btn-padding: var(--b-btn-padding, 0 20px);
+$b-btn-lg-padding: var(--b-btn-lg-padding, 0 24px);
 
 $font-size-map: (
-  lg: $devui-font-size-lg,
-  md: $devui-font-size-md,
-  sm: $devui-font-size-sm,
+  lg: $b-font-size-lg,
+  md: $b-font-size-md,
+  sm: $b-font-size-sm,
 );
 $radio-label-height-map: (
-  lg: $devui-size-lg,
-  md: $devui-size-md,
-  sm: $devui-size-sm,
+  lg: $b-size-lg,
+  md: $b-size-md,
+  sm: $b-size-sm,
 );
 $button-padding-map: (
-  lg: $devui-btn-lg-padding,
-  md: $devui-btn-padding,
-  sm: $devui-btn-sm-padding,
+  lg: $b-btn-lg-padding,
+  md: $b-btn-padding,
+  sm: $b-btn-sm-padding,
 );
-.#{$devui-prefix}-radio-button {
+.#{$b-prefix}-radio-button {
   display: flex;
   align-items: center;
   position: relative;
-  padding: $devui-btn-padding;
-  height: $devui-size-md;
-  font-size: $devui-font-size-md;
-  color: $devui-text;
+  padding: $b-btn-padding;
+  height: $b-size-md;
+  font-size: $b-font-size-md;
+  color: $b-text;
   cursor: pointer;
-  border: 1px solid $devui-line;
+  border: 1px solid $b-line;
   user-select: none;
   @each $size in ('lg', 'md', 'sm') {
-    &.#{$devui-prefix}-radio-button--#{$size} {
+    &.#{$b-prefix}-radio-button--#{$size} {
       font-size: map-get($font-size-map, #{$size});
       padding: map-get($button-padding-map, #{$size});
       height: map-get($radio-label-height-map, #{$size});
@@ -53,55 +53,55 @@ $button-padding-map: (
 
   &.active {
     color: #ffffff;
-    background-color: $devui-brand;
-    border-color: $devui-brand;
+    background-color: $b-brand;
+    border-color: $b-brand;
 
     &.disabled {
       color: #ffffff;
-      background-color: $devui-icon-fill-active-disabled;
+      background-color: $b-icon-fill-active-disabled;
     }
   }
 
   &.disabled {
     cursor: not-allowed;
-    color: $devui-disabled-text;
+    color: $b-disabled-text;
     background-color: #ffffff;
-    border-color: $devui-disabled-line;
+    border-color: $b-disabled-line;
   }
 }
 
-.#{$devui-prefix}-radio-group {
+.#{$b-prefix}-radio-group {
   &.is-row {
-    .#{$devui-prefix}-radio-button {
+    .#{$b-prefix}-radio-button {
       border-left: none;
 
       &:first-child {
-        border-top-left-radius: $devui-border-radius;
-        border-bottom-left-radius: $devui-border-radius;
-        border-left: 1px solid $devui-disabled-line;
+        border-top-left-radius: $b-border-radius;
+        border-bottom-left-radius: $b-border-radius;
+        border-left: 1px solid $b-disabled-line;
       }
 
       &:last-child {
-        border-top-right-radius: $devui-border-radius;
-        border-bottom-right-radius: $devui-border-radius;
+        border-top-right-radius: $b-border-radius;
+        border-bottom-right-radius: $b-border-radius;
       }
     }
   }
 
   &.is-column {
-    .#{$devui-prefix}-radio-button {
+    .#{$b-prefix}-radio-button {
       width: 100%;
       border-top: none;
 
       &:first-child {
-        border-top-left-radius: $devui-border-radius;
-        border-top-right-radius: $devui-border-radius;
-        border-top: 1px solid $devui-disabled-line;
+        border-top-left-radius: $b-border-radius;
+        border-top-right-radius: $b-border-radius;
+        border-top: 1px solid $b-disabled-line;
       }
 
       &:last-child {
-        border-bottom-left-radius: $devui-border-radius;
-        border-bottom-right-radius: $devui-border-radius;
+        border-bottom-left-radius: $b-border-radius;
+        border-bottom-right-radius: $b-border-radius;
       }
     }
   }

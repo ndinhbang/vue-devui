@@ -1,13 +1,13 @@
-.#{$devui-prefix}-dropdown {
+.#{$b-prefix}-dropdown {
   position: relative;
   vertical-align: middle;
 
-  .#{$devui-prefix}-dropdown-toggle {
+  .#{$b-prefix}-dropdown-toggle {
     box-shadow: none;
     outline: none;
   }
 
-  .#{$devui-prefix}-dropdown-toggle.#{$devui-prefix}-dropdown-default {
+  .#{$b-prefix}-dropdown-toggle.#{$b-prefix}-dropdown-default {
     line-height: 1.5;
     padding: 4px 10px;
     border-radius: 2px;
@@ -19,12 +19,12 @@
     display: flex;
     align-items: center;
 
-    &:not(.#{$devui-prefix}-dropdown-item) {
+    &:not(.#{$b-prefix}-dropdown-item) {
       display: inline-flex !important;
     }
   }
 
-  .#{$devui-prefix}-caret {
+  .#{$b-prefix}-caret {
     display: inline-block;
     margin-left: 2px;
     vertical-align: middle;
@@ -33,12 +33,12 @@
     border-left: 4px solid transparent;
   }
 
-  &.#{$devui-prefix}-dropdown-open .#{$devui-prefix}-dropdown-toggle span.icon-chevron-down {
+  &.#{$b-prefix}-dropdown-open .#{$b-prefix}-dropdown-toggle span.icon-chevron-down {
     transform: rotate(180deg);
   }
 }
 
-.#{$devui-prefix}-dropdown-menu {
+.#{$b-prefix}-dropdown-menu {
   position: absolute;
   float: left;
   top: calc(100% - 1px);
@@ -50,16 +50,16 @@
   background-clip: padding-box;
   border-radius: 2px;
   list-style: none;
-  background-color: $devui-connected-overlay-bg;
-  box-shadow: 0 2px 5px 0 $devui-shadow;
+  background-color: $b-connected-overlay-bg;
+  box-shadow: 0 2px 5px 0 $b-shadow;
   outline: none;
 
-  &.#{$devui-prefix}-dropdown-overlay,
-  &.#{$devui-prefix}-dropdown-overlay.popper-container {
-    border: 1px solid $devui-brand;
+  &.#{$b-prefix}-dropdown-overlay,
+  &.#{$b-prefix}-dropdown-overlay.popper-container {
+    border: 1px solid $b-brand;
   }
 
-  &.#{$devui-prefix}-dropdown-overlay.popper-container {
+  &.#{$b-prefix}-dropdown-overlay.popper-container {
     margin-top: -1px;
     margin-bottom: -1px;
   }
@@ -84,7 +84,7 @@
   }
 
   > .disabled > a {
-    color: $devui-disabled-text;
+    color: $b-disabled-text;
     cursor: not-allowed;
 
     &:hover,
@@ -93,32 +93,32 @@
     }
   }
 
-  .#{$devui-prefix}-dropdown-item:not(.disabled) {
+  .#{$b-prefix}-dropdown-item:not(.disabled) {
     &:hover:not(:active) {
-      background-color: $devui-list-item-hover-bg;
-      color: $devui-list-item-hover-text;
+      background-color: $b-list-item-hover-bg;
+      color: $b-list-item-hover-text;
     }
 
     &:active:hover {
-      background-color: $devui-list-item-active-bg;
-      color: $devui-list-item-active-text;
+      background-color: $b-list-item-active-bg;
+      color: $b-list-item-active-text;
     }
 
-    &.#{$devui-prefix}-dropdown-bg {
+    &.#{$b-prefix}-dropdown-bg {
       //箭头选中
-      background-color: $devui-list-item-hover-bg;
-      color: $devui-list-item-hover-text;
+      background-color: $b-list-item-hover-bg;
+      color: $b-list-item-hover-text;
     }
 
     &.active {
-      color: $devui-list-item-active-text;
-      background-color: $devui-list-item-active-bg;
+      color: $b-list-item-active-text;
+      background-color: $b-list-item-active-bg;
     }
   }
 }
 
-.#{$devui-prefix}-form-group.#{$devui-prefix}-has-feedback {
-  & > .#{$devui-prefix}-form-control-feedback {
+.#{$b-prefix}-form-group.#{$b-prefix}-has-feedback {
+  & > .#{$b-prefix}-form-control-feedback {
     position: absolute;
     top: 0;
     right: 0;
@@ -134,7 +134,7 @@
       position: absolute;
     }
 
-    .#{$devui-prefix}-caret {
+    .#{$b-prefix}-caret {
       display: inline-block;
       margin-left: 2px;
       vertical-align: middle;
@@ -149,7 +149,7 @@
   outline: 0;
 }
 
-.#{$devui-prefix}-dropdown-no-border {
+.#{$b-prefix}-dropdown-no-border {
   min-height: 28px;
   min-width: calc(min(100%, 102px));
   line-height: 1.5;
@@ -160,8 +160,8 @@
   background-image: none;
   text-decoration: none;
   cursor: pointer;
-  background-color: $devui-connected-overlay-bg;
-  color: $devui-text;
+  background-color: $b-connected-overlay-bg;
+  color: $b-text;
   display: flex;
   align-items: center;
   box-shadow: none;
@@ -174,38 +174,38 @@
 
   &:active:hover,
   &:focus {
-    color: $devui-brand-active;
+    color: $b-brand-active;
   }
 }
 
-.#{$devui-prefix}-dropdown {
-  .#{$devui-prefix}-dropdown-default {
-    background-color: $devui-base-bg;
-    color: $devui-text;
-    border-color: $devui-form-control-line;
+.#{$b-prefix}-dropdown {
+  .#{$b-prefix}-dropdown-default {
+    background-color: $b-base-bg;
+    color: $b-text;
+    border-color: $b-form-control-line;
 
     &:active,
     &:focus,
     &:hover {
-      border-color: $devui-form-control-line-hover;
+      border-color: $b-form-control-line-hover;
     }
   }
 
-  .#{$devui-prefix}-dropdown-menu {
-    background: $devui-connected-overlay-bg;
-    box-shadow: 0 2px 5px 0 $devui-shadow;
+  .#{$b-prefix}-dropdown-menu {
+    background: $b-connected-overlay-bg;
+    box-shadow: 0 2px 5px 0 $b-shadow;
 
     > li > a:not(.disabled) {
-      color: $devui-text;
+      color: $b-text;
 
       &:hover,
       &:focus {
-        background-color: $devui-list-item-hover-bg;
+        background-color: $b-list-item-hover-bg;
       }
     }
 
     > .disabled > a {
-      color: $devui-disabled-text;
+      color: $b-disabled-text;
       cursor: not-allowed;
 
       &:hover,

@@ -5,6 +5,7 @@ export class ContextService implements IContextService {
       return null;
     }
 
+    // @ts-ignore
     return window[nameSpace];
   }
   setDataFromNameSpace(nameSpace: string, value: any) {
@@ -12,6 +13,7 @@ export class ContextService implements IContextService {
       return;
     }
 
+    // @ts-ignore
     window[nameSpace] = value;
   }
 }

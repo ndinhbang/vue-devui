@@ -8,26 +8,26 @@
   width: 36px;
   height: 36px;
   border-radius: 18px;
-  background: $devui-highlight-overlay;
-  box-shadow: $devui-shadow-length-hover $devui-light-shadow;
+  background: $b-highlight-overlay;
+  box-shadow: $b-shadow-length-hover $b-light-shadow;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   &:hover {
-    background: $devui-area;
+    background: $b-area;
   }
 
   svg polygon {
-    fill: $devui-text;
+    fill: $b-text;
   }
 }
 
-.#{$devui-prefix}-carousel {
+.#{$b-prefix}-carousel {
   display: block;
   position: relative;
 
-  .#{$devui-prefix}-carousel__arrow {
+  .#{$b-prefix}-carousel__arrow {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -45,17 +45,17 @@
     }
   }
 
-  .#{$devui-prefix}-carousel__item-wrapper {
+  .#{$b-prefix}-carousel__item-wrapper {
     position: relative;
     overflow: hidden;
     height: 100%;
 
-    .#{$devui-prefix}-carousel__item-container {
+    .#{$b-prefix}-carousel__item-container {
       display: flex;
       height: 100%;
       position: relative;
 
-      .#{$devui-prefix}-carousel__item {
+      .#{$b-prefix}-carousel__item {
         flex: 1;
         position: relative;
         height: 100%;
@@ -63,7 +63,7 @@
     }
   }
 
-  .#{$devui-prefix}-carousel__dots {
+  .#{$b-prefix}-carousel__dots {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -83,27 +83,27 @@
       height: 6px;
       border-radius: 3px;
       margin-right: 8px;
-      background: $devui-icon-fill;
+      background: $b-icon-fill;
 
       &:hover {
         cursor: pointer;
-        background: $devui-icon-fill-hover;
+        background: $b-icon-fill-hover;
       }
 
       &.active {
         width: 24px;
-        background: $devui-icon-fill-active;
-        transition: all $devui-animation-duration-slow $devui-animation-ease-in-smooth;
+        background: $b-icon-fill-active;
+        transition: all $b-animation-duration-slow $b-animation-ease-in-smooth;
       }
     }
   }
 }
 
-.#{$devui-prefix}-carousel {
-  .#{$devui-prefix}-carousel__arrow {
+.#{$b-prefix}-carousel {
+  .#{$b-prefix}-carousel__arrow {
     .arrow-left,
     .arrow-right {
-      transition: background-color $devui-animation-duration-slow $devui-animation-ease-in-smooth;
+      transition: background-color $b-animation-duration-slow $b-animation-ease-in-smooth;
     }
   }
 }

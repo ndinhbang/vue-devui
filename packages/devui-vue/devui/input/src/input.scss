@@ -1,9 +1,9 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-input {
+.#{$b-prefix}-input {
   width: 100%;
-  height: $devui-size-md;
-  font-size: $devui-font-size;
+  height: $b-size-md;
+  font-size: $b-font-size;
 
   &__wrapper {
     display: inline-flex;
@@ -12,50 +12,50 @@
     width: 100%;
     padding: 0 8px;
     box-sizing: border-box;
-    border: 1px solid $devui-form-control-line;
-    border-radius: $devui-border-radius;
-    background-color: $devui-form-control-bg;
-    transition: border-color 0.3s $devui-animation-ease-in-out-smooth;
+    border: 1px solid $b-form-control-line;
+    border-radius: $b-border-radius;
+    background-color: $b-form-control-bg;
+    transition: border-color 0.3s $b-animation-ease-in-out-smooth;
     height: 100%;
 
-    &:not(.#{$devui-prefix}-input--error):not(.#{$devui-prefix}-input--disabled):not(.#{$devui-prefix}-input--focus):hover {
-      border-color: $devui-form-control-line-hover;
+    &:not(.#{$b-prefix}-input--error):not(.#{$b-prefix}-input--disabled):not(.#{$b-prefix}-input--focus):hover {
+      border-color: $b-form-control-line-hover;
     }
   }
 
-  &--focus:not(.#{$devui-prefix}-input--error) {
-    border-color: $devui-form-control-line-active;
+  &--focus:not(.#{$b-prefix}-input--error) {
+    border-color: $b-form-control-line-active;
   }
 
   &--disabled {
-    color: $devui-disabled-text;
-    border-color: $devui-disabled-line;
-    background-color: $devui-disabled-bg;
+    color: $b-disabled-text;
+    border-color: $b-disabled-line;
+    background-color: $b-disabled-bg;
     cursor: not-allowed;
 
     &:hover {
-      border-color: $devui-disabled-line;
+      border-color: $b-disabled-line;
     }
 
-    .#{$devui-prefix}-input__inner {
-      color: $devui-disabled-text;
+    .#{$b-prefix}-input__inner {
+      color: $b-disabled-text;
       cursor: not-allowed;
     }
   }
 
   &--error {
-    border-color: $devui-danger-line;
-    background-color: $devui-danger-bg;
+    border-color: $b-danger-line;
+    background-color: $b-danger-bg;
   }
 
   &--sm {
-    height: $devui-size-sm;
-    font-size: $devui-font-size-sm;
+    height: $b-size-sm;
+    font-size: $b-font-size-sm;
   }
 
   &--lg {
-    height: $devui-size-lg;
-    font-size: $devui-font-size-lg;
+    height: $b-size-lg;
+    font-size: $b-font-size-lg;
   }
 
   &--feedback {
@@ -65,7 +65,7 @@
   &__inner {
     width: 100%;
     height: 100%;
-    color: $devui-text;
+    color: $b-text;
     font-size: inherit;
     padding: 4px 0;
     border: none;
@@ -75,14 +75,14 @@
   }
 
   &--prepend {
-    .#{$devui-prefix}-input__wrapper {
+    .#{$b-prefix}-input__wrapper {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
   }
 
   &--append {
-    .#{$devui-prefix}-input__wrapper {
+    .#{$b-prefix}-input__wrapper {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
@@ -95,7 +95,7 @@
 
     &__prepend,
     &__append {
-      color: var(--devui-text);
+      color: var(--b-text);
       position: relative;
       display: inline-flex;
       align-items: center;
@@ -103,19 +103,19 @@
       min-height: 100%;
       padding: 0 20px;
       white-space: nowrap;
-      border: 1px solid $devui-form-control-line;
-      border-radius: $devui-border-radius;
-      background-color: $devui-form-control-bg;
+      border: 1px solid $b-form-control-line;
+      border-radius: $b-border-radius;
+      background-color: $b-form-control-bg;
 
-      .#{$devui-prefix}-button,
-      .#{$devui-prefix}-select .#{$devui-prefix}-select__selection {
+      .#{$b-prefix}-button,
+      .#{$b-prefix}-select .#{$b-prefix}-select__selection {
         border: none !important;
         background-color: transparent !important;
         color: inherit;
       }
 
-      .#{$devui-prefix}-button,
-      .#{$devui-prefix}-select__selection {
+      .#{$b-prefix}-button,
+      .#{$b-prefix}-select__selection {
         margin: 0 -20px;
       }
     }

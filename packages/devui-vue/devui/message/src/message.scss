@@ -1,10 +1,10 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-message {
+.#{$b-prefix}-message {
   position: fixed;
-  z-index: $devui-z-index-message;
+  z-index: $b-z-index-message;
   padding: 10px 15px;
-  border-radius: $devui-border-radius-feedback;
+  border-radius: $b-border-radius-feedback;
   left: 50%;
   transform: translateX(-50%);
   top: 80px;
@@ -12,69 +12,69 @@
   align-items: center;
   border-width: 1px;
   border-style: solid;
-  border-color: $devui-line;
+  border-color: $b-line;
   box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
-  background-color: $devui-base-bg;
+  background-color: $b-base-bg;
   transition: top 0.5s ease;
 
   &--success {
-    background-color: $devui-success-bg;
-    border-color: $devui-success-line;
+    background-color: $b-success-bg;
+    border-color: $b-success-line;
   }
 
   &--info {
-    background-color: $devui-info-bg;
-    border-color: $devui-info-line;
+    background-color: $b-info-bg;
+    border-color: $b-info-line;
   }
 
   &--warning {
-    background-color: $devui-warning-bg;
-    border-color: $devui-warning-line;
+    background-color: $b-warning-bg;
+    border-color: $b-warning-line;
   }
 
   &--error {
-    background-color: $devui-danger-bg;
-    border-color: $devui-danger-line;
+    background-color: $b-danger-bg;
+    border-color: $b-danger-line;
   }
 }
-.#{$devui-prefix}-message__close {
+.#{$b-prefix}-message__close {
   margin-left: auto;
   padding-left: 10px;
   line-height: 0;
   cursor: pointer;
 }
 // 图标样式
-.#{$devui-prefix}-message__image {
+.#{$b-prefix}-message__image {
   margin-top: 1px;
   display: inline-block;
-  width: $devui-font-size-icon;
-  min-width: $devui-font-size-icon;
-  min-height: $devui-font-size-icon;
-  height: $devui-font-size-icon;
+  width: $b-font-size-icon;
+  min-width: $b-font-size-icon;
+  min-height: $b-font-size-icon;
+  height: $b-font-size-icon;
   padding: 0;
   line-height: 1;
   margin-right: 10px;
 
   &--success {
-    color: $devui-success;
+    color: $b-success;
   }
 
   &--info {
-    color: $devui-info;
+    color: $b-info;
   }
 
   &--warning {
-    color: $devui-warning;
+    color: $b-warning;
   }
 
   &--error {
-    color: $devui-danger;
+    color: $b-danger;
   }
 }
 
 // 消息文本内容
-.#{$devui-prefix}-message__content {
-  font-size: $devui-font-size-message;
+.#{$b-prefix}-message__content {
+  font-size: $b-font-size-message;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -82,19 +82,19 @@
   -webkit-box-orient: vertical;
 
   &--success {
-    color: $devui-success;
+    color: $b-success;
   }
 
   &--info {
-    color: $devui-info;
+    color: $b-info;
   }
 
   &--warning {
-    color: $devui-warning;
+    color: $b-warning;
   }
 
   &--error {
-    color: $devui-danger;
+    color: $b-danger;
   }
 }
 

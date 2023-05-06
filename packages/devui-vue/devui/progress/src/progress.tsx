@@ -48,7 +48,7 @@ export default defineComponent({
       const len = Math.PI * 2 * radius;
 
       data.trailPath = {
-        stroke: 'var(--devui-dividing-line, #dfe1e6)',
+        stroke: 'var(--b-dividing-line, #dfe1e6)',
         strokeDasharray: `${len}px ${len}px`,
         strokeDashoffset: `0`,
         transition: 'stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s',

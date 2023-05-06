@@ -1,48 +1,48 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-popover__icon-wrap {
+.#{$b-prefix}-popover__icon-wrap {
   width: 16px;
   height: 16px;
   margin-right: 8px;
 
-  .#{$devui-prefix}-popover__icon.#{$devui-prefix}-popover__icon--success > g {
+  .#{$b-prefix}-popover__icon.#{$b-prefix}-popover__icon--success > g {
     & > path {
-      fill: $devui-success;
+      fill: $b-success;
     }
 
     & > circle,
     & > polygon {
-      fill: $devui-light-text;
+      fill: $b-light-text;
     }
   }
 
-  .#{$devui-prefix}-popover__icon.#{$devui-prefix}-popover__icon--warning > g {
+  .#{$b-prefix}-popover__icon.#{$b-prefix}-popover__icon--warning > g {
     & > path {
-      fill: $devui-warning;
+      fill: $b-warning;
     }
 
     & > polygon {
-      fill: $devui-light-text;
+      fill: $b-light-text;
     }
   }
 
-  .#{$devui-prefix}-popover__icon.#{$devui-prefix}-popover__icon--info > g {
+  .#{$b-prefix}-popover__icon.#{$b-prefix}-popover__icon--info > g {
     & > g {
-      fill: $devui-info;
+      fill: $b-info;
     }
 
     & > circle {
-      fill: $devui-light-text;
+      fill: $b-light-text;
     }
   }
 
-  .#{$devui-prefix}-popover__icon.#{$devui-prefix}-popover__icon--error > g {
+  .#{$b-prefix}-popover__icon.#{$b-prefix}-popover__icon--error > g {
     & > path {
-      fill: $devui-danger;
+      fill: $b-danger;
     }
 
     & > circle {
-      fill: $devui-light-text;
+      fill: $b-light-text;
     }
   }
 }

@@ -2,18 +2,18 @@
 
 .filter-wrapper {
   width: 200px;
-  background-color: $devui-connected-overlay-bg;
-  border-radius: $devui-border-radius;
+  background-color: $b-connected-overlay-bg;
+  border-radius: $b-border-radius;
 
   .filter-all-check {
     padding: 0 8px 4px;
-    border-bottom: 1px solid $devui-dividing-line;
+    border-bottom: 1px solid $b-dividing-line;
   }
 
   .filter-multiple-menu {
     width: 100%;
     padding: 4px 8px;
-    border-bottom: 1px solid $devui-dividing-line;
+    border-bottom: 1px solid $b-dividing-line;
   }
 
   .filter-operation {
@@ -46,31 +46,31 @@
   cursor: pointer;
 
   > svg g {
-    fill: $devui-dividing-line;
+    fill: $b-dividing-line;
   }
 
   &:hover {
     > svg g {
-      fill: $devui-icon-fill-active-hover;
+      fill: $b-icon-fill-active-hover;
     }
   }
 }
 
 .filter-item-active {
-  background: $devui-list-item-active-bg;
-  color: $devui-list-item-active-text;
+  background: $b-list-item-active-bg;
+  color: $b-list-item-active-text;
 }
 
 .filter-icon-active {
   visibility: visible !important;
 
   > svg g {
-    fill: $devui-icon-fill-active;
+    fill: $b-icon-fill-active;
   }
 
   &:hover {
     > svg g {
-      fill: $devui-icon-fill-active-hover;
+      fill: $b-icon-fill-active-hover;
     }
   }
 }

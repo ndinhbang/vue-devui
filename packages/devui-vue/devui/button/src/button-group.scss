@@ -1,25 +1,25 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-button-group {
+.#{$b-prefix}-button-group {
   display: flex;
 
   & > * {
     position: relative;
 
     &:not(:first-child),
-    &:not(:first-child) .#{$devui-prefix}-button {
+    &:not(:first-child) .#{$b-prefix}-button {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       margin-left: -1px;
 
-      &.#{$devui-prefix}-button--solid--primary {
-        border-left: 1px solid $devui-brand-hover;
+      &.#{$b-prefix}-button--solid--primary {
+        border-left: 1px solid $b-brand-hover;
         margin-left: 0;
       }
     }
 
     &:not(:last-child),
-    &:not(:last-child) .#{$devui-prefix}-button {
+    &:not(:last-child) .#{$b-prefix}-button {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }

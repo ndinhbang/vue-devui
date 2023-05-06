@@ -1,13 +1,13 @@
 @import '../../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-tags {
+.#{$b-prefix}-tags {
   &-input {
     flex: 1;
     padding: 1px 20px 1px 4px;
-    border: 1px solid $devui-form-control-line;
-    border-radius: $devui-border-radius;
+    border: 1px solid $b-form-control-line;
+    border-radius: $b-border-radius;
     outline: none;
-    background-color: $devui-base-bg;
+    background-color: $b-base-bg;
     transition: border-color 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 
@@ -22,9 +22,9 @@
   }
 
   &-placeholder {
-    font-size: $devui-font-size;
+    font-size: $b-font-size;
     line-height: 22px;
     margin-left: 6px;
-    color: $devui-placeholder;
+    color: $b-placeholder;
   }
 }

@@ -1,31 +1,31 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-alert {
-  color: $devui-text;
-  font-size: $devui-font-size;
+.#{$b-prefix}-alert {
+  color: $b-text;
+  font-size: $b-font-size;
   border: 1px solid transparent;
   padding: 8px 16px;
   line-height: 24px;
-  border-radius: $devui-border-radius;
+  border-radius: $b-border-radius;
   display: flex;
   align-items: center;
   position: relative;
   width: 100%;
   overflow: hidden;
 
-  &.#{$devui-prefix}-alert--center {
+  &.#{$b-prefix}-alert--center {
     justify-content: center;
   }
 
-  .#{$devui-prefix}-alert__content {
+  .#{$b-prefix}-alert__content {
     display: flex;
     padding: 0 16px 0 4px;
     word-break: normal;
     word-wrap: break-word;
   }
 
-  .#{$devui-prefix}-alert__close-icon {
-    color: $devui-text;
+  .#{$b-prefix}-alert__close-icon {
+    color: $b-text;
     opacity: 1;
     line-height: 26px;
     height: 24px;
@@ -34,140 +34,140 @@
     top: 8px;
 
     & > svg path {
-      fill: $devui-light-text;
+      fill: $b-light-text;
     }
 
     span {
-      color: $devui-text;
-      font-size: $devui-font-size;
+      color: $b-text;
+      font-size: $b-font-size;
       font-weight: bold;
     }
   }
 
-  &.#{$devui-prefix}-alert--success {
-    background-color: $devui-success-bg;
-    border-color: $devui-success-line;
-    color: $devui-text;
+  &.#{$b-prefix}-alert--success {
+    background-color: $b-success-bg;
+    border-color: $b-success-line;
+    color: $b-text;
 
-    .#{$devui-prefix}-alert__close-icon {
+    .#{$b-prefix}-alert__close-icon {
       & > svg path {
-        fill: $devui-success-line;
+        fill: $b-success-line;
       }
     }
   }
 
-  &.#{$devui-prefix}-alert--info {
-    background-color: $devui-info-bg;
-    border-color: $devui-info-line;
-    color: $devui-text;
+  &.#{$b-prefix}-alert--info {
+    background-color: $b-info-bg;
+    border-color: $b-info-line;
+    color: $b-text;
 
-    .#{$devui-prefix}-alert__close-icon {
+    .#{$b-prefix}-alert__close-icon {
       & > svg path {
-        fill: $devui-info-line;
+        fill: $b-info-line;
       }
     }
   }
 
-  &.#{$devui-prefix}-alert--warning {
-    background-color: $devui-warning-bg;
-    border-color: $devui-warning-line;
-    color: $devui-text;
+  &.#{$b-prefix}-alert--warning {
+    background-color: $b-warning-bg;
+    border-color: $b-warning-line;
+    color: $b-text;
 
-    .#{$devui-prefix}-alert__close-icon {
+    .#{$b-prefix}-alert__close-icon {
       & > svg path {
-        fill: $devui-warning-line;
+        fill: $b-warning-line;
       }
     }
   }
 
-  &.#{$devui-prefix}-alert--danger {
-    background-color: $devui-danger-bg;
-    border-color: $devui-danger-line;
-    color: $devui-text;
+  &.#{$b-prefix}-alert--danger {
+    background-color: $b-danger-bg;
+    border-color: $b-danger-line;
+    color: $b-text;
 
-    .#{$devui-prefix}-alert__close-icon {
+    .#{$b-prefix}-alert__close-icon {
       & > svg path {
-        fill: $devui-danger-line;
+        fill: $b-danger-line;
       }
     }
   }
 
-  &.#{$devui-prefix}-alert--simple {
-    border-color: $devui-line;
-    color: $devui-text;
+  &.#{$b-prefix}-alert--simple {
+    border-color: $b-line;
+    color: $b-text;
 
-    .#{$devui-prefix}-alert__close-icon {
+    .#{$b-prefix}-alert__close-icon {
       & > svg path {
-        fill: $devui-text-weak;
+        fill: $b-text-weak;
       }
     }
   }
 
-  svg.#{$devui-prefix}-alert__icon {
+  svg.#{$b-prefix}-alert__icon {
     width: 16px;
     height: 16px;
     vertical-align: middle;
     transform: translateY(-1px); //字体14px图标16px对齐问题，微调
   }
 
-  .#{$devui-prefix}-alert__icon.#{$devui-prefix}-alert__icon--success {
+  .#{$b-prefix}-alert__icon.#{$b-prefix}-alert__icon--success {
     & > g {
       path {
-        fill: $devui-success-line;
+        fill: $b-success-line;
       }
 
       polygon {
-        fill: $devui-light-text;
-        stroke: $devui-light-text;
+        fill: $b-light-text;
+        stroke: $b-light-text;
       }
     }
   }
 
-  .#{$devui-prefix}-alert__icon.#{$devui-prefix}-alert__icon--warning {
+  .#{$b-prefix}-alert__icon.#{$b-prefix}-alert__icon--warning {
     & > g {
       path.warning-outer {
-        fill: $devui-warning-line;
+        fill: $b-warning-line;
       }
 
       path.warning-inner {
-        fill: $devui-light-text;
-        stroke: $devui-light-text;
+        fill: $b-light-text;
+        stroke: $b-light-text;
       }
     }
   }
 
-  .#{$devui-prefix}-alert__icon.#{$devui-prefix}-alert__icon--info {
+  .#{$b-prefix}-alert__icon.#{$b-prefix}-alert__icon--info {
     & > g {
       path.info-outer {
-        fill: $devui-info-line;
+        fill: $b-info-line;
       }
 
       path.info-inner {
-        fill: $devui-light-text;
-        stroke: $devui-light-text;
+        fill: $b-light-text;
+        stroke: $b-light-text;
       }
     }
   }
 
-  .#{$devui-prefix}-alert__icon.#{$devui-prefix}-alert__icon--error {
+  .#{$b-prefix}-alert__icon.#{$b-prefix}-alert__icon--error {
     & > g {
       path.error-outer {
-        fill: $devui-danger-line;
+        fill: $b-danger-line;
       }
 
       path.error-inner {
-        fill: $devui-light-text;
-        stroke: $devui-light-text;
+        fill: $b-light-text;
+        stroke: $b-light-text;
       }
     }
   }
 }
 
-.#{$devui-prefix}-alert__icon-wrap {
+.#{$b-prefix}-alert__icon-wrap {
   margin-right: 4px;
 }
 
-.#{$devui-prefix}-alter--close {
+.#{$b-prefix}-alter--close {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -175,7 +175,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.#{$devui-prefix}-alert-leave-active {
+.#{$b-prefix}-alert-leave-active {
   animation: alertUpOut 0.3s ease-in-out;
   animation-fill-mode: both;
 }

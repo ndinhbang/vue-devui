@@ -49,16 +49,16 @@ export default defineComponent({
       const isFinished = activeStep.value > currentStepIndex;
 
       return isActive
-        ? 'var(--devui-brand)'
+        ? 'var(--b-brand)'
         : isFinished
-          ? 'var(--devui-success)'
-          : 'var(--devui-placeholder)';
+          ? 'var(--b-success)'
+          : 'var(--b-placeholder)';
     });
 
     const statusMap = {
-      finish: <Icon name="right-o" color="var(--devui-success)" size="24px"></Icon>,
-      success: <Icon name="right-o" color="var(--devui-success)" size="24px"></Icon>,
-      error: <Icon name="error-o" color="var(--devui-danger)" size="24px"></Icon>,
+      finish: <Icon name="right-o" color="var(--b-success)" size="24px"></Icon>,
+      success: <Icon name="right-o" color="var(--b-success)" size="24px"></Icon>,
+      error: <Icon name="error-o" color="var(--b-danger)" size="24px"></Icon>,
     };
 
     const renderDot = () => {
@@ -69,7 +69,7 @@ export default defineComponent({
           : (status.value && statusMap[status.value])
             ? statusMap[status.value]
             : activeStep.value > steps.value.indexOf(instance)
-              ? <Icon name="right-o" color="var(--devui-success)" size="24px"></Icon>
+              ? <Icon name="right-o" color="var(--b-success)" size="24px"></Icon>
               : <span class={ns.e('dot')}>{ currentStepIndex + 1 }</span>;
     };
 

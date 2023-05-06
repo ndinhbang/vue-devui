@@ -1,44 +1,44 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-textarea {
+.#{$b-prefix}-textarea {
   width: 100%;
   box-sizing: border-box;
   padding: 4px 8px;
-  color: var(--devui-text, #252b3a);
+  color: var(--b-text, #252b3a);
   vertical-align: middle;
   outline: none;
-  border: 1px solid $devui-form-control-line;
-  border-radius: $devui-border-radius;
-  background: $devui-form-control-bg;
-  transition: border-color 0.3s $devui-animation-ease-in-out-smooth;
+  border: 1px solid $b-form-control-line;
+  border-radius: $b-border-radius;
+  background: $b-form-control-bg;
+  transition: border-color 0.3s $b-animation-ease-in-out-smooth;
 
-  &:not(.#{$devui-prefix}-textarea--error):not(.#{$devui-prefix}-textarea--disabled):not(.#{$devui-prefix}-textarea--focus):hover {
-    border-color: $devui-form-control-line-hover;
+  &:not(.#{$b-prefix}-textarea--error):not(.#{$b-prefix}-textarea--disabled):not(.#{$b-prefix}-textarea--focus):hover {
+    border-color: $b-form-control-line-hover;
   }
 
-  &--focus:not(.#{$devui-prefix}-textarea--error) {
-    border-color: $devui-form-control-line-active;
+  &--focus:not(.#{$b-prefix}-textarea--error) {
+    border-color: $b-form-control-line-active;
   }
 
   &--disabled {
-    border-color: $devui-disabled-line;
-    background-color: $devui-disabled-bg;
-    color: $devui-disabled-text;
+    border-color: $b-disabled-line;
+    background-color: $b-disabled-bg;
+    color: $b-disabled-text;
     cursor: not-allowed;
 
     &:hover {
-      border-color: $devui-disabled-line;
+      border-color: $b-disabled-line;
     }
 
-    .#{$devui-prefix}-textarea__inner {
-      color: $devui-disabled-text;
+    .#{$b-prefix}-textarea__inner {
+      color: $b-disabled-text;
       cursor: not-allowed;
     }
   }
 
   &--error {
-    border-color: $devui-danger-line;
-    background-color: $devui-danger-bg;
+    border-color: $b-danger-line;
+    background-color: $b-danger-bg;
   }
 
   &__show-count {
@@ -46,7 +46,7 @@
     color: inherit;
     white-space: nowrap;
     pointer-events: none;
-    font-size: $devui-font-size;
+    font-size: $b-font-size;
   }
 
   &--feedback {

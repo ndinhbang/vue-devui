@@ -223,7 +223,7 @@ export default defineComponent({
             ref={dropdownRef}
             origin={origin.value}
             v-model={isShowSuggestion.value}
-            style={{ zIndex: 'var(--devui-z-index-dropdown, 1052)' }}
+            style={{ zIndex: 'var(--b-z-index-dropdown, 1052)' }}
           >
             <ul class={ns.e('suggestion-list')} style={{ width: `${dropdownWidth.value}` }}>
               {showNoData ? noDataTpl : suggestionListItem}

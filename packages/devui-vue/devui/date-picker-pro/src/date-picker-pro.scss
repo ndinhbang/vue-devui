@@ -4,11 +4,11 @@ $input-height-sm: 26px;
 $input-height-md: 28px;
 $input-height-lg: 46px;
 
-.#{$devui-prefix}-date-picker-pro {
+.#{$b-prefix}-date-picker-pro {
   display: inline-block;
-  background-color: $devui-base-bg;
+  background-color: $b-base-bg;
 
-  .#{$devui-prefix}-date-picker-pro__single-picker {
+  .#{$b-prefix}-date-picker-pro__single-picker {
     position: relative;
 
     &-icon {
@@ -16,7 +16,7 @@ $input-height-lg: 46px;
       align-items: center;
     }
 
-    .#{$devui-prefix}-input-slot__suffix {
+    .#{$b-prefix}-input-slot__suffix {
       cursor: pointer;
     }
 
@@ -28,27 +28,27 @@ $input-height-lg: 46px;
       align-items: center;
 
       svg path {
-        fill: $devui-shape-icon-fill;
+        fill: $b-shape-icon-fill;
       }
 
       &:hover {
         svg path {
-          fill: $devui-shape-icon-fill-active;
+          fill: $b-shape-icon-fill-active;
         }
       }
     }
 
-    .#{$devui-prefix}-date-picker-pro--icon-visible {
+    .#{$b-prefix}-date-picker-pro--icon-visible {
       visibility: visible;
     }
 
-    .#{$devui-prefix}-date-picker-pro--icon-hidden {
+    .#{$b-prefix}-date-picker-pro--icon-hidden {
       visibility: hidden;
     }
   }
 }
 
-.#{$devui-prefix}-date-picker-pro__panel {
+.#{$b-prefix}-date-picker-pro__panel {
   width: max-content;
 
   &-content {
@@ -56,7 +56,7 @@ $input-height-lg: 46px;
   }
 
   &-footer {
-    border-top: 1px solid $devui-dividing-line;
+    border-top: 1px solid $b-dividing-line;
     padding: 8px;
 
     &-center {
@@ -69,11 +69,11 @@ $input-height-lg: 46px;
     padding: 8px 16px;
     display: inline-block;
     height: 305px;
-    font-size: $devui-font-size-sm;
+    font-size: $b-font-size-sm;
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    border-left: 1px solid $devui-dividing-line;
+    border-left: 1px solid $b-dividing-line;
 
     &::-webkit-scrollbar {
       width: 0 !important;
@@ -81,7 +81,7 @@ $input-height-lg: 46px;
   }
 }
 
-.#{$devui-prefix}-date-picker-pro__calendar-panel {
+.#{$b-prefix}-date-picker-pro__calendar-panel {
   text-align: center;
   display: flex;
 
@@ -98,24 +98,24 @@ $input-height-lg: 46px;
     }
 
     &-item {
-      background-color: $devui-global-bg;
+      background-color: $b-global-bg;
 
-      .#{$devui-prefix}-date-picker-pro__year-title {
-        font-size: $devui-font-size-md;
+      .#{$b-prefix}-date-picker-pro__year-title {
+        font-size: $b-font-size-md;
         font-weight: bold;
         line-height: 30px;
         cursor: pointer;
       }
-      .#{$devui-prefix}-date-picker-pro__month-title {
-        font-size: $devui-font-size-sm;
+      .#{$b-prefix}-date-picker-pro__month-title {
+        font-size: $b-font-size-sm;
         line-height: 30px;
         cursor: pointer;
       }
-      &.#{$devui-prefix}-date-picker-pro__year-title-active {
-        background-color: $devui-base-bg;
+      &.#{$b-prefix}-date-picker-pro__year-title-active {
+        background-color: $b-base-bg;
       }
-      &:hover:not(.#{$devui-prefix}-date-picker-pro__year-title-active) {
-        background-color: $devui-list-item-selected-bg;
+      &:hover:not(.#{$b-prefix}-date-picker-pro__year-title-active) {
+        background-color: $b-list-item-selected-bg;
       }
     }
   }
@@ -125,7 +125,7 @@ $input-height-lg: 46px;
     display: inline-block;
     width: 253px;
     height: 305px;
-    font-size: $devui-font-size-sm;
+    font-size: $b-font-size-sm;
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -134,17 +134,17 @@ $input-height-lg: 46px;
       width: 0 !important;
     }
 
-    .#{$devui-prefix}-date-picker-pro__calendar-table tr,
-    .#{$devui-prefix}-date-picker-pro__calendar-table td {
+    .#{$b-prefix}-date-picker-pro__calendar-table tr,
+    .#{$b-prefix}-date-picker-pro__calendar-table td {
       border: none;
       padding: 0;
       text-align: center;
-      font-size: $devui-font-size-sm;
+      font-size: $b-font-size-sm;
     }
   }
 }
 
-.#{$devui-prefix}-date-picker-pro__tbody-wrapper {
+.#{$b-prefix}-date-picker-pro__tbody-wrapper {
   height: 270px;
   width: 100%;
   overflow-x: hidden;
@@ -156,30 +156,30 @@ $input-height-lg: 46px;
   }
 }
 
-.#{$devui-prefix}-date-picker-pro__calendar-table {
+.#{$b-prefix}-date-picker-pro__calendar-table {
   border-spacing: 0;
   margin: 0;
 
-  .#{$devui-prefix}-date-picker-pro__table-week-header td {
+  .#{$b-prefix}-date-picker-pro__table-week-header td {
     width: 35px;
     height: 22px;
     padding: 0;
   }
 
-  .#{$devui-prefix}-date-picker-pro__table-month-title {
+  .#{$b-prefix}-date-picker-pro__table-month-title {
     text-align: start;
     line-height: 26px;
-    color: $devui-aide-text;
+    color: $b-aide-text;
     padding-left: 8px;
   }
 
-  .#{$devui-prefix}-date-picker-pro__table-month-content {
-    color: $devui-text;
+  .#{$b-prefix}-date-picker-pro__table-month-content {
+    color: $b-text;
     border-spacing: 0 4px;
     border-collapse: separate;
     margin: 0;
 
-    .#{$devui-prefix}-date-picker-pro__table-date {
+    .#{$b-prefix}-date-picker-pro__table-date {
       padding: 0 4px;
       width: 30px;
 
@@ -189,38 +189,38 @@ $input-height-lg: 46px;
         width: 22px;
         height: 22px;
         line-height: 22px;
-        border-radius: $devui-border-radius-feedback;
+        border-radius: $b-border-radius-feedback;
       }
 
-      &:not(.#{$devui-prefix}-date-picker-pro__table-date-selected):not(.#{$devui-prefix}-date-picker-pro__table-date-disabled):hover {
+      &:not(.#{$b-prefix}-date-picker-pro__table-date-selected):not(.#{$b-prefix}-date-picker-pro__table-date-disabled):hover {
         span {
-          background-color: $devui-range-item-hover-bg;
+          background-color: $b-range-item-hover-bg;
         }
       }
 
-      &.#{$devui-prefix}-date-picker-pro__table-date-today {
+      &.#{$b-prefix}-date-picker-pro__table-date-today {
         span {
-          color: $devui-brand;
+          color: $b-brand;
         }
       }
 
-      &.#{$devui-prefix}-date-picker-pro__table-date-selected,
-      &.#{$devui-prefix}-date-picker-pro__table-date-start,
-      &.#{$devui-prefix}-date-picker-pro__table-date-end {
+      &.#{$b-prefix}-date-picker-pro__table-date-selected,
+      &.#{$b-prefix}-date-picker-pro__table-date-start,
+      &.#{$b-prefix}-date-picker-pro__table-date-end {
         span {
-          background-color: $devui-list-item-active-bg;
-          color: $devui-list-item-active-text;
+          background-color: $b-list-item-active-bg;
+          color: $b-list-item-active-text;
         }
       }
-      &.#{$devui-prefix}-date-picker-pro__table-date-in-range {
-        background-color: $devui-list-item-hover-bg;
+      &.#{$b-prefix}-date-picker-pro__table-date-in-range {
+        background-color: $b-list-item-hover-bg;
 
         span:hover {
-          background-color: $devui-range-item-hover-bg;
+          background-color: $b-range-item-hover-bg;
         }
       }
 
-      &.#{$devui-prefix}-date-picker-pro__table-date-start:not(.#{$devui-prefix}-date-picker-pro__table-date-end) {
+      &.#{$b-prefix}-date-picker-pro__table-date-start:not(.#{$b-prefix}-date-picker-pro__table-date-end) {
         position: relative;
 
         &::after {
@@ -229,7 +229,7 @@ $input-height-lg: 46px;
           position: absolute;
           width: 8px;
           height: 22px;
-          background-color: $devui-list-item-hover-bg;
+          background-color: $b-list-item-hover-bg;
           right: 0;
           top: 0;
         }
@@ -239,11 +239,11 @@ $input-height-lg: 46px;
         }
 
         span:not(:hover) {
-          border-radius: $devui-border-radius-feedback 0 0 $devui-border-radius-feedback;
+          border-radius: $b-border-radius-feedback 0 0 $b-border-radius-feedback;
         }
       }
 
-      &.#{$devui-prefix}-date-picker-pro__table-date-end:not(.#{$devui-prefix}-date-picker-pro__table-date-start) {
+      &.#{$b-prefix}-date-picker-pro__table-date-end:not(.#{$b-prefix}-date-picker-pro__table-date-start) {
         position: relative;
 
         &::after {
@@ -252,7 +252,7 @@ $input-height-lg: 46px;
           position: absolute;
           width: 5px;
           height: 22px;
-          background-color: $devui-list-item-hover-bg;
+          background-color: $b-list-item-hover-bg;
           left: 0;
           top: 0;
         }
@@ -262,13 +262,13 @@ $input-height-lg: 46px;
         }
 
         span:not(:hover) {
-          border-radius: 0 $devui-border-radius-feedback $devui-border-radius-feedback 0;
+          border-radius: 0 $b-border-radius-feedback $b-border-radius-feedback 0;
         }
       }
 
-      &.#{$devui-prefix}-date-picker-pro__table-date-disabled {
+      &.#{$b-prefix}-date-picker-pro__table-date-disabled {
         span {
-          color: $devui-disabled-text;
+          color: $b-disabled-text;
           cursor: not-allowed;
         }
       }
@@ -276,9 +276,9 @@ $input-height-lg: 46px;
   }
 }
 
-.#{$devui-prefix}-date-picker-pro__panel-time {
+.#{$b-prefix}-date-picker-pro__panel-time {
   display: inline-block;
-  border-left: 1px solid $devui-dividing-line;
+  border-left: 1px solid $b-dividing-line;
   height: 305px;
   text-align: center;
   width: 115px;
@@ -292,7 +292,7 @@ $input-height-lg: 46px;
       line-height: 30px;
     }
   }
-  .#{$devui-prefix}-time-list {
+  .#{$b-prefix}-time-list {
     border: none;
 
     .time-item {
@@ -310,12 +310,12 @@ $input-height-lg: 46px;
           }
 
           span {
-            font-size: $devui-font-size-sm;
-            border-radius: $devui-border-radius-feedback;
+            font-size: $b-font-size-sm;
+            border-radius: $b-border-radius-feedback;
 
             &:hover {
-              background-color: $devui-list-item-hover-bg;
-              color: $devui-list-item-hover-text;
+              background-color: $b-list-item-hover-bg;
+              color: $b-list-item-hover-text;
             }
           }
         }
@@ -324,12 +324,12 @@ $input-height-lg: 46px;
           background-color: transparent;
 
           span {
-            background-color: $devui-list-item-active-bg;
-            color: $devui-list-item-active-text;
+            background-color: $b-list-item-active-bg;
+            color: $b-list-item-active-text;
 
             &:hover {
-              background-color: $devui-list-item-active-bg;
-              color: $devui-list-item-active-text;
+              background-color: $b-list-item-active-bg;
+              color: $b-list-item-active-text;
             }
           }
         }
@@ -339,19 +339,19 @@ $input-height-lg: 46px;
 }
 
 // 日期范围选择器
-.#{$devui-prefix}-range-date-picker-pro {
+.#{$b-prefix}-range-date-picker-pro {
   display: inline-block;
-  background-color: $devui-base-bg;
+  background-color: $b-base-bg;
 
-  &.#{$devui-prefix}-range-date-picker-pro__range-width {
+  &.#{$b-prefix}-range-date-picker-pro__range-width {
     width: 300px;
   }
 
-  &.#{$devui-prefix}-range-date-picker-pro__range-time-width {
+  &.#{$b-prefix}-range-date-picker-pro__range-time-width {
     width: 400px;
   }
 
-  .#{$devui-prefix}-range-date-picker-pro__range-picker {
+  .#{$b-prefix}-range-date-picker-pro__range-picker {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -359,20 +359,20 @@ $input-height-lg: 46px;
     box-sizing: border-box;
     width: 100%;
     min-height: 24px;
-    border: 1px solid $devui-form-control-line;
-    border-radius: $devui-border-radius;
-    background-color: $devui-form-control-bg;
-    transition: border-color 0.3s $devui-animation-ease-in-out-smooth;
+    border: 1px solid $b-form-control-line;
+    border-radius: $b-border-radius;
+    background-color: $b-form-control-bg;
+    transition: border-color 0.3s $b-animation-ease-in-out-smooth;
 
-    &:not(.#{$devui-prefix}-range-date-picker-pro--error):not(.#{$devui-prefix}-range-date-picker-pro--disabled):hover {
-      border-color: $devui-form-control-line-hover;
+    &:not(.#{$b-prefix}-range-date-picker-pro--error):not(.#{$b-prefix}-range-date-picker-pro--disabled):hover {
+      border-color: $b-form-control-line-hover;
     }
 
-    .#{$devui-prefix}-range-date-picker-pro__input {
+    .#{$b-prefix}-range-date-picker-pro__input {
       flex: 1 1;
     }
 
-    .#{$devui-prefix}-input {
+    .#{$b-prefix}-input {
       display: inline-block;
       height: calc($input-height-md - 2px);
       width: 100%;
@@ -381,37 +381,37 @@ $input-height-lg: 46px;
         border: none;
       }
 
-      &.#{$devui-prefix}-input--sm {
+      &.#{$b-prefix}-input--sm {
         height: calc($input-height-sm - 2px);
       }
 
-      &.#{$devui-prefix}-input--lg {
+      &.#{$b-prefix}-input--lg {
         height: calc($input-height-lg - 2px);
       }
     }
 
-    .#{$devui-prefix}-range-date-picker-pro__start {
-      .#{$devui-prefix}-input--feedback {
+    .#{$b-prefix}-range-date-picker-pro__start {
+      .#{$b-prefix}-input--feedback {
         padding-right: 0;
       }
     }
 
-    .#{$devui-prefix}-range-date-picker-pro__active-input {
-      .#{$devui-prefix}-input__inner {
-        color: $devui-brand;
+    .#{$b-prefix}-range-date-picker-pro__active-input {
+      .#{$b-prefix}-input__inner {
+        color: $b-brand;
       }
     }
-    .#{$devui-prefix}-range-date-picker-pro__normal-input {
-      .#{$devui-prefix}-input__inner {
-        color: $devui-text;
+    .#{$b-prefix}-range-date-picker-pro__normal-input {
+      .#{$b-prefix}-input__inner {
+        color: $b-text;
       }
     }
 
-    .#{$devui-prefix}-range-date-picker-pro__separator {
+    .#{$b-prefix}-range-date-picker-pro__separator {
       display: inline-block;
       padding: 0 4px;
     }
-    .#{$devui-prefix}-input-slot__suffix {
+    .#{$b-prefix}-input-slot__suffix {
       cursor: pointer;
     }
 
@@ -428,64 +428,64 @@ $input-height-lg: 46px;
       align-items: center;
 
       svg path {
-        fill: $devui-shape-icon-fill;
+        fill: $b-shape-icon-fill;
       }
 
       &:hover {
         svg path {
-          fill: $devui-shape-icon-fill-active;
+          fill: $b-shape-icon-fill-active;
         }
       }
     }
 
-    .#{$devui-prefix}-range-date-picker-pro--icon-visible {
+    .#{$b-prefix}-range-date-picker-pro--icon-visible {
       visibility: visible;
     }
 
-    .#{$devui-prefix}-range-date-picker-pro--icon-hidden {
+    .#{$b-prefix}-range-date-picker-pro--icon-hidden {
       visibility: hidden;
     }
 
-    &.#{$devui-prefix}-range-date-picker-pro--disabled {
-      color: $devui-disabled-text;
-      border-color: $devui-disabled-line;
-      background-color: $devui-disabled-bg;
+    &.#{$b-prefix}-range-date-picker-pro--disabled {
+      color: $b-disabled-text;
+      border-color: $b-disabled-line;
+      background-color: $b-disabled-bg;
       cursor: not-allowed;
 
       &:hover {
-        border-color: $devui-disabled-line;
+        border-color: $b-disabled-line;
       }
 
-      .#{$devui-prefix}-input__inner {
-        color: $devui-disabled-text;
+      .#{$b-prefix}-input__inner {
+        color: $b-disabled-text;
         cursor: not-allowed;
       }
     }
-    &.#{$devui-prefix}-range-date-picker-pro--error {
-      border-color: $devui-danger-line;
-      background-color: $devui-danger-bg;
+    &.#{$b-prefix}-range-date-picker-pro--error {
+      border-color: $b-danger-line;
+      background-color: $b-danger-bg;
     }
   }
 
   &--open {
-    .#{$devui-prefix}-range-date-picker-pro__range-picker {
-      border-color: $devui-form-control-line-active;
+    .#{$b-prefix}-range-date-picker-pro__range-picker {
+      border-color: $b-form-control-line-active;
 
-      &:not(.#{$devui-prefix}-range-date-picker-pro--error):not(.#{$devui-prefix}-range-date-picker-pro--disabled):hover {
-        border-color: $devui-form-control-line-active;
+      &:not(.#{$b-prefix}-range-date-picker-pro--error):not(.#{$b-prefix}-range-date-picker-pro--disabled):hover {
+        border-color: $b-form-control-line-active;
       }
     }
   }
 }
 
 // 年选择器
-.#{$devui-prefix}-date-picker-pro__year-calendar-panel {
+.#{$b-prefix}-date-picker-pro__year-calendar-panel {
   height: 200px;
   width: 204px;
   padding: 8px 12px;
-  font-size: $devui-font-size-sm;
+  font-size: $b-font-size-sm;
 
-  .#{$devui-prefix}-date-picker-pro__year-list {
+  .#{$b-prefix}-date-picker-pro__year-list {
     width: 184px;
     height: 186px;
     overflow: auto;
@@ -496,52 +496,52 @@ $input-height-lg: 46px;
       width: 0;
     }
 
-    .#{$devui-prefix}-date-picker-pro__year-list-item {
+    .#{$b-prefix}-date-picker-pro__year-list-item {
       display: flex;
       padding: 4px 0;
       height: 48px;
     }
-    .#{$devui-prefix}-date-picker-pro__year-item-title {
+    .#{$b-prefix}-date-picker-pro__year-item-title {
       width: 60px;
       height: 40px;
       line-height: 40px;
       text-align: center;
       cursor: pointer;
-      border-radius: var(--devui-border-radius-feedback, 4px);
+      border-radius: var(--b-border-radius-feedback, 4px);
 
-      &:hover:not(.#{$devui-prefix}-date-picker-pro__year-active):not(.#{$devui-prefix}-date-picker-pro__year-disabled) {
-        background-color: $devui-list-item-hover-bg;
+      &:hover:not(.#{$b-prefix}-date-picker-pro__year-active):not(.#{$b-prefix}-date-picker-pro__year-disabled) {
+        background-color: $b-list-item-hover-bg;
       }
 
-      &.#{$devui-prefix}-date-picker-pro__this-year {
-        color: $devui-brand;
+      &.#{$b-prefix}-date-picker-pro__this-year {
+        color: $b-brand;
       }
 
-      &.#{$devui-prefix}-date-picker-pro__year-active {
-        background-color: $devui-list-item-active-bg;
-        color: $devui-list-item-active-text;
+      &.#{$b-prefix}-date-picker-pro__year-active {
+        background-color: $b-list-item-active-bg;
+        color: $b-list-item-active-text;
       }
 
-      &.#{$devui-prefix}-date-picker-pro__year-in-range:not(.#{$devui-prefix}-date-picker-pro__year-active) {
-        background: $devui-list-item-hover-bg;
+      &.#{$b-prefix}-date-picker-pro__year-in-range:not(.#{$b-prefix}-date-picker-pro__year-active) {
+        background: $b-list-item-hover-bg;
         border-radius: 0;
 
         &:hover {
-          background-color: $devui-range-item-hover-bg;
-          border-radius: var(--devui-border-radius-feedback, 4px);
+          background-color: $b-range-item-hover-bg;
+          border-radius: var(--b-border-radius-feedback, 4px);
         }
       }
 
-      &.#{$devui-prefix}-date-picker-pro__year-start:not(.#{$devui-prefix}-date-picker-pro__year-end):not(:hover) {
-        border-radius: $devui-border-radius-feedback 0 0 $devui-border-radius-feedback;
+      &.#{$b-prefix}-date-picker-pro__year-start:not(.#{$b-prefix}-date-picker-pro__year-end):not(:hover) {
+        border-radius: $b-border-radius-feedback 0 0 $b-border-radius-feedback;
       }
 
-      &.#{$devui-prefix}-date-picker-pro__year-end:not(.#{$devui-prefix}-date-picker-pro__year-start):not(:hover) {
-        border-radius: 0 $devui-border-radius-feedback $devui-border-radius-feedback 0;
+      &.#{$b-prefix}-date-picker-pro__year-end:not(.#{$b-prefix}-date-picker-pro__year-start):not(:hover) {
+        border-radius: 0 $b-border-radius-feedback $b-border-radius-feedback 0;
       }
 
-      &.#{$devui-prefix}-date-picker-pro__year-disabled {
-        color: $devui-disabled-text;
+      &.#{$b-prefix}-date-picker-pro__year-disabled {
+        color: $b-disabled-text;
         cursor: not-allowed;
         border-radius: 0;
       }
@@ -549,13 +549,13 @@ $input-height-lg: 46px;
   }
 }
 // 月选择器
-.#{$devui-prefix}-date-picker-pro__month-calendar-panel {
+.#{$b-prefix}-date-picker-pro__month-calendar-panel {
   height: 300px;
   text-align: center;
-  font-size: $devui-font-size-sm;
+  font-size: $b-font-size-sm;
   display: flex;
 
-  .#{$devui-prefix}-date-picker-pro__year-list {
+  .#{$b-prefix}-date-picker-pro__year-list {
     height: 100%;
     overflow: auto;
     scrollbar-width: none;
@@ -568,27 +568,27 @@ $input-height-lg: 46px;
     }
 
     &-item {
-      background-color: $devui-global-bg;
-      font-size: $devui-font-size-md;
+      background-color: $b-global-bg;
+      font-size: $b-font-size-md;
       height: 30px;
       line-height: 30px;
       cursor: pointer;
 
-      &.#{$devui-prefix}-date-picker-pro__year-item-active {
-        background-color: $devui-base-bg;
+      &.#{$b-prefix}-date-picker-pro__year-item-active {
+        background-color: $b-base-bg;
       }
-      &:hover:not(.#{$devui-prefix}-date-picker-pro__year-item-active) {
-        background-color: $devui-list-item-selected-bg;
+      &:hover:not(.#{$b-prefix}-date-picker-pro__year-item-active) {
+        background-color: $b-list-item-selected-bg;
       }
     }
   }
-  .#{$devui-prefix}-date-picker-pro__month-wrapper {
+  .#{$b-prefix}-date-picker-pro__month-wrapper {
     height: 300px;
     width: 208px;
     padding: 4px;
     display: inline-block;
 
-    .#{$devui-prefix}-date-picker-pro__month-list {
+    .#{$b-prefix}-date-picker-pro__month-list {
       height: 100%;
       width: 100%;
       overflow: auto;
@@ -603,22 +603,22 @@ $input-height-lg: 46px;
         text-align: center;
         border: none;
         padding: 0;
-        font-size: $devui-font-size-sm;
+        font-size: $b-font-size-sm;
       }
     }
 
-    .#{$devui-prefix}-date-picker-pro__table-month-title {
+    .#{$b-prefix}-date-picker-pro__table-month-title {
       text-align: start;
       line-height: 26px;
-      color: $devui-aide-text;
+      color: $b-aide-text;
       padding-left: 8px;
     }
 
-    .#{$devui-prefix}-date-picker-pro__table-month-content {
-      color: $devui-text;
+    .#{$b-prefix}-date-picker-pro__table-month-content {
+      color: $b-text;
       margin: 0;
 
-      .#{$devui-prefix}-date-picker-pro__month-item {
+      .#{$b-prefix}-date-picker-pro__month-item {
         width: 60px;
         height: 40px;
         padding: 4px 0;
@@ -631,59 +631,59 @@ $input-height-lg: 46px;
           display: block;
           height: 32px;
           line-height: 32px;
-          border-radius: $devui-border-radius-feedback;
+          border-radius: $b-border-radius-feedback;
         }
 
-        &:hover:not(.#{$devui-prefix}-date-picker-pro__month-active):not(.#{$devui-prefix}-date-picker-pro__month-disabled) {
+        &:hover:not(.#{$b-prefix}-date-picker-pro__month-active):not(.#{$b-prefix}-date-picker-pro__month-disabled) {
           span {
-            background-color: $devui-list-item-hover-bg;
+            background-color: $b-list-item-hover-bg;
           }
         }
 
-        &.#{$devui-prefix}-date-picker-pro__this-month {
+        &.#{$b-prefix}-date-picker-pro__this-month {
           span {
-            color: $devui-brand;
+            color: $b-brand;
           }
         }
 
-        &.#{$devui-prefix}-date-picker-pro__month-active {
+        &.#{$b-prefix}-date-picker-pro__month-active {
           span {
-            background-color: $devui-list-item-active-bg;
-            color: $devui-list-item-active-text;
+            background-color: $b-list-item-active-bg;
+            color: $b-list-item-active-text;
           }
         }
 
-        &.#{$devui-prefix}-date-picker-pro__month-in-range:not(.#{$devui-prefix}-date-picker-pro__month-active) {
+        &.#{$b-prefix}-date-picker-pro__month-in-range:not(.#{$b-prefix}-date-picker-pro__month-active) {
           span {
-            background: $devui-list-item-hover-bg;
+            background: $b-list-item-hover-bg;
             border-radius: 0;
           }
 
           &:hover {
             span {
-              background-color: $devui-range-item-hover-bg;
-              border-radius: var(--devui-border-radius-feedback, 4px);
+              background-color: $b-range-item-hover-bg;
+              border-radius: var(--b-border-radius-feedback, 4px);
             }
           }
         }
 
-        &.#{$devui-prefix}-date-picker-pro__month-start:not(.#{$devui-prefix}-date-picker-pro__month-end):not(:hover) {
+        &.#{$b-prefix}-date-picker-pro__month-start:not(.#{$b-prefix}-date-picker-pro__month-end):not(:hover) {
           span {
-            border-radius: $devui-border-radius-feedback 0 0 $devui-border-radius-feedback;
+            border-radius: $b-border-radius-feedback 0 0 $b-border-radius-feedback;
           }
         }
 
-        &.#{$devui-prefix}-date-picker-pro__month-end:not(.#{$devui-prefix}-date-picker-pro__month-start):not(:hover) {
+        &.#{$b-prefix}-date-picker-pro__month-end:not(.#{$b-prefix}-date-picker-pro__month-start):not(:hover) {
           span {
-            border-radius: 0 $devui-border-radius-feedback $devui-border-radius-feedback 0;
+            border-radius: 0 $b-border-radius-feedback $b-border-radius-feedback 0;
           }
         }
 
-        &.#{$devui-prefix}-date-picker-pro__month-disabled {
+        &.#{$b-prefix}-date-picker-pro__month-disabled {
           cursor: not-allowed;
 
           span {
-            color: $devui-disabled-text;
+            color: $b-disabled-text;
             border-radius: 0;
           }
         }

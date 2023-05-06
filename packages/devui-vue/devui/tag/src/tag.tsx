@@ -52,7 +52,7 @@ export default defineComponent({
           style={{
             display: 'block',
             color: contentColor.value,
-            backgroundColor: checked.value ? themeColor.value : !color.value ? '' : 'var(--devui-base-bg, #ffffff)',
+            backgroundColor: checked.value ? themeColor.value : !color.value ? '' : 'var(--b-base-bg, #ffffff)',
           }}
           title={tagTitle}>
           {slots.default?.()}

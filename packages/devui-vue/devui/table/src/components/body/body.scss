@@ -1,26 +1,26 @@
 @import '../../../../styles-var/devui-var.scss';
 
 $input-height-md: 28px;
-$devui-table-inset-shadow-left: var(--devui-table-inset-shadow-left, 8px 0 8px -4px);
-$devui-table-inset-shadow-right: var(--devui-table-inset-shadow-right, -8px 0 8px -4px);
+$b-table-inset-shadow-left: var(--b-table-inset-shadow-left, 8px 0 8px -4px);
+$b-table-inset-shadow-right: var(--b-table-inset-shadow-right, -8px 0 8px -4px);
 
-.#{$devui-prefix}-table {
+.#{$b-prefix}-table {
   &__tbody {
     tr {
-      font-size: $devui-font-size;
-      color: $devui-text;
-      background-color: $devui-base-bg;
+      font-size: $b-font-size;
+      color: $b-text;
+      background-color: $b-base-bg;
       border: none;
 
       &.hover-enabled:hover {
-        background-color: $devui-list-item-hover-bg;
+        background-color: $b-list-item-hover-bg;
 
-        .#{$devui-prefix}-table--last-sticky-left {
-          background: linear-gradient(to left, transparent, $devui-list-item-hover-bg 10px);
+        .#{$b-prefix}-table--last-sticky-left {
+          background: linear-gradient(to left, transparent, $b-list-item-hover-bg 10px);
         }
 
-        .#{$devui-prefix}-table--first-sticky-right {
-          background: linear-gradient(to right, transparent, $devui-list-item-hover-bg 10px);
+        .#{$b-prefix}-table--first-sticky-right {
+          background: linear-gradient(to right, transparent, $b-list-item-hover-bg 10px);
         }
       }
 
@@ -38,7 +38,7 @@ $devui-table-inset-shadow-right: var(--devui-table-inset-shadow-right, -8px 0 8p
         vertical-align: middle;
         line-height: 24px;
         border: none;
-        border-bottom: 1px solid $devui-dividing-line;
+        border-bottom: 1px solid $b-dividing-line;
 
         &.is-left {
           text-align: left;
@@ -66,13 +66,13 @@ $devui-table-inset-shadow-right: var(--devui-table-inset-shadow-right, -8px 0 8p
             height: 100%;
             top: 0;
             left: 0;
-            border: 1px solid $devui-line;
-            border-radius: $devui-border-radius;
+            border: 1px solid $b-line;
+            border-radius: $b-border-radius;
             pointer-events: none;
           }
         }
 
-        .#{$devui-prefix}-table__cell {
+        .#{$b-prefix}-table__cell {
           width: 100%;
           white-space: nowrap;
           overflow: hidden;
@@ -99,7 +99,7 @@ $devui-table-inset-shadow-right: var(--devui-table-inset-shadow-right, -8px 0 8p
   }
 }
 
-.#{$devui-prefix}-table {
+.#{$b-prefix}-table {
   &--sticky-cell {
     position: sticky;
     z-index: 5;
@@ -107,8 +107,8 @@ $devui-table-inset-shadow-right: var(--devui-table-inset-shadow-right, -8px 0 8p
 
   &--scroll-middle,
   &--scroll-right {
-    .#{$devui-prefix}-table--last-sticky-left {
-      background: linear-gradient(to left, transparent, $devui-base-bg 10px);
+    .#{$b-prefix}-table--last-sticky-left {
+      background: linear-gradient(to left, transparent, $b-base-bg 10px);
 
       &::after {
         content: '';
@@ -118,15 +118,15 @@ $devui-table-inset-shadow-right: var(--devui-table-inset-shadow-right, -8px 0 8p
         bottom: 0;
         width: 10px;
         pointer-events: none;
-        box-shadow: inset $devui-table-inset-shadow-left $devui-light-shadow;
+        box-shadow: inset $b-table-inset-shadow-left $b-light-shadow;
       }
     }
   }
 
   &--scroll-middle,
   &--scroll-left {
-    .#{$devui-prefix}-table--first-sticky-right {
-      background: linear-gradient(to right, transparent, $devui-base-bg 10px);
+    .#{$b-prefix}-table--first-sticky-right {
+      background: linear-gradient(to right, transparent, $b-base-bg 10px);
 
       &::before {
         content: '';
@@ -136,7 +136,7 @@ $devui-table-inset-shadow-right: var(--devui-table-inset-shadow-right, -8px 0 8p
         bottom: 0;
         width: 10px;
         pointer-events: none;
-        box-shadow: inset $devui-table-inset-shadow-right $devui-light-shadow;
+        box-shadow: inset $b-table-inset-shadow-right $b-light-shadow;
       }
     }
   }

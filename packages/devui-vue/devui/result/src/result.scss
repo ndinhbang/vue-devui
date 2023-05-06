@@ -1,6 +1,6 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-result {
+.#{$b-prefix}-result {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,32 +11,32 @@
 
   &__icon {
     &-success::before {
-      color: $devui-success;
+      color: $b-success;
     }
 
     &-danger::before {
-      color: $devui-danger;
+      color: $b-danger;
     }
 
     &-warning::before {
-      color: $devui-warning;
+      color: $b-warning;
     }
 
     &-info::before {
-      color: $devui-info;
+      color: $b-info;
     }
   }
 
   &__title {
     margin-top: 20px;
-    color: $devui-text;
-    font-size: $devui-font-size-lg;
+    color: $b-text;
+    font-size: $b-font-size-lg;
   }
 
   &__desc {
     margin-top: 10px;
-    color: $devui-text-weak;
-    font-size: $devui-font-size-md;
+    color: $b-text-weak;
+    font-size: $b-font-size-md;
   }
 
   &__extra {

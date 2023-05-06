@@ -1,9 +1,9 @@
 @import '../../styles-var/devui-var.scss';
 
 $font-size-map: (
-  lg: $devui-font-size-lg,
-  md: $devui-font-size-lg,
-  sm: $devui-font-size-sm,
+  lg: $b-font-size-lg,
+  md: $b-font-size-lg,
+  sm: $b-font-size-sm,
 );
 
 $tag-height-map: (
@@ -18,27 +18,27 @@ $tag-line-height-map: (
   sm: 22px,
 );
 
-$devui-tag-normal-config: (
+$b-tag-normal-config: (
   default: (
     border: 0,
-    color: $devui-text,
-    background-color: $devui-default-bg,
+    color: $b-text,
+    background-color: $b-default-bg,
   ),
   primary: (
-    color: $devui-primary,
-    background-color: $devui-primary-bg,
+    color: $b-primary,
+    background-color: $b-primary-bg,
   ),
   success: (
-    color: $devui-success,
-    background-color: $devui-success-bg,
+    color: $b-success,
+    background-color: $b-success-bg,
   ),
   warning: (
-    color: $devui-warning,
-    background-color: $devui-warning-bg,
+    color: $b-warning,
+    background-color: $b-warning-bg,
   ),
   danger: (
-    color: $devui-danger,
-    background-color: $devui-danger-bg,
+    color: $b-danger,
+    background-color: $b-danger-bg,
   ),
   colorful: (
     background-color: #ffffff,
@@ -48,28 +48,28 @@ $devui-tag-normal-config: (
   ),
 );
 
-.#{$devui-prefix}-tag {
+.#{$b-prefix}-tag {
   display: inline-block;
 
-  .#{$devui-prefix}-tag__item {
+  .#{$b-prefix}-tag__item {
     display: block;
     position: relative;
     padding: 0 8px;
     height: 20px;
     border: 1px solid;
-    border-radius: $devui-border-radius;
-    font-size: $devui-font-size;
+    border-radius: $b-border-radius;
+    font-size: $b-font-size;
     line-height: 20px;
     cursor: default;
     @each $type in default, primary, success, warning, danger, colorful, deletable {
-      &.#{$devui-prefix}-tag--#{$type} {
-        @each $key, $value in map-get($devui-tag-normal-config, $type) {
+      &.#{$b-prefix}-tag--#{$type} {
+        @each $key, $value in map-get($b-tag-normal-config, $type) {
           #{$key}: $value;
         }
       }
     }
     @each $size in ('lg', 'md', 'sm') {
-      &.#{$devui-prefix}-tag--#{$size} {
+      &.#{$b-prefix}-tag--#{$size} {
         font-size: map-get($font-size-map, #{$size});
         height: map-get($tag-height-map, #{$size});
         line-height: map-get($tag-line-height-map, #{$size});
@@ -80,7 +80,7 @@ $devui-tag-normal-config: (
   .remove-button {
     display: inline-block;
     margin-left: 12px;
-    font-size: $devui-font-size-icon;
+    font-size: $b-font-size-icon;
     cursor: pointer;
     width: 12px;
     height: 12px;

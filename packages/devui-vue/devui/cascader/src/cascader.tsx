@@ -85,7 +85,7 @@ export default defineComponent({
               v-model={menuShow.value}
               position={position.value as Placement[]}
               align="start"
-              style={{ zIndex: 'var(--devui-z-index-dropdown, 1052)' }}>
+              style={{ zIndex: 'var(--b-z-index-dropdown, 1052)' }}>
               <div class={ns.e('drop-menu-animation')}>
                 {!isSearching.value && (
                   <div class={`${menuOpenClass.value} ${ns.e('dropdown-menu')}`}>

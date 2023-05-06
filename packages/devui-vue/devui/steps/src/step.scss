@@ -1,18 +1,18 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-step {
+.#{$b-prefix}-step {
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
 
   &:last-child {
-    &:not(.center):not(.#{$devui-prefix}-step--simple) {
+    &:not(.center):not(.#{$b-prefix}-step--simple) {
       flex-basis: auto !important;
     }
 
     flex-shrink: 0;
 
-    .#{$devui-prefix}-step__line {
+    .#{$b-prefix}-step__line {
       display: none;
     }
   }
@@ -33,8 +33,8 @@
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: $devui-brand-foil;
-    color: $devui-text;
+    background-color: $b-brand-foil;
+    color: $b-text;
   }
 
   &__line {
@@ -43,43 +43,43 @@
     left: 24px;
     width: calc(100% - 24px);
     height: 1px;
-    background-color: $devui-line;
+    background-color: $b-line;
   }
 
   &__title {
-    color: $devui-placeholder;
+    color: $b-placeholder;
   }
 
   &__description {
-    color: $devui-placeholder;
+    color: $b-placeholder;
     font-size: 12px;
   }
 
   &.active {
-    .#{$devui-prefix}-step__dot {
-      background-color: $devui-brand;
-      color: $devui-light-text;
+    .#{$b-prefix}-step__dot {
+      background-color: $b-brand;
+      color: $b-light-text;
     }
 
-    .#{$devui-prefix}-step__title, .#{$devui-prefix}-step__description {
-      color: $devui-brand;
+    .#{$b-prefix}-step__title, .#{$b-prefix}-step__description {
+      color: $b-brand;
     }
   }
 
   &.finished {
-    .#{$devui-prefix}-step__dot {
-      background-color: $devui-success;
+    .#{$b-prefix}-step__dot {
+      background-color: $b-success;
     }
 
-    .#{$devui-prefix}-step__title, .#{$devui-prefix}-step__description {
-      color: $devui-success;
+    .#{$b-prefix}-step__title, .#{$b-prefix}-step__description {
+      color: $b-success;
     }
   }
 
   &.center {
     text-align: center;
 
-    .#{$devui-prefix}-step__line {
+    .#{$b-prefix}-step__line {
       left: calc(50% + 12px);
     }
   }
@@ -87,56 +87,56 @@
   // 步骤条状态
   &.wait {
     .devui-step__dot {
-      background-color: $devui-brand-foil;
-      color: $devui-text;
+      background-color: $b-brand-foil;
+      color: $b-text;
     }
 
     .devui-step__title {
-      color: $devui-placeholder;
+      color: $b-placeholder;
     }
   }
 
   &.process {
     .devui-step__dot {
-      background-color: $devui-brand;
-      color: $devui-light-text;
+      background-color: $b-brand;
+      color: $b-light-text;
     }
 
     .devui-step__title {
-      color: $devui-brand;
+      color: $b-brand;
     }
   }
 
   &.finish {
     .devui-step__dot {
-      background-color: $devui-success;
-      color: $devui-light-text;
+      background-color: $b-success;
+      color: $b-light-text;
     }
 
     .devui-step__title {
-      color: $devui-success;
+      color: $b-success;
     }
   }
 
   &.success {
     .devui-step__dot {
-      background-color: $devui-success;
-      color: $devui-light-text;
+      background-color: $b-success;
+      color: $b-light-text;
     }
 
     .devui-step__title {
-      color: $devui-success;
+      color: $b-success;
     }
   }
 
   &.error {
     .devui-step__dot {
-      background-color: $devui-danger;
-      color: $devui-light-text;
+      background-color: $b-danger;
+      color: $b-light-text;
     }
 
     .devui-step__title {
-      color: $devui-danger;
+      color: $b-danger;
     }
   }
 }

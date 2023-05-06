@@ -49,25 +49,25 @@ export default defineComponent({
           type: 'success',
           text: '成功',
           icon: 'right-o',
-          color: 'var(--devui-success)',
+          color: 'var(--b-success)',
         },
         {
           type: 'failed',
           text: '错误',
           icon: 'error-o',
-          color: 'var(--devui-danger)',
+          color: 'var(--b-danger)',
         },
         {
           type: 'warning',
           text: '警告',
           icon: 'warning-o',
-          color: 'var(--devui-warning)',
+          color: 'var(--b-warning)',
         },
         {
           type: 'info',
           text: '信息',
           icon: 'info-o',
-          color: 'var(--devui-info)',
+          color: 'var(--b-info)',
         },
       ];
       const item = typeList.find((i) => i.type === props.type);
@@ -94,7 +94,7 @@ export default defineComponent({
             class={ns.e('overlay')}
             lock-scroll={false}
             close-on-click-overlay={closeOnClickOverlay.value}
-            style={{ zIndex: 'calc(var(--devui-z-index-modal, 1050) - 1)' }}
+            style={{ zIndex: 'calc(var(--b-z-index-modal, 1050) - 1)' }}
           />
         )}
         <Transition name={props.showAnimation ? ns.m('wipe') : ''}>

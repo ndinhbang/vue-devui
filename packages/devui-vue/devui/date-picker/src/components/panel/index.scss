@@ -11,7 +11,7 @@ $panel-cell-active-color: #f1f1f1;
 $panel-cell-active-hover-bg: #0088dd;
 $panel-cell-active-hover-color: #ffffff;
 
-.#{$devui-prefix}-calendar-panel {
+.#{$b-prefix}-calendar-panel {
   width: $panel-width;
   padding: $panel-padding;
   box-sizing: border-box;
@@ -32,12 +32,12 @@ $panel-cell-active-hover-color: #ffffff;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      border-radius: $devui-border-radius;
+      border-radius: $b-border-radius;
       background-color: $panel-cell-bg;
       color: $panel-cell-color;
 
       &:hover {
-        background-color: $devui-disabled-bg;
+        background-color: $b-disabled-bg;
       }
 
       &.selected {
@@ -51,12 +51,12 @@ $panel-cell-active-hover-color: #ffffff;
       }
 
       &.innerday {
-        background-color: $devui-disabled-bg;
+        background-color: $b-disabled-bg;
       }
 
       &.disabled,
       &.not-current {
-        color: $devui-disabled-text;
+        color: $b-disabled-text;
       }
 
       &.disabled {

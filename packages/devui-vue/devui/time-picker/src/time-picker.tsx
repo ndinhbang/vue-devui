@@ -87,7 +87,7 @@ export default defineComponent({
                 origin={inputDom.value?.$el}
                 position={position.value as Placement[]}
                 align="start"
-                style={{ zIndex: 'var(--devui-z-index-dropdown, 1052)' }}>
+                style={{ zIndex: 'var(--b-z-index-dropdown, 1052)' }}>
                 <TimePopup
                   ref={timePopupDom}
                   showPopup={showPopup.value}

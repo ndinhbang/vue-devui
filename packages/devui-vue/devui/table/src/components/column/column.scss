@@ -1,36 +1,36 @@
 @import '../../../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-table {
+.#{$b-prefix}-table {
   &__tbody {
     tr {
-      .#{$devui-prefix}-table__tree-operate {
+      .#{$b-prefix}-table__tree-operate {
         padding-right: 8px;
         cursor: pointer;
 
         > svg.svg-icon rect {
-          stroke: $devui-disabled-text;
+          stroke: $b-disabled-text;
         }
 
         > svg.svg-icon path {
-          fill: $devui-disabled-text;
+          fill: $b-disabled-text;
         }
 
         > svg.svg-icon.svg-icon-close rect:last-child {
-          fill: $devui-disabled-text;
+          fill: $b-disabled-text;
           stroke: none;
         }
 
         &:hover {
           > svg.svg-icon rect {
-            stroke: $devui-icon-fill-active;
+            stroke: $b-icon-fill-active;
           }
 
           > svg.svg-icon path {
-            fill: $devui-icon-fill-active;
+            fill: $b-icon-fill-active;
           }
 
           > svg.svg-icon.svg-icon-close rect:last-child {
-            fill: $devui-icon-fill-active;
+            fill: $b-icon-fill-active;
             stroke: none;
           }
         }

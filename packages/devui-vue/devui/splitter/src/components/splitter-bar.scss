@@ -1,7 +1,7 @@
 @import '../../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-splitter__bar {
-  background-color: $devui-dividing-line;
+.#{$b-prefix}-splitter__bar {
+  background-color: $b-dividing-line;
   display: flex;
   position: relative;
   align-items: center;
@@ -9,8 +9,8 @@
   flex-grow: 0;
   flex-shrink: 0;
 
-  .#{$devui-prefix}-splitter__collapse {
-    background-color: $devui-dividing-line;
+  .#{$b-prefix}-splitter__collapse {
+    background-color: $b-dividing-line;
     position: absolute;
     z-index: 15;
     cursor: pointer;
@@ -26,12 +26,12 @@
     }
 
     &:hover {
-      background-color: $devui-brand-hover;
+      background-color: $b-brand-hover;
     }
   }
 
   &--horizontal {
-    .#{$devui-prefix}-splitter__collapse {
+    .#{$b-prefix}-splitter__collapse {
       width: 12px;
       height: 30px;
 
@@ -43,7 +43,7 @@
       }
 
       &.prev {
-        border-radius: 0 $devui-border-radius-feedback $devui-border-radius-feedback 0;
+        border-radius: 0 $b-border-radius-feedback $b-border-radius-feedback 0;
         left: 100%;
 
         &::before,
@@ -76,7 +76,7 @@
       }
 
       &.next {
-        border-radius: $devui-border-radius-feedback 0 0 $devui-border-radius-feedback;
+        border-radius: $b-border-radius-feedback 0 0 $b-border-radius-feedback;
         right: 100%;
 
         &::before,
@@ -111,7 +111,7 @@
   }
 
   &--vertical {
-    .#{$devui-prefix}-splitter__collapse {
+    .#{$b-prefix}-splitter__collapse {
       height: 12px;
       width: 30px;
 
@@ -123,7 +123,7 @@
       }
 
       &.prev {
-        border-radius: 0 0 $devui-border-radius-feedback $devui-border-radius-feedback;
+        border-radius: 0 0 $b-border-radius-feedback $b-border-radius-feedback;
         top: 100%;
 
         &::before,
@@ -156,7 +156,7 @@
       }
 
       &.next {
-        border-radius: $devui-border-radius-feedback $devui-border-radius-feedback 0 0;
+        border-radius: $b-border-radius-feedback $b-border-radius-feedback 0 0;
         bottom: 100%;
 
         &::before,
@@ -197,7 +197,7 @@
     &:hover,
     &:focus,
     &:active {
-      background-color: $devui-brand-hover;
+      background-color: $b-brand-hover;
     }
 
     &::after {

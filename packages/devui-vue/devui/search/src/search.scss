@@ -2,31 +2,31 @@
 @import '../../style/mixins/flex';
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-search {
+.#{$b-prefix}-search {
   position: relative;
   @include flex;
 
-  &:not(.#{$devui-prefix}-search--error):not(.#{$devui-prefix}-search--disabled):not(.#{$devui-prefix}-search--focus):hover {
-    .#{$devui-prefix}-input {
-      border-color: $devui-form-control-line-hover;
+  &:not(.#{$b-prefix}-search--error):not(.#{$b-prefix}-search--disabled):not(.#{$b-prefix}-search--focus):hover {
+    .#{$b-prefix}-input {
+      border-color: $b-form-control-line-hover;
     }
   }
 
-  .#{$devui-prefix}-input {
+  .#{$b-prefix}-input {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: $devui-size-md;
+    height: $b-size-md;
     // 60px = clear + icon 的宽度
     padding: 4px 60px 4px 8px;
-    font-size: $devui-font-size-md;
-    color: $devui-text;
+    font-size: $b-font-size-md;
+    color: $b-text;
     box-sizing: border-box;
-    border: 1px solid $devui-form-control-line;
-    border-radius: $devui-border-radius;
-    background-color: $devui-form-control-bg;
-    transition: border-color 0.3s $devui-animation-ease-in-out-smooth;
+    border: 1px solid $b-form-control-line;
+    border-radius: $b-border-radius;
+    background-color: $b-form-control-bg;
+    transition: border-color 0.3s $b-animation-ease-in-out-smooth;
 
     &__inner {
       padding: 0;
@@ -39,27 +39,27 @@
   }
 
   &--focus {
-    .#{$devui-prefix}-input {
-      border-color: $devui-form-control-line-active;
+    .#{$b-prefix}-input {
+      border-color: $b-form-control-line-active;
     }
   }
 
   &__clear,
   &__icon {
-    @include size($devui-size-md, $devui-size-md);
+    @include size($b-size-md, $b-size-md);
     @include flex;
 
     & svg {
       path {
-        fill: $devui-icon-fill;
+        fill: $b-icon-fill;
       }
-      @include size($devui-font-size-md, $devui-font-size-md);
+      @include size($b-font-size-md, $b-font-size-md);
     }
   }
 
   &__clear {
     position: absolute;
-    right: $devui-size-md;
+    right: $b-size-md;
     cursor: pointer;
 
     &::after {
@@ -70,7 +70,7 @@
       transform: translateY(-50%);
       width: 1px;
       height: 46%;
-      border-left: 1px solid $devui-dividing-line;
+      border-left: 1px solid $b-dividing-line;
     }
   }
 
@@ -84,85 +84,85 @@
   }
 
   &--sm {
-    .#{$devui-prefix}-input {
-      height: $devui-size-sm;
-      font-size: $devui-font-size-sm;
+    .#{$b-prefix}-input {
+      height: $b-size-sm;
+      font-size: $b-font-size-sm;
 
-      &.#{$devui-prefix}-input--sm {
+      &.#{$b-prefix}-input--sm {
         padding: 0 48px 0 6px;
       }
     }
 
-    .#{$devui-prefix}-search__icon, .#{$devui-prefix}-search__clear {
-      @include size($devui-size-sm, $devui-size-sm);
+    .#{$b-prefix}-search__icon, .#{$b-prefix}-search__clear {
+      @include size($b-size-sm, $b-size-sm);
 
       svg {
-        @include size($devui-font-size-sm, $devui-font-size-sm);
+        @include size($b-font-size-sm, $b-font-size-sm);
       }
     }
 
-    .#{$devui-prefix}-search__clear {
-      right: $devui-size-sm;
+    .#{$b-prefix}-search__clear {
+      right: $b-size-sm;
     }
   }
 
   &--lg {
-    .#{$devui-prefix}-input {
-      height: $devui-size-lg;
-      font-size: $devui-font-size-lg;
+    .#{$b-prefix}-input {
+      height: $b-size-lg;
+      font-size: $b-font-size-lg;
 
-      &.#{$devui-prefix}-input--lg {
+      &.#{$b-prefix}-input--lg {
         padding: 4px 80px 4px 10px;
       }
     }
 
-    .#{$devui-prefix}-search__icon, .#{$devui-prefix}-search__clear {
-      @include size($devui-size-lg, $devui-size-lg);
+    .#{$b-prefix}-search__icon, .#{$b-prefix}-search__clear {
+      @include size($b-size-lg, $b-size-lg);
 
       svg {
-        @include size($devui-font-size-lg, $devui-font-size-lg);
+        @include size($b-font-size-lg, $b-font-size-lg);
       }
     }
 
-    .#{$devui-prefix}-search__clear {
-      right: $devui-size-lg;
+    .#{$b-prefix}-search__clear {
+      right: $b-size-lg;
     }
   }
 
   &--disabled {
-    .#{$devui-prefix}-input {
+    .#{$b-prefix}-input {
       cursor: not-allowed;
-      color: $devui-disabled-text;
-      border-color: $devui-disabled-line;
-      background-color: $devui-disabled-bg;
+      color: $b-disabled-text;
+      border-color: $b-disabled-line;
+      background-color: $b-disabled-bg;
     }
 
-    .#{$devui-prefix}-search__icon {
+    .#{$b-prefix}-search__icon {
       cursor: not-allowed;
     }
 
     .icon-search {
-      color: $devui-disabled-text !important;
+      color: $b-disabled-text !important;
     }
   }
 
   &--left {
-    .#{$devui-prefix}-input {
-      padding-right: $devui-size-md;
-      padding-left: $devui-size-md;
+    .#{$b-prefix}-input {
+      padding-right: $b-size-md;
+      padding-left: $b-size-md;
 
-      &.#{$devui-prefix}-input--lg {
-        padding-right: $devui-size-lg;
-        padding-left: $devui-size-lg;
+      &.#{$b-prefix}-input--lg {
+        padding-right: $b-size-lg;
+        padding-left: $b-size-lg;
       }
 
-      &.#{$devui-prefix}-input--sm {
-        padding-right: $devui-size-sm;
-        padding-left: $devui-size-sm;
+      &.#{$b-prefix}-input--sm {
+        padding-right: $b-size-sm;
+        padding-left: $b-size-sm;
       }
     }
 
-    .#{$devui-prefix}-search__clear {
+    .#{$b-prefix}-search__clear {
       right: 0;
 
       &::after {
@@ -170,18 +170,18 @@
       }
     }
 
-    .#{$devui-prefix}-search__icon {
+    .#{$b-prefix}-search__icon {
       left: 0;
     }
   }
 
   &--no-border {
-    .#{$devui-prefix}-input,
-    .#{$devui-prefix}-input__wrapper {
+    .#{$b-prefix}-input,
+    .#{$b-prefix}-input__wrapper {
       background-color: unset;
     }
 
-    &:not(.#{$devui-prefix}-search--focus) .#{$devui-prefix}-input:not(:hover, :focus, :active) {
+    &:not(.#{$b-prefix}-search--focus) .#{$b-prefix}-input:not(:hover, :focus, :active) {
       border: 1px solid transparent;
     }
   }

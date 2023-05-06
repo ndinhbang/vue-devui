@@ -1,11 +1,11 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-breadcrumb {
+.#{$b-prefix}-breadcrumb {
   display: flex;
   align-items: center;
 
-  .#{$devui-prefix}-breadcrumb__item:last-child {
-    .#{$devui-prefix}-breadcrumb__separator {
+  .#{$b-prefix}-breadcrumb__item:last-child {
+    .#{$b-prefix}-breadcrumb__separator {
       display: none;
     }
   }

@@ -3,10 +3,10 @@
 body {
   margin: 0;
   padding: 0;
-  color: $devui-text;
-  font-size: $devui-font-size;
+  color: $b-text;
+  font-size: $b-font-size;
   font-family: $font-family;
-  line-height: $devui-line-height-base;
+  line-height: $b-line-height-base;
 }
 
 *,
@@ -52,34 +52,34 @@ a:visited {
 }
 
 :-ms-input-placeholder {
-  color: $devui-placeholder;
+  color: $b-placeholder;
 }
 
 ::-moz-placeholder {
-  color: $devui-placeholder;
+  color: $b-placeholder;
 }
 
 ::-webkit-input-placeholder {
-  color: $devui-placeholder;
+  color: $b-placeholder;
 }
 
 //******************滚动条*************************/
-.#{$devui-prefix}-scrollbar::-webkit-scrollbar {
+.#{$b-prefix}-scrollbar::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
-.#{$devui-prefix}-scrollbar::-webkit-scrollbar-track {
+.#{$b-prefix}-scrollbar::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-.#{$devui-prefix}-scrollbar::-webkit-scrollbar-thumb {
+.#{$b-prefix}-scrollbar::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background-color: $devui-line;
+  background-color: $b-line;
 }
 
-.#{$devui-prefix}-scrollbar::-webkit-scrollbar-thumb:hover {
-  background-color: $devui-placeholder; // TODO: Color-Question
+.#{$b-prefix}-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: $b-placeholder; // TODO: Color-Question
 }
 
 body > * ::-webkit-scrollbar {
@@ -93,11 +93,11 @@ body > * ::-webkit-scrollbar-track {
 
 body > * ::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background-color: $devui-line;
+  background-color: $b-line;
 }
 
 body > * ::-webkit-scrollbar-thumb:hover {
-  background-color: $devui-placeholder; // TODO: Color-Question
+  background-color: $b-placeholder; // TODO: Color-Question
 }
 
 body > * ::-webkit-scrollbar-corner {

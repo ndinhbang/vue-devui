@@ -1,11 +1,11 @@
-.#{$devui-prefix}-menu-horizontal {
+.#{$b-prefix}-menu-horizontal {
   display: flex;
   box-sizing: border-box;
-  line-height: $devui-line-height-base;
-  background: $devui-menu-bg;
+  line-height: $b-line-height-base;
+  background: $b-menu-bg;
   padding: 14px 20px;
 
-  .#{$devui-prefix}-menu-item {
+  .#{$b-prefix}-menu-item {
     display: flex;
     position: relative;
     box-sizing: content-box;
@@ -14,7 +14,7 @@
     cursor: pointer;
   }
 
-  .#{$devui-prefix}-menu-item::after {
+  .#{$b-prefix}-menu-item::after {
     content: '';
     display: block;
     position: absolute;
@@ -26,14 +26,14 @@
   }
 
   ::after {
-    transition: all $devui-animation-duration-fast $devui-animation-ease-in-smooth;
+    transition: all $b-animation-duration-fast $b-animation-ease-in-smooth;
     background: transparent;
   }
 
-  .#{$devui-prefix}-menu-item-select,
-  .#{$devui-prefix}-menu-active-parent {
-    .#{$devui-prefix}-submenu-title-content {
-      color: $devui-menu-item-select;
+  .#{$b-prefix}-menu-item-select,
+  .#{$b-prefix}-menu-active-parent {
+    .#{$b-prefix}-submenu-title-content {
+      color: $b-menu-item-select;
     }
 
     &::after {
@@ -46,34 +46,34 @@
       height: 2px;
       content: '';
       opacity: 1;
-      background: $devui-brand;
+      background: $b-brand;
     }
   }
 
-  .#{$devui-prefix}-menu-item {
+  .#{$b-prefix}-menu-item {
     span,
     a {
-      color: $devui-text;
+      color: $b-text;
     }
   }
 
-  .#{$devui-prefix}-menu-item:hover {
+  .#{$b-prefix}-menu-item:hover {
     span,
     a {
-      color: $devui-brand;
+      color: $b-brand;
     }
 
     &::after {
-      background: $devui-brand;
+      background: $b-brand;
     }
   }
 
-  .#{$devui-prefix}-submenu {
+  .#{$b-prefix}-submenu {
     margin: 0;
     padding: 0;
     position: relative;
 
-    div.#{$devui-prefix}-submenu-title {
+    div.#{$b-prefix}-submenu-title {
       padding: 0 20px;
 
       span {
@@ -82,7 +82,7 @@
 
       .icon-chevron-up,
       .icon-chevron-right {
-        transition: transform $devui-animation-duration-slow $devui-animation-ease-in-out-smooth;
+        transition: transform $b-animation-duration-slow $b-animation-ease-in-out-smooth;
       }
     }
 
@@ -101,7 +101,7 @@
       cursor: pointer;
 
       &::after {
-        background: $devui-brand;
+        background: $b-brand;
       }
 
       > div > i.icon-chevron-up {
@@ -113,16 +113,16 @@
       }
     }
 
-    div.#{$devui-prefix}-menu-item-horizontal-wrapper {
+    div.#{$b-prefix}-menu-item-horizontal-wrapper {
       transition:
-        all $devui-animation-duration-fast $devui-animation-ease-in-smooth,
+        all $b-animation-duration-fast $b-animation-ease-in-smooth,
         left 0 linear;
-      background: $devui-menu-bg;
-      z-index: $devui-z-index-modal;
+      background: $b-menu-bg;
+      z-index: $b-z-index-modal;
     }
 
-    div.#{$devui-prefix}-menu-item-horizontal-wrapper-show {
-      transition: all $devui-animation-duration-fast $devui-animation-ease-in-smooth;
+    div.#{$b-prefix}-menu-item-horizontal-wrapper-show {
+      transition: all $b-animation-duration-fast $b-animation-ease-in-smooth;
       opacity: 1;
       visibility: visible;
       max-height: 100vh;
@@ -130,59 +130,59 @@
       border-radius: 8px;
       position: absolute;
 
-      .#{$devui-prefix}-menu-item {
+      .#{$b-prefix}-menu-item {
         margin-top: 5px;
       }
 
-      .#{$devui-prefix}-submenu {
+      .#{$b-prefix}-submenu {
         margin: 5px 0;
         padding: 0 20px !important;
 
-        div.#{$devui-prefix}-submenu-title {
+        div.#{$b-prefix}-submenu-title {
           padding: 0 !important;
         }
       }
 
-      .#{$devui-prefix}-menu-item-horizontal-wrapper-level .#{$devui-prefix}-submenu {
+      .#{$b-prefix}-menu-item-horizontal-wrapper-level .#{$b-prefix}-submenu {
         padding: 0 20px !important;
       }
     }
 
-    div.#{$devui-prefix}-menu-item-horizontal-wrapper-hidden {
-      transition: all $devui-animation-duration-fast $devui-animation-ease-in-smooth;
+    div.#{$b-prefix}-menu-item-horizontal-wrapper-hidden {
+      transition: all $b-animation-duration-fast $b-animation-ease-in-smooth;
       visibility: hidden;
       position: absolute;
       padding: 0 !important;
       max-height: 0;
       overflow: hidden;
       opacity: 0;
-      .#{$devui-prefix}-menu-item {
+      .#{$b-prefix}-menu-item {
         margin-top: 5px;
       }
 
-      .#{$devui-prefix}-submenu {
+      .#{$b-prefix}-submenu {
         margin: 5px 0;
         padding: 0 20px !important;
 
-        div.#{$devui-prefix}-submenu-title {
+        div.#{$b-prefix}-submenu-title {
           padding: 0 !important;
         }
       }
     }
   }
 
-  .#{$devui-prefix}-menu-item-disabled,
-  .#{$devui-prefix}-submenu-disabled {
+  .#{$b-prefix}-menu-item-disabled,
+  .#{$b-prefix}-submenu-disabled {
     span,
     a {
-      color: $devui-menu-item-disabled !important;
+      color: $b-menu-item-disabled !important;
       cursor: not-allowed;
     }
 
     &::after {
       content: unset !important;
     }
-    &+.#{$devui-prefix}-menu-item-horizontal-wrapper {
+    &+.#{$b-prefix}-menu-item-horizontal-wrapper {
       display: none;
     }
   }

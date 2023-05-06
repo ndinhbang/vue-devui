@@ -11,9 +11,13 @@ export class ThemeService {
   eventBus: IEventBus;
   storage: IStorageService;
   context: IContextService;
+  // @ts-ignore
   currentTheme: Theme;
+  // @ts-ignore
   contentElement: HTMLStyleElement;
+  // @ts-ignore
   colorTransitionElement: HTMLStyleElement;
+  // @ts-ignore
   extraData: {
     [themeId: string]: {
       cssVariables?: {
@@ -22,8 +26,8 @@ export class ThemeService {
       appendClasses?: Array<string>;
     };
   };
-  private _appendedClasses: Array<string>;
-  set appendClasses(classes: Array<string>) {
+  private _appendedClasses: Array<string> | undefined;
+  set appendClasses(classes: Array<string> | undefined) {
     if (this._appendedClasses) {
       this.removeAppendedClass(this._appendedClasses);
     }
@@ -37,7 +41,7 @@ export class ThemeService {
     return this._appendedClasses;
   }
 
-  public mediaQuery: PrefersColorSchemeMediaQuery;
+  public mediaQuery: PrefersColorSchemeMediaQuery | undefined;
 
   constructor(eventBus?: IEventBus, storage?: IStorageService, context?: IContextService) {
     this.eventBus = eventBus === undefined ? new EventBus() : eventBus;
@@ -121,7 +125,7 @@ export class ThemeService {
     document.body.classList.remove(...classNames);
   }
 
-  setExtraData(data, apply = false) {
+  setExtraData(data: any, apply = false) {
     this.extraData = data;
     if (apply) {
       this.applyExtraData();
@@ -131,8 +135,10 @@ export class ThemeService {
   private applyExtraData() {
     const theme = this.currentTheme;
     if (this.extraData && this.extraData[theme.id] && this.extraData[theme.id].cssVariables) {
+
       this.contentElement.innerText
       = ':root { ' + this.formatCSSVariables(theme.data) + ' }'
+          // @ts-ignore
       + ':root { ' + this.formatCSSVariables(this.extraData[theme.id].cssVariables) + ' }';
     }
     if (this.extraData && this.extraData[theme.id] && this.extraData[theme.id].appendClasses) {
@@ -144,6 +150,7 @@ export class ThemeService {
 
   public unloadTheme() {
     if (this.contentElement && document.contains(this.contentElement)) {
+      // @ts-ignore
       this.contentElement.parentElement.removeChild(this.contentElement);
     }
     if (this.appendClasses) {

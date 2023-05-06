@@ -1,6 +1,6 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-comment {
+.#{$b-prefix}-comment {
   display: flex;
   align-items: flex-start;
 
@@ -19,20 +19,20 @@
 
   &__author {
     padding: 0 8px 0 0;
-    font-size: $devui-font-size;
-    color: $devui-text-weak;
+    font-size: $b-font-size;
+    color: $b-text-weak;
     font-weight: 800;
   }
 
   &__datetime {
-    font-size: $devui-font-size;
-    color: $devui-aide-text;
+    font-size: $b-font-size;
+    color: $b-aide-text;
   }
 
   &__content {
     margin-top: 8px;
     line-height: 20px;
-    font-size: $devui-text;
+    font-size: $b-text;
   }
 
   &__actions {

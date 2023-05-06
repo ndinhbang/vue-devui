@@ -1,10 +1,10 @@
 @import '../../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-flexible-overlay {
+.#{$b-prefix}-flexible-overlay {
   position: fixed;
-  border-radius: $devui-border-radius;
-  background-color: $devui-connected-overlay-bg;
-  box-shadow: $devui-shadow-length-connected-overlay $devui-shadow;
+  border-radius: $b-border-radius;
+  background-color: $b-connected-overlay-bg;
+  box-shadow: $b-shadow-length-connected-overlay $b-shadow;
   z-index: 1000;
 
   &__arrow {

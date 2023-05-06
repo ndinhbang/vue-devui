@@ -1,17 +1,17 @@
 @import '../../../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-table {
+.#{$b-prefix}-table {
   &__thead {
     tr {
       border: none;
-      background-color: $devui-base-bg;
+      background-color: $b-base-bg;
 
       th {
         display: table-cell;
         text-align: left;
         padding: 0;
         border: none;
-        border-bottom: 1px solid $devui-line;
+        border-bottom: 1px solid $b-line;
         background-color: inherit;
 
         &.is-left {
@@ -28,25 +28,25 @@
       }
 
       .operable:hover {
-        background-color: $devui-list-item-hover-bg;
+        background-color: $b-list-item-hover-bg;
       }
 
       .resizeable:hover {
         .resize-handle {
-          border-right: 1px solid $devui-line;
+          border-right: 1px solid $b-line;
         }
       }
 
       .resizeable {
         .resize-handle:hover {
-          border-right: 2px solid $devui-form-control-line-active;
+          border-right: 2px solid $b-form-control-line-active;
         }
       }
 
       .sort-active,
       .filter-active {
-        background-color: $devui-list-item-hover-bg;
-        border-radius: $devui-border-radius 0 0 $devui-border-radius;
+        background-color: $b-list-item-hover-bg;
+        border-radius: $b-border-radius 0 0 $b-border-radius;
       }
     }
 
@@ -60,8 +60,8 @@
       .title {
         display: inline-block;
         max-width: calc(100% - 18px);
-        font-size: $devui-font-size;
-        color: $devui-text;
+        font-size: $b-font-size;
+        color: $b-text;
         font-weight: 700;
         line-height: 36px;
         vertical-align: middle;
@@ -91,17 +91,17 @@
       }
     }
 
-    .#{$devui-prefix}-table__checkable-cell .header-container {
+    .#{$b-prefix}-table__checkable-cell .header-container {
       padding-left: 0;
     }
   }
 }
 
-.#{$devui-prefix}-table {
+.#{$b-prefix}-table {
   &--header-bg {
-    thead.#{$devui-prefix}-table__thead {
+    thead.#{$b-prefix}-table__thead {
       tr {
-        background: var(--devui-list-item-hover-bg, #f2f5fc);
+        background: var(--b-list-item-hover-bg, #f2f5fc);
       }
     }
   }

@@ -1,6 +1,6 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-dropdown span {
+.#{$b-prefix}-dropdown span {
   &.icon-chevron-down,
   &.icon-select-arrow {
     display: inline-block;
@@ -8,18 +8,18 @@
   }
 }
 
-.#{$devui-prefix}-dropdown__menu-wrap .#{$devui-prefix}-dropdown-menu {
+.#{$b-prefix}-dropdown__menu-wrap .#{$b-prefix}-dropdown-menu {
   width: 100%;
 }
 
-.#{$devui-prefix}-dropdown-animation span {
+.#{$b-prefix}-dropdown-animation span {
   &.icon-chevron-down,
   &.icon-select-arrow {
-    transition: transform $devui-animation-duration-slow $devui-animation-ease-in-out-smooth;
+    transition: transform $b-animation-duration-slow $b-animation-ease-in-out-smooth;
   }
 }
 
-.#{$devui-prefix}-dropdown.open span {
+.#{$b-prefix}-dropdown.open span {
   &.icon-chevron-down,
   &.icon-select-arrow {
     transform: rotate(180deg);
@@ -58,7 +58,7 @@
   }
 }
 
-.#{$devui-prefix}-dropdown--fade {
+.#{$b-prefix}-dropdown--fade {
   &-bottom {
     &-enter-from,
     &-leave-to {

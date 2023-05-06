@@ -1,144 +1,144 @@
 @import '../../styles-var/devui-var.scss';
 
 .no-left-padding {
-  &.#{$devui-prefix}-panel-body-collapse {
+  &.#{$b-prefix}-panel-body-collapse {
     &::before {
       content: none !important;
     }
 
-    .#{$devui-prefix}-panel-content {
+    .#{$b-prefix}-panel-content {
       border-left: none !important;
     }
   }
 }
 
-.#{$devui-prefix}-panel {
+.#{$b-prefix}-panel {
   line-height: 1.5;
-  background-color: $devui-base-bg;
+  background-color: $b-base-bg;
 
-  .#{$devui-prefix}-panel-heading {
+  .#{$b-prefix}-panel-heading {
     padding: 12px 20px;
-    color: $devui-text;
+    color: $b-text;
 
     d-panel-header {
       line-height: 1.5;
     }
   }
 
-  .#{$devui-prefix}-panel-body {
+  .#{$b-prefix}-panel-body {
     display: flex;
     position: relative;
-    border-top: 1px solid $devui-dividing-line;
+    border-top: 1px solid $b-dividing-line;
 
-    .#{$devui-prefix}-panel-content {
+    .#{$b-prefix}-panel-content {
       line-height: 1.5;
       padding: 15px;
-      background: $devui-base-bg;
+      background: $b-base-bg;
       flex: 1;
     }
 
-    &.#{$devui-prefix}-panel-body-collapse {
+    &.#{$b-prefix}-panel-body-collapse {
       &::before {
         content: '';
         width: 30px;
         height: 100%;
       }
 
-      .#{$devui-prefix}-panel-content {
-        border-left: 2px solid $devui-dividing-line;
+      .#{$b-prefix}-panel-content {
+        border-left: 2px solid $b-dividing-line;
       }
     }
   }
 
-  .#{$devui-prefix}-panel-footer {
+  .#{$b-prefix}-panel-footer {
     padding: 10px 15px;
-    color: $devui-text;
-    background-color: $devui-area;
+    color: $b-text;
+    background-color: $b-area;
 
     d-panel-footer {
       line-height: 1.5;
     }
   }
 
-  &.#{$devui-prefix}-panel-default {
-    .#{$devui-prefix}-panel-heading,
-    .#{$devui-prefix}-panel-body {
-      background-color: $devui-default-bg;
+  &.#{$b-prefix}-panel-default {
+    .#{$b-prefix}-panel-heading,
+    .#{$b-prefix}-panel-body {
+      background-color: $b-default-bg;
     }
   }
 
-  &.#{$devui-prefix}-panel-primary {
-    .#{$devui-prefix}-panel-heading,
-    .#{$devui-prefix}-panel-body {
-      background-color: $devui-primary-bg;
+  &.#{$b-prefix}-panel-primary {
+    .#{$b-prefix}-panel-heading,
+    .#{$b-prefix}-panel-body {
+      background-color: $b-primary-bg;
     }
 
-    .#{$devui-prefix}-panel-body-collapse {
-      .#{$devui-prefix}-panel-content {
-        border-color: $devui-primary-line;
+    .#{$b-prefix}-panel-body-collapse {
+      .#{$b-prefix}-panel-content {
+        border-color: $b-primary-line;
       }
     }
   }
 
-  &.#{$devui-prefix}-panel-info {
-    .#{$devui-prefix}-panel-heading,
-    .#{$devui-prefix}-panel-body {
-      background-color: $devui-info-bg;
+  &.#{$b-prefix}-panel-info {
+    .#{$b-prefix}-panel-heading,
+    .#{$b-prefix}-panel-body {
+      background-color: $b-info-bg;
     }
 
-    .#{$devui-prefix}-panel-body-collapse {
-      .#{$devui-prefix}-panel-content {
-        border-color: $devui-info-line;
+    .#{$b-prefix}-panel-body-collapse {
+      .#{$b-prefix}-panel-content {
+        border-color: $b-info-line;
       }
     }
   }
 
-  &.#{$devui-prefix}-panel-success {
-    .#{$devui-prefix}-panel-heading,
-    .#{$devui-prefix}-panel-body {
-      background-color: $devui-success-bg;
+  &.#{$b-prefix}-panel-success {
+    .#{$b-prefix}-panel-heading,
+    .#{$b-prefix}-panel-body {
+      background-color: $b-success-bg;
     }
 
-    .#{$devui-prefix}-panel-body-collapse {
-      .#{$devui-prefix}-panel-content {
-        border-color: $devui-success-line;
+    .#{$b-prefix}-panel-body-collapse {
+      .#{$b-prefix}-panel-content {
+        border-color: $b-success-line;
       }
     }
   }
 
-  &.#{$devui-prefix}-panel-warning {
-    .#{$devui-prefix}-panel-heading,
-    .#{$devui-prefix}-panel-body {
-      background-color: $devui-warning-bg;
+  &.#{$b-prefix}-panel-warning {
+    .#{$b-prefix}-panel-heading,
+    .#{$b-prefix}-panel-body {
+      background-color: $b-warning-bg;
     }
 
-    .#{$devui-prefix}-panel-body-collapse {
-      .#{$devui-prefix}-panel-content {
-        border-color: $devui-warning-line;
+    .#{$b-prefix}-panel-body-collapse {
+      .#{$b-prefix}-panel-content {
+        border-color: $b-warning-line;
       }
     }
   }
 
-  &.#{$devui-prefix}-panel-danger {
-    .#{$devui-prefix}-panel-heading,
-    .#{$devui-prefix}-panel-body {
-      background-color: $devui-danger-bg;
+  &.#{$b-prefix}-panel-danger {
+    .#{$b-prefix}-panel-heading,
+    .#{$b-prefix}-panel-body {
+      background-color: $b-danger-bg;
     }
 
-    .#{$devui-prefix}-panel-body-collapse {
-      .#{$devui-prefix}-panel-content {
-        border-color: $devui-danger-line;
+    .#{$b-prefix}-panel-body-collapse {
+      .#{$b-prefix}-panel-content {
+        border-color: $b-danger-line;
       }
     }
   }
 
-  .#{$devui-prefix}-panel-leave-active {
+  .#{$b-prefix}-panel-leave-active {
     transition: all 0.3s ease-in-out;
     animation: panelUpOut 0.3s ease-in-out;
     animation-fill-mode: both;
   }
 
-  .#{$devui-prefix}-panel-enter-active {
+  .#{$b-prefix}-panel-enter-active {
     transition: all 0.3s ease-in-out;
     animation: panelUpIn 0.3s ease-in-out;
     animation-fill-mode: both;

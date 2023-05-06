@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as enquire from 'enquirejs-ssr';
 import { ReplaySubject } from 'rxjs';
 

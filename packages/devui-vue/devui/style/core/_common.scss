@@ -15,19 +15,19 @@
   clear: both;
 }
 
-.#{$devui-prefix}-close {
+.#{$b-prefix}-close {
   float: right;
   font-weight: bold;
   line-height: 20px;
   height: 20px;
-  color: $devui-text;
+  color: $b-text;
   text-shadow: 0 1px 0 #ffffff;
   filter: alpha(opacity=20);
   opacity: 0.2;
 
   &:hover,
   &:focus {
-    color: $devui-text;
+    color: $b-text;
     text-decoration: none;
     cursor: pointer;
     filter: alpha(opacity=50);
@@ -35,7 +35,7 @@
   }
 }
 
-button.#{$devui-prefix}-close {
+button.#{$b-prefix}-close {
   -webkit-appearance: none;
   padding: 0;
   cursor: pointer;
@@ -45,7 +45,7 @@ button.#{$devui-prefix}-close {
 
 a:hover,
 a:focus {
-  color: $devui-link;
+  color: $b-link;
 }
 
 a:active,
@@ -53,41 +53,41 @@ a:hover {
   outline: 0;
 }
 
-.#{$devui-prefix}-link {
-  color: $devui-link;
+.#{$b-prefix}-link {
+  color: $b-link;
 
   &:hover {
-    color: $devui-link-active;
+    color: $b-link-active;
     text-decoration: underline;
     cursor: pointer;
   }
 }
 
-.#{$devui-prefix}-link-light {
-  color: $devui-link-light;
+.#{$b-prefix}-link-light {
+  color: $b-link-light;
 
   &:hover {
-    color: $devui-link-light-active;
+    color: $b-link-light-active;
     text-decoration: underline;
     cursor: pointer;
   }
 }
 
-.#{$devui-prefix}-disabled {
+.#{$b-prefix}-disabled {
   &,
-  &.#{$devui-prefix}-input-group-addon {
-    border-color: $devui-disabled-line;
+  &.#{$b-prefix}-input-group-addon {
+    border-color: $b-disabled-line;
   }
 
   &,
   & > input,
-  & > .#{$devui-prefix}-input-group-addon {
-    color: $devui-disabled-text;
-    background-color: $devui-disabled-bg;
+  & > .#{$b-prefix}-input-group-addon {
+    color: $b-disabled-text;
+    background-color: $b-disabled-bg;
     cursor: not-allowed;
   }
 }
 
-.#{$devui-prefix}-body-scrollblock {
+.#{$b-prefix}-body-scrollblock {
   width: 100%;
 }

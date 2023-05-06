@@ -131,7 +131,7 @@ export default defineComponent({
                 position={position.value}
                 style={{
                   visibility: isOpen.value ? 'visible' : 'hidden',
-                  'z-index': isOpen.value ? 'var(--devui-z-index-dropdown, 1052)' : -1,
+                  'z-index': isOpen.value ? 'var(--b-z-index-dropdown, 1052)' : -1,
                 }}>
                 <div class={dropdownCls} style={{ width: `${dropdownWidth.value}`, visibility: isOpen.value ? 'visible' : 'hidden' }}>
                   <ul class={listCls} v-show={!isLoading.value}>

@@ -1,8 +1,8 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-auto-complete,
-.#{$devui-prefix}-auto-complete__menu {
-  .#{$devui-prefix}-dropdown-menu {
+.#{$b-prefix}-auto-complete,
+.#{$b-prefix}-auto-complete__menu {
+  .#{$b-prefix}-dropdown-menu {
     width: 100%;
     left: 0 !important;
     top: 0 !important;
@@ -16,30 +16,30 @@
   }
 }
 
-.#{$devui-prefix}-auto-complete {
-  .#{$devui-prefix}-form-control {
+.#{$b-prefix}-auto-complete {
+  .#{$b-prefix}-form-control {
     padding: 4px 0;
     width: 100%;
     background-color: transparent;
   }
 }
 
-.#{$devui-prefix}-auto-complete,
-.#{$devui-prefix}-auto-complete__menu {
+.#{$b-prefix}-auto-complete,
+.#{$b-prefix}-auto-complete__menu {
   .active {
-    background: $devui-list-item-hover-bg;
+    background: $b-list-item-hover-bg;
   }
 
-  .#{$devui-prefix}-dropdown-menu {
+  .#{$b-prefix}-dropdown-menu {
     width: 100%;
     display: block;
   }
 
-  .#{$devui-prefix}-auto-complete__dropdown-menu-cdk {
+  .#{$b-prefix}-auto-complete__dropdown-menu-cdk {
     position: static;
   }
 
-  .#{$devui-prefix}-dropdown-item {
+  .#{$b-prefix}-dropdown-item {
     cursor: pointer;
     display: block;
     line-height: 20px;
@@ -55,23 +55,23 @@
     }
   }
 
-  .#{$devui-prefix}-dropdown-menu {
-    .#{$devui-prefix}-dropdown-item:not(.disabled) {
+  .#{$b-prefix}-dropdown-menu {
+    .#{$b-prefix}-dropdown-item:not(.disabled) {
       &:hover {
-        background-color: $devui-list-item-hover-bg;
-        color: $devui-list-item-hover-text;
+        background-color: $b-list-item-hover-bg;
+        color: $b-list-item-hover-text;
       }
 
       &.selected,
       &.selected &:hover {
-        color: $devui-list-item-active-text !important;
-        background-color: $devui-list-item-active-bg !important;
+        color: $b-list-item-active-text !important;
+        background-color: $b-list-item-active-bg !important;
       }
     }
   }
 
-  .#{$devui-prefix}-auto-complete__no-result-template,
-  .#{$devui-prefix}-auto-complete__searching-template {
+  .#{$b-prefix}-auto-complete__no-result-template,
+  .#{$b-prefix}-auto-complete__searching-template {
     display: block;
     width: 100%;
     padding: 8px 12px;
@@ -81,58 +81,58 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     cursor: not-allowed;
-    background-color: $devui-disabled-bg;
-    color: $devui-disabled-text;
+    background-color: $b-disabled-bg;
+    color: $b-disabled-text;
     line-height: 14px;
 
     &:hover,
     &:active,
     &:hover:active {
-      background-color: $devui-unavailable;
+      background-color: $b-unavailable;
     }
   }
 
   /* 选项disabled */
-  .#{$devui-prefix}-dropdown-item.disabled,
-  .#{$devui-prefix}-dropdown-item.disabled:hover {
+  .#{$b-prefix}-dropdown-item.disabled,
+  .#{$b-prefix}-dropdown-item.disabled:hover {
     cursor: not-allowed;
-    color: $devui-disabled-text;
+    color: $b-disabled-text;
   }
 
-  ul.#{$devui-prefix}-auto-complete__list-unstyled {
+  ul.#{$b-prefix}-auto-complete__list-unstyled {
     margin: 0;
     overflow-y: auto;
   }
 
-  .#{$devui-prefix}-auto-complete__dropdown-bg {
-    background: $devui-list-item-hover-bg;
-    color: $devui-list-item-hover-text;
+  .#{$b-prefix}-auto-complete__dropdown-bg {
+    background: $b-list-item-hover-bg;
+    color: $b-list-item-hover-text;
   }
 
-  .#{$devui-prefix}-auto-complete__popup-tips {
-    color: $devui-text-weak; // TODO: Color-Question
+  .#{$b-prefix}-auto-complete__popup-tips {
+    color: $b-text-weak; // TODO: Color-Question
     padding: 4px 12px;
   }
 
-  .#{$devui-prefix}-auto-complete__dropdown-latestSource ul {
+  .#{$b-prefix}-auto-complete__dropdown-latestSource ul {
     line-height: initial !important;
   }
 }
 
-.#{$devui-prefix}-auto-complete {
+.#{$b-prefix}-auto-complete {
   &--sm {
-    height: $devui-size-sm;
-    font-size: $devui-font-size-sm;
+    height: $b-size-sm;
+    font-size: $b-font-size-sm;
   }
 
   &--md {
-    height: $devui-size-md;
-    font-size: $devui-font-size-md;
+    height: $b-size-md;
+    font-size: $b-font-size-md;
   }
 
   &--lg {
-    height: $devui-size-lg;
-    font-size: $devui-font-size-lg;
+    height: $b-size-lg;
+    font-size: $b-font-size-lg;
   }
 
   &__clear--icon {
@@ -154,13 +154,13 @@
       width: 100%;
       height: 100%;
       padding: 0 8px;
-      border: 1px solid $devui-form-control-line;
-      border-radius: $devui-border-radius;
-      background-color: $devui-form-control-bg;
-      transition: border-color 0.3s $devui-animation-ease-in-out-smooth;
+      border: 1px solid $b-form-control-line;
+      border-radius: $b-border-radius;
+      background-color: $b-form-control-bg;
+      transition: border-color 0.3s $b-animation-ease-in-out-smooth;
 
-      &:not(.#{$devui-prefix}-auto-complete--disabled):not(.#{$devui-prefix}-auto-complete-input__wrapper--error):hover {
-        border-color: $devui-form-control-line-hover;
+      &:not(.#{$b-prefix}-auto-complete--disabled):not(.#{$b-prefix}-auto-complete-input__wrapper--error):hover {
+        border-color: $b-form-control-line-hover;
       }
 
       > input {
@@ -168,8 +168,8 @@
       }
 
       &--error {
-        border-color: $devui-danger-line;
-        background-color: $devui-danger-bg;
+        border-color: $b-danger-line;
+        background-color: $b-danger-bg;
       }
 
       &--feedback {
@@ -179,7 +179,7 @@
 
     &__prepend,
     &__append {
-      color: var(--devui-text);
+      color: var(--b-text);
       position: relative;
       display: inline-flex;
       align-items: center;
@@ -187,53 +187,53 @@
       min-height: 100%;
       padding: 0 20px;
       white-space: nowrap;
-      border: 1px solid $devui-form-control-line;
-      border-radius: $devui-border-radius;
-      background-color: $devui-form-control-bg;
+      border: 1px solid $b-form-control-line;
+      border-radius: $b-border-radius;
+      background-color: $b-form-control-bg;
 
-      .#{$devui-prefix}-button,
-      .#{$devui-prefix}-select .#{$devui-prefix}-select__selection {
+      .#{$b-prefix}-button,
+      .#{$b-prefix}-select .#{$b-prefix}-select__selection {
         border: none;
         background-color: transparent;
         color: inherit;
       }
 
-      .#{$devui-prefix}-button,
-      .#{$devui-prefix}-select__selection {
+      .#{$b-prefix}-button,
+      .#{$b-prefix}-select__selection {
         display: inline-block;
         margin: 0 -20px;
       }
     }
   }
 
-  &--focus .#{$devui-prefix}-auto-complete-input__wrapper:not(.#{$devui-prefix}-auto-complete-input__wrapper--error) {
-    border-color: $devui-form-control-line-active;
+  &--focus .#{$b-prefix}-auto-complete-input__wrapper:not(.#{$b-prefix}-auto-complete-input__wrapper--error) {
+    border-color: $b-form-control-line-active;
 
     &:hover {
-      border-color: $devui-form-control-line-active;
+      border-color: $b-form-control-line-active;
     }
   }
 
   &--disabled {
-    color: $devui-disabled-text;
-    background-color: $devui-disabled-bg;
-    border-color: $devui-disabled-line;
+    color: $b-disabled-text;
+    background-color: $b-disabled-bg;
+    border-color: $b-disabled-line;
     cursor: not-allowed;
-    .#{$devui-prefix}-dropdown-origin {
+    .#{$b-prefix}-dropdown-origin {
       cursor: not-allowed;
       background-color: transparent !important;
     }
   }
 
   &--prepend {
-    .#{$devui-prefix}-auto-complete-input__wrapper {
+    .#{$b-prefix}-auto-complete-input__wrapper {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
   }
 
   &--append {
-    .#{$devui-prefix}-auto-complete-input__wrapper {
+    .#{$b-prefix}-auto-complete-input__wrapper {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
@@ -243,20 +243,20 @@
     display: inline-flex;
     width: 100%;
     align-items: stretch;
-    .#{$devui-prefix}-auto-complete-input__prepend {
+    .#{$b-prefix}-auto-complete-input__prepend {
       border-right: 0;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
 
-    .#{$devui-prefix}-auto-complete-input__append {
+    .#{$b-prefix}-auto-complete-input__append {
       border-left: 0;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
 
-    .#{$devui-prefix}-auto-complete-input__prefix,
-    .#{$devui-prefix}-auto-complete-input__suffix {
+    .#{$b-prefix}-auto-complete-input__prefix,
+    .#{$b-prefix}-auto-complete-input__suffix {
       display: inline-flex;
       white-space: nowrap;
       flex-shrink: 0;
@@ -264,13 +264,13 @@
       align-items: center;
     }
 
-    .#{$devui-prefix}-auto-complete-input__prefix {
+    .#{$b-prefix}-auto-complete-input__prefix {
       > * {
         margin-right: 8px;
       }
     }
 
-    .#{$devui-prefix}-auto-complete-input__suffix {
+    .#{$b-prefix}-auto-complete-input__suffix {
       > * {
         margin-left: 8px;
       }

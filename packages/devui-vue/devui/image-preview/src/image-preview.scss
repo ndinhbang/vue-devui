@@ -1,12 +1,12 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-image-preview {
+.#{$b-prefix}-image-preview {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: $devui-z-index-full-page-overlay;
+  z-index: $b-z-index-full-page-overlay;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,24 +16,24 @@
   polygon,
   g,
   path {
-    fill: $devui-icon-text;
+    fill: $b-icon-text;
   }
   @mixin fixed-button() {
     position: fixed;
-    z-index: $devui-z-index-full-page-overlay;
+    z-index: $b-z-index-full-page-overlay;
     cursor: pointer;
     width: 36px;
     height: 36px;
     border-radius: 50%;
     border: none;
-    background: $devui-highlight-overlay;
-    box-shadow: $devui-shadow-length-base $devui-light-shadow;
+    background: $b-highlight-overlay;
+    box-shadow: $b-shadow-length-base $b-light-shadow;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
     &:hover {
-      background: $devui-area;
+      background: $b-area;
     }
 
     svg {
@@ -83,8 +83,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $devui-highlight-overlay;
-    box-shadow: $devui-shadow-length-fullscreen-overlay $devui-light-shadow;
+    background: $b-highlight-overlay;
+    box-shadow: $b-shadow-length-fullscreen-overlay $b-light-shadow;
 
     button {
       display: inline-flex;
@@ -92,7 +92,7 @@
       height: 24px;
       align-items: center;
       justify-content: center;
-      color: $devui-text;
+      color: $b-text;
       border: none;
       background-color: transparent;
       cursor: pointer;
@@ -100,7 +100,7 @@
       padding: 0;
     }
 
-    .#{$devui-prefix}-image-preview__index {
+    .#{$b-prefix}-image-preview__index {
       display: inline-flex;
       width: 100px;
       justify-content: center;
@@ -114,12 +114,12 @@
   }
 }
 
-.#{$devui-prefix}-image-preview__bg {
+.#{$b-prefix}-image-preview__bg {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: calc($devui-z-index-full-page-overlay - 1);
-  background: $devui-shadow;
+  z-index: calc($b-z-index-full-page-overlay - 1);
+  background: $b-shadow;
 }

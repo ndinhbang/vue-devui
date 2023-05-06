@@ -1,19 +1,19 @@
-$devui-menu-item-margin: 10px;
+$b-menu-item-margin: 10px;
 
 // Menu
 
 // color
 
-$devui-menu-item: var(--devui-menu-item);
-$devui-menu-item-sub: var(--devui-menu-item-sub);
-$devui-menu-item-disabled: var(--devui-menu-disabled);
-$devui-menu-item-select: var(--devui-menu-item-hover);
-$devui-menu-item-hover: var(--devui-menu-item-hover);
+$b-menu-item: var(--b-menu-item);
+$b-menu-item-sub: var(--b-menu-item-sub);
+$b-menu-item-disabled: var(--b-menu-disabled);
+$b-menu-item-select: var(--b-menu-item-hover);
+$b-menu-item-hover: var(--b-menu-item-hover);
 
-$devui-menu-item-selectBar: var(--devui-primary-hover, #5e7ce0);
-$devui-menu-active-parent: var(--devui-icon-fill-active);
-$devui-menu-bg: var(--devui-global-bg-normal);
-$devui-menu-bg-level: var(--devui-global-bg);
+$b-menu-item-selectBar: var(--b-primary-hover, #5e7ce0);
+$b-menu-active-parent: var(--b-icon-fill-active);
+$b-menu-bg: var(--b-global-bg-normal);
+$b-menu-bg-level: var(--b-global-bg);
 
 @import '../../styles-var/devui-var.scss';
 @import './styles/clear.scss';

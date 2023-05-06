@@ -1,12 +1,12 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-color-picker {
+.#{$b-prefix}-color-picker {
   position: relative;
 
   &-position {
     position: absolute;
-    z-index: $devui-z-index-function-widget;
-    background-color: $devui-connected-overlay-bg;
+    z-index: $b-z-index-function-widget;
+    background-color: $b-connected-overlay-bg;
   }
 
   &-color-value {

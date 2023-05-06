@@ -1,23 +1,23 @@
 // 引入主题变量
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-editable-select {
+.#{$b-prefix}-editable-select {
   &-input {
     height: 32px;
-    font-size: $devui-font-size;
+    font-size: $b-font-size;
 
     &--sm {
-      height: $devui-size-sm;
-      font-size: $devui-font-size-sm;
+      height: $b-size-sm;
+      font-size: $b-font-size-sm;
     }
 
     &--lg {
-      height: $devui-size-lg;
-      font-size: $devui-font-size-lg;
+      height: $b-size-lg;
+      font-size: $b-font-size-lg;
     }
 
     &--open {
-      .#{$devui-prefix}-editable-select__arrow-icon {
+      .#{$b-prefix}-editable-select__arrow-icon {
         transform: rotate(180deg);
       }
     }
@@ -29,31 +29,31 @@
       position: relative;
       height: 100%;
       padding: 0 8px;
-      border: 1px solid $devui-form-control-line;
-      border-radius: $devui-border-radius;
-      background-color: $devui-form-control-bg;
-      transition: border-color 0.3s $devui-animation-ease-in-out-smooth;
+      border: 1px solid $b-form-control-line;
+      border-radius: $b-border-radius;
+      background-color: $b-form-control-bg;
+      transition: border-color 0.3s $b-animation-ease-in-out-smooth;
 
-      &:not(.#{$devui-prefix}-editable-select-input__wrapper--disabled):not(&--focus):hover {
-        border-color: $devui-form-control-line-hover;
+      &:not(.#{$b-prefix}-editable-select-input__wrapper--disabled):not(&--focus):hover {
+        border-color: $b-form-control-line-hover;
       }
 
       &--focus {
-        border-color: $devui-form-control-line-active;
+        border-color: $b-form-control-line-active;
       }
 
       &--disabled {
-        color: $devui-disabled-text;
-        border-color: $devui-disabled-line;
-        background-color: $devui-disabled-bg;
+        color: $b-disabled-text;
+        border-color: $b-disabled-line;
+        background-color: $b-disabled-bg;
         cursor: not-allowed;
 
         &:hover {
-          border-color: $devui-disabled-line;
+          border-color: $b-disabled-line;
         }
 
-        .#{$devui-prefix}-editable-select-input__inner {
-          color: $devui-disabled-text;
+        .#{$b-prefix}-editable-select-input__inner {
+          color: $b-disabled-text;
           cursor: not-allowed;
         }
       }
@@ -83,21 +83,21 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: $devui-font-size;
+      font-size: $b-font-size;
 
       & > span {
         align-items: center;
       }
 
-      .#{$devui-prefix}-editable-select__clear-icon {
+      .#{$b-prefix}-editable-select__clear-icon {
         pointer-events: auto;
         display: flex;
         cursor: pointer;
       }
 
-      .#{$devui-prefix}-editable-select__arrow-icon {
+      .#{$b-prefix}-editable-select__arrow-icon {
         display: flex;
-        transition: transform $devui-animation-duration-slow $devui-animation-ease-in-out-smooth;
+        transition: transform $b-animation-duration-slow $b-animation-ease-in-out-smooth;
       }
     }
   }
@@ -129,35 +129,35 @@
 
     &--disabled {
       cursor: not-allowed;
-      color: $devui-disabled-text;
+      color: $b-disabled-text;
     }
 
     &--selected:not(&--disabled):not(&--no-data-tip) {
-      color: $devui-list-item-active-text;
-      background-color: $devui-list-item-active-bg;
+      color: $b-list-item-active-text;
+      background-color: $b-list-item-active-bg;
     }
 
     &--last-selected {
-      background: $devui-list-item-hover-bg;
-      color: $devui-list-item-hover-text;
+      background: $b-list-item-hover-bg;
+      color: $b-list-item-hover-text;
     }
 
     &--hover:not(&--selected) {
-      background-color: $devui-list-item-hover-bg;
-      color: $devui-list-item-hover-text;
+      background-color: $b-list-item-hover-bg;
+      color: $b-list-item-hover-text;
     }
 
     &:not(&--disabled):not(&--selected):not(&--no-data-tip):hover {
-      background-color: $devui-list-item-hover-bg;
-      color: $devui-list-item-hover-text;
+      background-color: $b-list-item-hover-bg;
+      color: $b-list-item-hover-text;
     }
 
     &--no-data-tip {
       text-align: center;
       cursor: not-allowed;
       user-select: none;
-      color: $devui-disabled-text;
-      font-size: $devui-font-size;
+      color: $b-disabled-text;
+      font-size: $b-font-size;
       line-height: 22px;
       padding: 0;
     }

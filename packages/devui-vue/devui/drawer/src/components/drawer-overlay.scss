@@ -1,12 +1,12 @@
 @import '../../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-drawer__overlay {
+.#{$b-prefix}-drawer__overlay {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: $devui-shadow;
+  background-color: $b-shadow;
 }
 
 .drawer-overlay-fade-enter-active,

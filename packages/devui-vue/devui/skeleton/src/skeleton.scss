@@ -1,6 +1,6 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-skeleton {
+.#{$b-prefix}-skeleton {
   width: 100%;
 
   &__paragraph {
@@ -13,7 +13,7 @@
   }
 }
 
-.#{$devui-prefix}-skeleton-item.#{$devui-prefix}-skeleton__title {
+.#{$b-prefix}-skeleton-item.#{$b-prefix}-skeleton__title {
   width: 40%;
   margin-bottom: 16px;
 }

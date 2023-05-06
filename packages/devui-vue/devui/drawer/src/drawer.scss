@@ -1,16 +1,16 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-drawer {
+.#{$b-prefix}-drawer {
   position: fixed;
   top: 0;
   bottom: 0;
   width: 300px;
-  border-radius: $devui-border-radius;
-  background-color: $devui-base-bg;
+  border-radius: $b-border-radius;
+  background-color: $b-base-bg;
   transform: translateX(0);
   opacity: 1;
   overflow: auto;
-  box-shadow: $devui-shadow-length-fullscreen-overlay $devui-shadow;
+  box-shadow: $b-shadow-length-fullscreen-overlay $b-shadow;
 
   &--left {
     left: 0;

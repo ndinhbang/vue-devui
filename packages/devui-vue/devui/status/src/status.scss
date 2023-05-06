@@ -1,6 +1,6 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-status {
+.#{$b-prefix}-status {
   line-height: 20px;
   height: 20px;
   display: flex;
@@ -16,46 +16,46 @@
   }
 }
 
-.#{$devui-prefix}-status.#{$devui-prefix}-status__bg {
+.#{$b-prefix}-status.#{$b-prefix}-status__bg {
   &--success {
     &::before {
-      background-color: $devui-success;
+      background-color: $b-success;
     }
   }
 
   &--error {
     &::before {
-      background-color: $devui-danger;
+      background-color: $b-danger;
     }
   }
 
   &--warning {
     &::before {
-      background-color: $devui-warning;
+      background-color: $b-warning;
     }
   }
 
   &--initial {
     &::before {
-      background-color: $devui-initial;
+      background-color: $b-initial;
     }
   }
 
   &--waiting {
     &::before {
-      background-color: $devui-waiting;
+      background-color: $b-waiting;
     }
   }
 
   &--running {
     &::before {
-      background-color: $devui-info;
+      background-color: $b-info;
     }
   }
 
   &--invalid {
     &::before {
-      background-color: $devui-dividing-line;
+      background-color: $b-dividing-line;
     }
   }
 }

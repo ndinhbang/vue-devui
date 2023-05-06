@@ -81,7 +81,7 @@ export default defineComponent({
                 origin={originRef.value}
                 align="start"
                 position={position.value}
-                style={{ zIndex: 'var(--devui-z-index-dropdown, 1052)' }}>
+                style={{ zIndex: 'var(--b-z-index-dropdown, 1052)' }}>
                 <DatePickerProPanel
                   {...props}
                   dateValue={dateValue.value}

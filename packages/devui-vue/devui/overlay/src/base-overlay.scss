@@ -1,6 +1,6 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-overlay__fade {
+.#{$b-prefix}-overlay__fade {
   @mixin d-overlay-fade-animation {
     animation-name: d-overlay-fade;
     animation-duration: 0.3s;

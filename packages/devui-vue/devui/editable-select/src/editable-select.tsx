@@ -92,7 +92,7 @@ export default defineComponent({
             v-model={states.visible}
             origin={originRef.value}
             position={position.value}
-            style={{ zIndex: 'var(--devui-z-index-dropdown, 1052)' }}>
+            style={{ zIndex: 'var(--b-z-index-dropdown, 1052)' }}>
             <Dropdown options={filteredOptions.value} width={props.width} maxHeight={props.maxHeight} v-slots={ctx.slots}></Dropdown>
           </FlexibleOverlay>
         </Transition>

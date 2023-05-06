@@ -1,6 +1,6 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-fullscreen {
+.#{$b-prefix}-fullscreen {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,13 +8,13 @@
   height: 100%;
   z-index: 10;
   overflow: auto;
-  background-color: $devui-base-bg;
+  background-color: $b-base-bg;
 }
 
-.#{$devui-prefix}-fullscreen__html {
+.#{$b-prefix}-fullscreen__html {
   overflow: hidden;
 }
 
 :not(:root):fullscreen::backdrop {
-  background: $devui-base-bg;
+  background: $b-base-bg;
 }

@@ -1,6 +1,6 @@
 @import '../../../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-color-picker-edit {
+.#{$b-prefix}-color-picker-edit {
   justify-content: space-between;
   align-items: center;
 
@@ -42,7 +42,7 @@
       padding: 2px;
 
       &:focus-within {
-        border: 1px solid var(--devui-primary);
+        border: 1px solid var(--b-primary);
       }
     }
 

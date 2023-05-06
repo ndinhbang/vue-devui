@@ -1,7 +1,7 @@
 @import '../../style/mixins/flex';
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-cascader {
+.#{$b-prefix}-cascader {
   @include flex(flex-start);
 
   position: relative;
@@ -29,7 +29,7 @@
 
   &__disbaled {
     .icon {
-      color: $devui-disabled-text !important;
+      color: $b-disabled-text !important;
     }
   }
 
@@ -71,19 +71,19 @@
     box-sizing: border-box;
     cursor: pointer;
     font-weight: 400;
-    font-size: $devui-font-size;
+    font-size: $b-font-size;
     text-align: left;
-    border-radius: $devui-border-radius;
+    border-radius: $b-border-radius;
 
     &:hover {
-      color: $devui-brand-active;
-      background-color: $devui-list-item-hover-bg;
+      color: $b-brand-active;
+      background-color: $b-list-item-hover-bg;
     }
   }
 }
 
-.#{$devui-prefix}-cascader__dropdown--open {
-  .#{$devui-prefix}-cascader--drop-icon-animation {
+.#{$b-prefix}-cascader__dropdown--open {
+  .#{$b-prefix}-cascader--drop-icon-animation {
     transform: rotate(180deg);
   }
 }

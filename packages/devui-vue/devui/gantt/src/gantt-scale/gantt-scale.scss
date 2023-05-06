@@ -1,14 +1,14 @@
 @import '../../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-gantt-scale-wrapper {
+.#{$b-prefix}-gantt-scale-wrapper {
   display: block;
   height: 36px;
   line-height: 18px;
 }
 
-.#{$devui-prefix}-gantt-scale {
+.#{$b-prefix}-gantt-scale {
   display: inline-block;
-  color: $devui-placeholder; // TODO: Color-Question
+  color: $b-placeholder; // TODO: Color-Question
   text-align: center;
   position: absolute;
   height: 36px;
@@ -16,7 +16,7 @@
 
   &.day {
     &:not(.milestone) {
-      &:hover .#{$devui-prefix}-scale-start {
+      &:hover .#{$b-prefix}-scale-start {
         display: none;
       }
     }
@@ -31,7 +31,7 @@
     }
   }
 
-  & .#{$devui-prefix}-scale-start {
+  & .#{$b-prefix}-scale-start {
     width: 100%;
     height: 18px;
     position: absolute;
@@ -39,11 +39,11 @@
     white-space: nowrap;
 
     &.milestone {
-      color: $devui-success;
+      color: $b-success;
     }
   }
 
-  & .#{$devui-prefix}-scale-unit {
+  & .#{$b-prefix}-scale-unit {
     height: 18px;
     position: absolute;
     top: 18px;
@@ -51,26 +51,26 @@
 
     & .border-left {
       height: 18px;
-      border-left: 1px solid $devui-list-item-selected-bg;
+      border-left: 1px solid $b-list-item-selected-bg;
     }
 
     & .scale-highlight {
       position: absolute;
       height: 18px;
-      border-radius: $devui-border-radius;
-      background-color: $devui-brand;
+      border-radius: $b-border-radius;
+      background-color: $b-brand;
       padding: 0 4px 0 4px;
 
       & div {
-        color: $devui-base-bg;
-        font-size: $devui-font-size;
+        color: $b-base-bg;
+        font-size: $b-font-size;
         font-weight: normal;
       }
     }
 
     .today {
       background: rgba(255, 121, 14, 0.2);
-      border-radius: $devui-border-radius;
+      border-radius: $b-border-radius;
       height: 16px;
     }
   }
@@ -81,7 +81,7 @@
     width: 18px;
     height: 18px;
     margin-left: 16px;
-    border: 1px solid $devui-list-item-selected-bg; // TODO: Color-Question
+    border: 1px solid $b-list-item-selected-bg; // TODO: Color-Question
     cursor: pointer;
 
     & div {
@@ -96,13 +96,13 @@
   }
 }
 
-.#{$devui-prefix}-mark-line {
+.#{$b-prefix}-mark-line {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 2px;
   z-index: 1;
-  background: $devui-line;
+  background: $b-line;
   opacity: 0.5;
 
   &.today {
@@ -124,7 +124,7 @@
 
   &.milestone {
     opacity: 0.2;
-    background: $devui-success;
+    background: $b-success;
 
     &.day {
       margin-left: 24px;
@@ -140,7 +140,7 @@
   }
 }
 
-.#{$devui-prefix}-mark-stripe {
+.#{$b-prefix}-mark-stripe {
   position: absolute;
   top: 0;
   bottom: 0;

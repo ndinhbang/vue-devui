@@ -1,22 +1,22 @@
 @import '../../styles-var/devui-var.scss';
 
-$devui-transfer-header-height: 40px;
-$devui-transfer-body-list-item-height: 32px;
+$b-transfer-header-height: 40px;
+$b-transfer-body-list-item-height: 32px;
 
-.#{$devui-prefix}-transfer {
+.#{$b-prefix}-transfer {
   display: flex;
 
   &__panel {
     width: 300px;
-    border: 1px solid $devui-line;
-    border-radius: $devui-border-radius;
+    border: 1px solid $b-line;
+    border-radius: $b-border-radius;
 
     &--header {
       display: flex;
       justify-content: space-between;
-      height: $devui-transfer-header-height;
-      line-height: $devui-transfer-header-height;
-      border-bottom: 1px solid $devui-dividing-line;
+      height: $b-transfer-header-height;
+      line-height: $b-transfer-header-height;
+      border-bottom: 1px solid $b-dividing-line;
       padding: 0 16px;
 
       &-allChecked {
@@ -24,7 +24,7 @@ $devui-transfer-body-list-item-height: 32px;
       }
 
       &-num {
-        color: $devui-aide-text;
+        color: $b-aide-text;
 
         &-unit {
           margin-left: 4px;
@@ -44,11 +44,11 @@ $devui-transfer-body-list-item-height: 32px;
         width: 100%;
         padding: 7px 16px 0 16px;
 
-        .#{$devui-prefix}-search {
+        .#{$b-prefix}-search {
           width: 100%;
         }
 
-        .#{$devui-prefix}-input__inner {
+        .#{$b-prefix}-input__inner {
           padding: 5px 0;
         }
       }
@@ -72,7 +72,7 @@ $devui-transfer-body-list-item-height: 32px;
           cursor: pointer;
           height: 36px;
           line-height: 36px;
-          font-size: $devui-font-size;
+          font-size: $b-font-size;
 
           .icon-drag-small {
             cursor: move;
@@ -87,23 +87,23 @@ $devui-transfer-body-list-item-height: 32px;
 
         &-drag {
           &-dragging {
-            background-color: $devui-brand-foil !important;
+            background-color: $b-brand-foil !important;
           }
 
           &-over {
-            background-color: $devui-brand-hover;
+            background-color: $b-brand-hover;
           }
 
           &-over-top {
-            border-top-color: $devui-brand-active;
+            border-top-color: $b-brand-active;
           }
 
           &-over-bottom {
-            border-bottom-color: $devui-brand-active;
+            border-bottom-color: $b-brand-active;
           }
         }
 
-        &-drag:hover .#{$devui-prefix}-transfer__panel-body-list-drag__icon {
+        &-drag:hover .#{$b-prefix}-transfer__panel-body-list-drag__icon {
           visibility: visible;
         }
 
@@ -118,7 +118,7 @@ $devui-transfer-body-list-item-height: 32px;
           display: flex;
           justify-content: center;
           align-items: center;
-          color: $devui-disabled-text;
+          color: $b-disabled-text;
         }
       }
 
@@ -139,7 +139,7 @@ $devui-transfer-body-list-item-height: 32px;
       display: flex;
       flex-direction: column;
 
-      .#{$devui-prefix}-button__icon.#{$devui-prefix}-button--circle.#{$devui-prefix}-button--lg {
+      .#{$b-prefix}-button__icon.#{$b-prefix}-button--circle.#{$b-prefix}-button--lg {
         width: 36px;
         height: 36px;
       }
@@ -151,32 +151,32 @@ $devui-transfer-body-list-item-height: 32px;
   }
 
   &-drag-dragging {
-    background-color: $devui-brand-foil;
+    background-color: $b-brand-foil;
   }
 
   &-drag-over {
-    background-color: $devui-brand-hover;
+    background-color: $b-brand-hover;
   }
 
   .transfer-checkbox {
     height: 36px;
     line-height: 36px;
-    font-size: $devui-font-size;
+    font-size: $b-font-size;
   }
 }
-.#{$devui-prefix}-transfer–drag-over-top {
-  border-top-color: $devui-brand-active;
+.#{$b-prefix}-transfer–drag-over-top {
+  border-top-color: $b-brand-active;
 }
 
-.#{$devui-prefix}-transfer–drag-over-bottom {
-  border-bottom-color: $devui-brand-active;
+.#{$b-prefix}-transfer–drag-over-bottom {
+  border-bottom-color: $b-brand-active;
 }
 
-.transfer-checkbox .#{$devui-prefix}-checkbox label {
+.transfer-checkbox .#{$b-prefix}-checkbox label {
   display: flex;
   width: 100% !important;
 }
 
-.transfer-checkbox .#{$devui-prefix}-checkbox label .#{$devui-prefix}-checkbox__material {
+.transfer-checkbox .#{$b-prefix}-checkbox label .#{$b-prefix}-checkbox__material {
   flex-shrink: 0;
 }

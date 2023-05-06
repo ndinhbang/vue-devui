@@ -1,23 +1,23 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-popover__content.#{$devui-prefix}-flexible-overlay {
+.#{$b-prefix}-popover__content.#{$b-prefix}-flexible-overlay {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   white-space: nowrap;
   padding: 4px 12px;
   line-height: 1.5;
-  border-radius: $devui-border-radius-feedback;
-  color: $devui-feedback-overlay-text;
-  background-color: $devui-feedback-overlay-bg;
-  font-size: $devui-font-size-sm;
+  border-radius: $b-border-radius-feedback;
+  color: $b-feedback-overlay-text;
+  background-color: $b-feedback-overlay-bg;
+  font-size: $b-font-size-sm;
 
   &.is-icon {
     flex-wrap: nowrap;
   }
 }
 
-.#{$devui-prefix}-popover--fade {
+.#{$b-prefix}-popover--fade {
   &-bottom,
   &-top {
     &-enter-from,

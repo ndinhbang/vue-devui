@@ -8,18 +8,18 @@
   vertical-align: middle;
 }
 
-.#{$devui-prefix}-switch {
+.#{$b-prefix}-switch {
   display: inline-flex;
   align-items: center;
-  width: $devui-size-md * 1.4;
-  height: $devui-size-md;
+  width: $b-size-md * 1.4;
+  height: $b-size-md;
 
   &__wrapper {
     width: 100%;
     height: 62.5%;
-    border-radius: $devui-border-radius-full;
-    background: $devui-line;
-    border: 1px solid $devui-line;
+    border-radius: $b-border-radius-full;
+    background: $b-line;
+    border: 1px solid $b-line;
     position: relative;
     display: inline-block;
     box-sizing: border-box;
@@ -28,26 +28,26 @@
     margin: 0;
     cursor: pointer;
     vertical-align: bottom;
-    transition: $devui-animation-duration-slow $devui-animation-ease-in-out-smooth all;
+    transition: $b-animation-duration-slow $b-animation-ease-in-out-smooth all;
 
-    &:not(.#{$devui-prefix}-switch--checked):hover {
-      border-color: $devui-line;
+    &:not(.#{$b-prefix}-switch--checked):hover {
+      border-color: $b-line;
     }
 
     &:active {
-      border-color: $devui-brand-active-focus;
+      border-color: $b-brand-active-focus;
     }
 
-    .#{$devui-prefix}-switch__inner-wrapper {
+    .#{$b-prefix}-switch__inner-wrapper {
       display: inline-block;
       width: 100%;
       height: 100%;
       padding-left: 14px;
-      font-size: $devui-font-size;
+      font-size: $b-font-size;
       box-sizing: border-box;
 
-      .#{$devui-prefix}-switch__inner {
-        color: $devui-light-text;
+      .#{$b-prefix}-switch__inner {
+        color: $b-light-text;
         width: 100%;
         height: 100%;
         text-align: center;
@@ -58,41 +58,41 @@
     small {
       width: 16px;
       height: 16px;
-      background: $devui-light-text;
-      border-radius: $devui-border-radius-full;
+      background: $b-light-text;
+      border-radius: $b-border-radius-full;
       position: absolute;
       top: 1px;
       left: 1px;
-      transition: $devui-animation-duration-slow $devui-animation-ease-in-out-smooth all;
+      transition: $b-animation-duration-slow $b-animation-ease-in-out-smooth all;
     }
   }
 
   // md
-  .#{$devui-prefix}-switch--checked .#{$devui-prefix}-switch__inner-wrapper {
+  .#{$b-prefix}-switch--checked .#{$b-prefix}-switch__inner-wrapper {
     padding-left: unset;
     padding-right: 14px;
   }
 
-  .#{$devui-prefix}-switch--checked small {
-    background: $devui-light-text;
+  .#{$b-prefix}-switch--checked small {
+    background: $b-light-text;
     left: 26px;
   }
 
   // lg
   &--lg {
-    width: $devui-size-lg * 1.4;
-    height: $devui-size-lg;
+    width: $b-size-lg * 1.4;
+    height: $b-size-lg;
 
-    .#{$devui-prefix}-switch__wrapper {
+    .#{$b-prefix}-switch__wrapper {
       height: 64%;
     }
 
-    .#{$devui-prefix}-switch__inner-wrapper {
+    .#{$b-prefix}-switch__inner-wrapper {
       padding-left: 24px;
-      font-size: $devui-font-size-modal-title;
+      font-size: $b-font-size-modal-title;
     }
 
-    .#{$devui-prefix}-switch--checked .#{$devui-prefix}-switch__inner-wrapper {
+    .#{$b-prefix}-switch--checked .#{$b-prefix}-switch__inner-wrapper {
       padding-left: unset;
       padding-right: 24px;
     }
@@ -102,28 +102,28 @@
       height: 22px;
     }
 
-    .#{$devui-prefix}-switch--checked small {
-      background: $devui-light-text;
+    .#{$b-prefix}-switch--checked small {
+      background: $b-light-text;
       left: 31px;
     }
   }
 
   // sm
   &--sm {
-    width: $devui-size-sm * 1.4;
-    height: $devui-size-sm;
+    width: $b-size-sm * 1.4;
+    height: $b-size-sm;
 
-    .#{$devui-prefix}-switch__wrapper {
+    .#{$b-prefix}-switch__wrapper {
       height: 66%;
     }
 
-    .#{$devui-prefix}-switch__inner-wrapper {
+    .#{$b-prefix}-switch__inner-wrapper {
       line-height: 1;
       padding-left: 12px;
-      font-size: $devui-font-size-sm;
+      font-size: $b-font-size-sm;
     }
 
-    .#{$devui-prefix}-switch--checked .#{$devui-prefix}-switch__inner-wrapper {
+    .#{$b-prefix}-switch--checked .#{$b-prefix}-switch__inner-wrapper {
       padding-left: unset;
       padding-right: 18px;
     }
@@ -134,23 +134,23 @@
       position: absolute;
     }
 
-    .#{$devui-prefix}-switch--checked small {
+    .#{$b-prefix}-switch--checked small {
       left: 19px;
     }
   }
 
   &--checked {
-    background: $devui-brand;
-    border-color: $devui-brand;
+    background: $b-brand;
+    border-color: $b-brand;
 
     &:hover {
-      background: $devui-brand-active;
-      border-color: $devui-brand-active;
+      background: $b-brand-active;
+      border-color: $b-brand-active;
     }
 
     &:active {
-      background: $devui-brand-active-focus;
-      border-color: $devui-brand-active-focus;
+      background: $b-brand-active-focus;
+      border-color: $b-brand-active-focus;
     }
   }
 
@@ -158,27 +158,27 @@
     &,
     &:hover,
     &:active,
-    &.#{$devui-prefix}-switch--checked {
+    &.#{$b-prefix}-switch--checked {
       cursor: not-allowed;
     }
 
     &,
     &:hover,
     &:active {
-      background-color: $devui-disabled-line;
-      border-color: $devui-disabled-line;
+      background-color: $b-disabled-line;
+      border-color: $b-disabled-line;
 
       small {
-        background-color: $devui-unavailable;
+        background-color: $b-unavailable;
       }
     }
 
-    &.#{$devui-prefix}-switch--checked {
-      background-color: $devui-icon-fill-active-disabled;
-      border-color: $devui-icon-fill-active-disabled;
+    &.#{$b-prefix}-switch--checked {
+      background-color: $b-icon-fill-active-disabled;
+      border-color: $b-icon-fill-active-disabled;
 
       small {
-        background-color: $devui-light-text;
+        background-color: $b-light-text;
       }
     }
   }

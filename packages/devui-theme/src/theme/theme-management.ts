@@ -33,13 +33,17 @@ export function ThemeServiceInit(
     return null;
   }
 
+  // @ts-ignore
   window[THEME_KEY.themeCollection] = themes || {
     'devui-light-theme': devuiLightTheme,
     'devui-dark-theme': devuiDarkTheme,
   };
+  // @ts-ignore
   window[THEME_KEY.currentTheme] = defaultThemeName || 'devui-light-theme';
+  // @ts-ignore
   const eventBus = window['globalEventBus'] || new EventBus(); // window.globalEventBus 为 框架的事件总线
   const themeService = new ThemeService(eventBus);
+  // @ts-ignore
   window[THEME_KEY.themeService] = themeService;
 
   themeService.setExtraData(extraData || {
@@ -47,24 +51,28 @@ export function ThemeServiceInit(
       appendClasses: ['dark-mode']
     }
   });
-  themeService.initializeTheme(null, allowDynamicTheme);
+  themeService.initializeTheme(undefined, allowDynamicTheme);
   if (ieSupport) {
     ieSupportCssVar();
   }
   return themeService;
 }
 
-export function ThemeServiceFollowSystemOn(themeConfig?: { lightThemeName: string; darkThemeName: string }): Subscription {
+export function ThemeServiceFollowSystemOn(themeConfig?: { lightThemeName: string; darkThemeName: string }): Subscription | null {
   if (typeof window === 'undefined') {
     return null;
   }
 
+  // @ts-ignore
   const themeService: ThemeService = window[THEME_KEY.themeService];
   themeService.registerMediaQuery();
+  // @ts-ignore
   return themeService.mediaQuery.prefersColorSchemeChange.subscribe(value => {
     if (value === 'dark') {
+      // @ts-ignore
       themeService.applyTheme(window[THEME_KEY.themeCollection][themeConfig && themeConfig.darkThemeName || 'devui-dark-theme']);
     } else {
+      // @ts-ignore
       themeService.applyTheme(window[THEME_KEY.themeCollection][themeConfig && themeConfig.lightThemeName || 'devui-light-theme']);
     }
   });
@@ -77,6 +85,7 @@ export function ThemeServiceFollowSystemOff(sub?: Subscription) {
   if (sub) {
     sub.unsubscribe();
   }
+  // @ts-ignore
   const themeService = window[THEME_KEY.themeService];
   themeService.unregisterMediaQuery();
 }
@@ -98,6 +107,7 @@ export function ieSupportCssVar() {
 
   const config = { attributes: true, attributeFilter: [THEME_KEY.uiThemeAttributeName] };
 
+  // @ts-ignore
   observer.observe(document.querySelector(`#${THEME_KEY.styleElementId}`), config);
 }
 

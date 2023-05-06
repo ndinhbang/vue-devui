@@ -1,19 +1,19 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-avatar {
+.#{$b-prefix}-avatar {
   display: inline-block;
 }
 
-.#{$devui-prefix}-avatar__style {
+.#{$b-prefix}-avatar__style {
   display: inline-block;
   text-align: center;
-  color: $devui-light-text;
+  color: $b-light-text;
 }
 
-.#{$devui-prefix}-avatar--background-0 {
+.#{$b-prefix}-avatar--background-0 {
   background-color: #ff8b87;
 }
 
-.#{$devui-prefix}-avatar--background-1 {
+.#{$b-prefix}-avatar--background-1 {
   background-color: #7693f5;
 }

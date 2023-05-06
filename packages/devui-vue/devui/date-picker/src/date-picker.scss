@@ -6,10 +6,10 @@ $border-style: solid;
 $border-color: #dddddd;
 $input-border-color: #0066cc;
 
-.#{$devui-prefix}-datepicker-container {
+.#{$b-prefix}-datepicker-container {
   .input-container {
     border: 1px solid $input-border-color;
-    border-radius: $devui-border-radius;
+    border-radius: $b-border-radius;
     display: flex;
     flex-direction: row;
     width: 200px;
@@ -36,7 +36,7 @@ $input-border-color: #0066cc;
     right: 6px;
   }
 
-  .#{$devui-prefix}-datepicker-panel {
+  .#{$b-prefix}-datepicker-panel {
     border: 1px solid #000000;
     margin: 0;
     padding: 0;
@@ -44,9 +44,9 @@ $input-border-color: #0066cc;
     border-width: $border-width;
     border-style: $border-style;
     border-color: $border-color;
-    border-radius: $devui-border-radius-card;
-    box-shadow: $devui-shadow-length-base $devui-shadow;
-    background-color: $devui-base-bg;
+    border-radius: $b-border-radius-card;
+    box-shadow: $b-shadow-length-base $b-shadow;
+    background-color: $b-base-bg;
     font-size: $cell-font-size;
     position: absolute;
     z-index: 99;

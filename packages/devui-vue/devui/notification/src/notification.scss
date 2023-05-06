@@ -1,63 +1,63 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-notification {
+.#{$b-prefix}-notification {
   position: fixed;
   top: 50px;
   right: 20px;
   width: 20em;
   word-break: normal;
   word-wrap: break-word;
-  z-index: $devui-z-index-pop-up;
+  z-index: $b-z-index-pop-up;
 
   a {
     &:link,
     &:visited {
-      color: $devui-link-light;
+      color: $b-link-light;
     }
 
     &:hover,
     &:active {
-      color: $devui-link-light-active;
+      color: $b-link-light-active;
     }
   }
 }
 
-.#{$devui-prefix}-notification-item-container {
+.#{$b-prefix}-notification-item-container {
   position: relative;
   margin: 0 0 8px 0;
   opacity: 0.95;
   filter: alpha(opacity=95);
-  box-shadow: $devui-shadow-length-feedback-overlay $devui-shadow;
-  border-radius: $devui-border-radius-feedback;
-  color: $devui-feedback-overlay-text;
-  background-color: $devui-feedback-overlay-bg;
+  box-shadow: $b-shadow-length-feedback-overlay $b-shadow;
+  border-radius: $b-border-radius-feedback;
+  color: $b-feedback-overlay-text;
+  background-color: $b-feedback-overlay-bg;
 }
 
-.#{$devui-prefix}-notification__item {
+.#{$b-prefix}-notification__item {
   position: relative;
   display: block;
   padding: 12px 16px;
 }
 
-.#{$devui-prefix}-notification__icon-close {
+.#{$b-prefix}-notification__icon-close {
   position: absolute;
   top: 7px;
   right: 10px;
   cursor: pointer;
 
   & i.icon {
-    color: $devui-light-text !important;
+    color: $b-light-text !important;
   }
 }
 
-.#{$devui-prefix}-notification__title {
-  font-size: $devui-font-size-card-title;
+.#{$b-prefix}-notification__title {
+  font-size: $b-font-size-card-title;
   padding: 0 0 calc(0.5em - 2px) 0;
   display: block;
   font-weight: 700;
 }
 
-.#{$devui-prefix}-notification__image {
+.#{$b-prefix}-notification__image {
   position: absolute;
   display: inline-block;
   width: 16px;
@@ -68,58 +68,58 @@
   padding: 0;
   line-height: 1;
 
-  &.#{$devui-prefix}-notification__image--warning {
-    path.#{$devui-prefix}-notification__warning-outer {
-      fill: $devui-warning-line;
+  &.#{$b-prefix}-notification__image--warning {
+    path.#{$b-prefix}-notification__warning-outer {
+      fill: $b-warning-line;
     }
 
-    path.#{$devui-prefix}-notification__warning-inner {
-      fill: $devui-light-text;
-      stroke: $devui-light-text;
+    path.#{$b-prefix}-notification__warning-inner {
+      fill: $b-light-text;
+      stroke: $b-light-text;
     }
   }
 
-  &.#{$devui-prefix}-notification__image--info {
-    background-color: $devui-info;
+  &.#{$b-prefix}-notification__image--info {
+    background-color: $b-info;
   }
 
-  &.#{$devui-prefix}-notification__image--error {
-    background-color: $devui-danger;
+  &.#{$b-prefix}-notification__image--error {
+    background-color: $b-danger;
   }
 
-  &.#{$devui-prefix}-notification__image--success {
-    background-color: $devui-success;
+  &.#{$b-prefix}-notification__image--success {
+    background-color: $b-success;
   }
 
-  .#{$devui-prefix}-notification__image-info-path,
-  .#{$devui-prefix}-notification__image-error-path,
-  .#{$devui-prefix}-notification__image-success-path {
-    fill: $devui-light-text;
+  .#{$b-prefix}-notification__image-info-path,
+  .#{$b-prefix}-notification__image-error-path,
+  .#{$b-prefix}-notification__image-success-path {
+    fill: $b-light-text;
   }
 }
 
-.#{$devui-prefix}-notification__message {
+.#{$b-prefix}-notification__message {
   margin-left: 20px;
 
-  .#{$devui-prefix}-notification__content {
-    font-size: $devui-font-size;
+  .#{$b-prefix}-notification__content {
+    font-size: $b-font-size;
     margin-top: 4px;
   }
 }
 
-.#{$devui-prefix}-notification-message-common .#{$devui-prefix}-notification__message {
+.#{$b-prefix}-notification-message-common .#{$b-prefix}-notification__message {
   margin-left: 0;
 }
 
-.#{$devui-prefix}-notification__message p {
-  font-size: $devui-font-size;
+.#{$b-prefix}-notification__message p {
+  font-size: $b-font-size;
   margin-top: 4px;
 }
 
 .notification-fade {
   &-enter-active,
   &-leave-active {
-    transition: transform $devui-animation-duration-slow $devui-animation-ease-in-out;
+    transition: transform $b-animation-duration-slow $b-animation-ease-in-out;
   }
 
   &-enter-from,

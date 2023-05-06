@@ -14,49 +14,49 @@
   }
 }
 
-.#{$devui-prefix}-loading__mask {
+.#{$b-prefix}-loading__mask {
   // to mask cover fixed column
-  z-index: $devui-z-index-full-page-overlay;
+  z-index: $b-z-index-full-page-overlay;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
-  background-color: $devui-line;
+  background-color: $b-line;
   opacity: 0.3;
 }
 
-.#{$devui-prefix}-loading__wrapper {
+.#{$b-prefix}-loading__wrapper {
   text-align: center;
 }
 
-.#{$devui-prefix}-loading--full {
+.#{$b-prefix}-loading--full {
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
-  z-index: $devui-z-index-full-page-overlay;
+  z-index: $b-z-index-full-page-overlay;
 }
 
-.#{$devui-prefix}-loading--hidden {
+.#{$b-prefix}-loading--hidden {
   overflow: hidden;
 }
 
-.#{$devui-prefix}-loading__text {
+.#{$b-prefix}-loading__text {
   margin-left: 10px;
 }
 
 // 默认加载样式
-.#{$devui-prefix}-loading__area {
+.#{$b-prefix}-loading__area {
   position: absolute;
   transform: translate(-50%, -50%);
   padding: 12px 14px;
-  background: var(--devui-base-bg, #ffffff);
-  border-radius: var(--devui-border-radius-card, 6px);
+  background: var(--b-base-bg, #ffffff);
+  border-radius: var(--b-border-radius-card, 6px);
 }
 
-.#{$devui-prefix}-loading__busy-default-spinner {
+.#{$b-prefix}-loading__busy-default-spinner {
   position: relative;
   display: inline-block;
   width: 15px;
@@ -72,31 +72,31 @@
     border-radius: 50%;
   }
 
-  .#{$devui-prefix}-loading__bar1 {
+  .#{$b-prefix}-loading__bar1 {
     top: 0;
     left: 0;
     background: #5e7ce0;
-    background: var(--devui-brand, #5e7ce0);
+    background: var(--b-brand, #5e7ce0);
   }
 
-  .#{$devui-prefix}-loading__bar2 {
+  .#{$b-prefix}-loading__bar2 {
     top: 0;
     left: 9px;
     background: #859bff;
-    background: var(--devui-brand-foil, #859bff);
+    background: var(--b-brand-foil, #859bff);
   }
 
-  .#{$devui-prefix}-loading__bar3 {
+  .#{$b-prefix}-loading__bar3 {
     top: 9px;
     left: 0;
     background: #859bff;
-    background: var(--devui-brand-foil, #859bff);
+    background: var(--b-brand-foil, #859bff);
   }
 
-  .#{$devui-prefix}-loading__bar4 {
+  .#{$b-prefix}-loading__bar4 {
     top: 9px;
     left: 9px;
     background: #5e7ce0;
-    background: var(--devui-brand, #5e7ce0);
+    background: var(--b-brand, #5e7ce0);
   }
 }

@@ -1,10 +1,10 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-icon-group {
+.#{$b-prefix}-icon-group {
   display: inline-flex;
   align-items: center;
 
-  & > .#{$devui-prefix}-icon__container:not(.#{$devui-prefix}-icon--operable) {
+  & > .#{$b-prefix}-icon__container:not(.#{$b-prefix}-icon--operable) {
     padding: 8px;
     margin-left: 0;
 

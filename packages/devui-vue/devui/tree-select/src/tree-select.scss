@@ -5,46 +5,46 @@ $tree-select-dropdown-max-height: 300px;
 $tree-select-item-min-height: 36px;
 $tree-select-item-font-size: 16px;
 
-.#{$devui-prefix}-tree-select {
+.#{$b-prefix}-tree-select {
   position: relative;
   width: 100%;
 }
 
-.#{$devui-prefix}-tree-select-disabled {
+.#{$b-prefix}-tree-select-disabled {
   cursor: not-allowed;
-  background-color: $devui-disabled-bg;
-  border-color: $devui-disabled-line;
-  color: $devui-disabled-text;
+  background-color: $b-disabled-bg;
+  border-color: $b-disabled-line;
+  color: $b-disabled-text;
 
-  .#{$devui-prefix}-tree-select-input {
+  .#{$b-prefix}-tree-select-input {
     cursor: not-allowed;
-    background-color: $devui-disabled-bg;
-    border-color: $devui-disabled-line;
-    color: $devui-disabled-text;
+    background-color: $b-disabled-bg;
+    border-color: $b-disabled-line;
+    color: $b-disabled-text;
   }
 
-  .#{$devui-prefix}-tree-select-arrow {
+  .#{$b-prefix}-tree-select-arrow {
     cursor: not-allowed;
-    color: $devui-disabled-text;
+    color: $b-disabled-text;
   }
 }
 
-.#{$devui-prefix}-tree-select-open {
-  .#{$devui-prefix}-tree-select-arrow {
+.#{$b-prefix}-tree-select-open {
+  .#{$b-prefix}-tree-select-arrow {
     transform: rotate3d(0, 0, 1, 180deg);
   }
 }
 
-.#{$devui-prefix}-tree-select-input {
+.#{$b-prefix}-tree-select-input {
   cursor: pointer;
   width: 100%;
   height: $tree-select-input-height;
   padding: 0 10px;
-  color: $devui-text;
-  border: 1px solid $devui-form-control-line;
-  border-radius: $devui-border-radius;
+  color: $b-text;
+  border: 1px solid $b-form-control-line;
+  border-radius: $b-border-radius;
   outline: none;
-  background-color: $devui-base-bg;
+  background-color: $b-base-bg;
   overflow: auto;
 
   &:empty::before {
@@ -54,32 +54,32 @@ $tree-select-item-font-size: 16px;
   }
 }
 
-.#{$devui-prefix}-tree-select-value {
+.#{$b-prefix}-tree-select-value {
   display: inline-block;
   height: 80%;
   vertical-align: middle;
 }
 
-.#{$devui-prefix}-tree-select-value-enableLabelization {
+.#{$b-prefix}-tree-select-value-enableLabelization {
   padding: 0 10px;
   margin: 2px 10px 2px 0;
-  background-color: $devui-icon-fill;
+  background-color: $b-icon-fill;
 }
 
-.#{$devui-prefix}-tree-select-dropdown {
-  border-radius: $devui-border-radius;
-  background: $devui-base-bg;
-  box-shadow: 0 2px 5px 0 $devui-shadow;
+.#{$b-prefix}-tree-select-dropdown {
+  border-radius: $b-border-radius;
+  background: $b-base-bg;
+  box-shadow: 0 2px 5px 0 $b-shadow;
 }
 
-.#{$devui-prefix}-tree-select-dropdown-list {
+.#{$b-prefix}-tree-select-dropdown-list {
   max-height: $tree-select-dropdown-max-height;
   overflow-y: auto;
   padding: 0;
   margin: 0;
 }
 
-.#{$devui-prefix}-tree-select-item {
+.#{$b-prefix}-tree-select-item {
   font-size: $tree-select-item-font-size;
   display: inline-flex;
   min-height: $tree-select-item-min-height;
@@ -91,36 +91,36 @@ $tree-select-item-font-size: 16px;
   white-space: nowrap;
   text-overflow: ellipsis;
   border: 0;
-  color: $devui-text;
+  color: $b-text;
   cursor: pointer;
   align-items: center;
 
   &:hover:not(.active):not(.disabled) {
-    color: $devui-list-item-hover-text;
-    background-color: $devui-list-item-hover-bg;
+    color: $b-list-item-hover-text;
+    background-color: $b-list-item-hover-bg;
   }
 }
 
-.#{$devui-prefix}-tree-select-clearable {
+.#{$b-prefix}-tree-select-clearable {
   position: relative;
 
   &:hover {
-    .#{$devui-prefix}-tree-select-clear {
+    .#{$b-prefix}-tree-select-clear {
       display: inline-flex;
     }
 
-    .#{$devui-prefix}-tree-select-arrow {
+    .#{$b-prefix}-tree-select-arrow {
       display: none;
     }
   }
 }
 
-.#{$devui-prefix}-tree-select-notclearable {
+.#{$b-prefix}-tree-select-notclearable {
   position: relative;
 }
 
-.#{$devui-prefix}-tree-select-clear,
-.#{$devui-prefix}-tree-select-arrow {
+.#{$b-prefix}-tree-select-clear,
+.#{$b-prefix}-tree-select-arrow {
   position: absolute;
   top: 0;
   right: 0;
@@ -131,11 +131,11 @@ $tree-select-item-font-size: 16px;
   align-items: center;
 }
 
-.#{$devui-prefix}-tree-select-clear {
+.#{$b-prefix}-tree-select-clear {
   display: none;
 
   &:hover {
     cursor: pointer;
-    color: $devui-icon-fill-active;
+    color: $b-icon-fill-active;
   }
 }

@@ -1,10 +1,10 @@
 @import '../../styles-var/devui-var.scss';
 
-.#{$devui-prefix}-list {
+.#{$b-prefix}-list {
   padding-bottom: 4px;
-  border-radius: $devui-border-radius;
+  border-radius: $b-border-radius;
   box-sizing: border-box;
   background-clip: padding-box;
-  background-color: $devui-connected-overlay-bg;
+  background-color: $b-connected-overlay-bg;
   outline: none;
 }

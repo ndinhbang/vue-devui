@@ -5,14 +5,14 @@
 $simple-step-height: 36;
 $simple-step-space: 8;
 
-.#{$devui-prefix}-steps {
+.#{$b-prefix}-steps {
   display: flex;
 
   &.vertical {
     flex-direction: column;
     height: 100%;
 
-    .#{$devui-prefix}-step {
+    .#{$b-prefix}-step {
       flex-direction: row;
 
       &__line {
@@ -30,13 +30,13 @@ $simple-step-space: 8;
   }
 
   &.simple {
-    .#{$devui-prefix}-step {
+    .#{$b-prefix}-step {
       position: relative;
       height: #{$simple-step-height}px;
       line-height: #{$simple-step-height}px;
       text-align: center;
-      background-color: $devui-brand-foil;
-      color: $devui-text;
+      background-color: $b-brand-foil;
+      color: $b-text;
 
       &:not(:first-child) {
         margin-left: #{math.div($simple-step-height, 2)}px;
@@ -54,9 +54,9 @@ $simple-step-space: 8;
         left: -#{$simple-step-height - $simple-step-space}px;
         top: 0;
         border: solid #{math.div($simple-step-height, 2)}px transparent;
-        border-top-color: $devui-brand-foil;
-        border-right-color: $devui-brand-foil;
-        border-bottom-color: $devui-brand-foil;
+        border-top-color: $b-brand-foil;
+        border-right-color: $b-brand-foil;
+        border-bottom-color: $b-brand-foil;
       }
 
       &::after {
@@ -67,36 +67,36 @@ $simple-step-space: 8;
         right: -#{$simple-step-height}px;
         top: 0;
         border: solid #{math.div($simple-step-height, 2)}px transparent;
-        border-left-color: $devui-brand-foil;
+        border-left-color: $b-brand-foil;
       }
 
       &.active {
-        background-color: $devui-brand;
-        color: $devui-light-text;
+        background-color: $b-brand;
+        color: $b-light-text;
 
         &::before {
-          border-top-color: $devui-brand;
-          border-right-color: $devui-brand;
-          border-bottom-color: $devui-brand;
+          border-top-color: $b-brand;
+          border-right-color: $b-brand;
+          border-bottom-color: $b-brand;
         }
 
         &::after {
-          border-left-color: $devui-brand;
+          border-left-color: $b-brand;
         }
       }
 
       &.finished {
-        background-color: $devui-success;
-        color: $devui-light-text;
+        background-color: $b-success;
+        color: $b-light-text;
 
         &::before {
-          border-top-color: $devui-success;
-          border-right-color: $devui-success;
-          border-bottom-color: $devui-success;
+          border-top-color: $b-success;
+          border-right-color: $b-success;
+          border-bottom-color: $b-success;
         }
 
         &::after {
-          border-left-color: $devui-success;
+          border-left-color: $b-success;
         }
       }
     }
